@@ -1,0 +1,112 @@
+name: Snapshot FPL data
+
+# Runs every day at 02:30 UTC, which is after the overnight price changes
+# have settled. You can also run it by hand from the Actions tab any time.
+on:
+  schedule:
+    - cron: '30 2 * * *'
+  workflow_dispatch:
+
+# The job commits back into this repo, so it needs write permission.
+permissions:
+  contents: write
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Read config
+        id: cfg
+        run: |
+          ENTRY_ID=$(jq -r '.entry_id // empty' config.json)
+          LEAGUE_ID=$(jq -r '.league_id // empty' config.json)
+          echo "entry_id=$ENTRY_ID"   >> "$GITHUB_OUTPUT"
+          echo "league_id=$LEAGUE_ID" >> "$GITHUB_OUTPUT"
+          echo "Entry ID: ${ENTRY_ID:-(not set)}"
+          echo "League ID: ${LEAGUE_ID:-(not set)}"
+
+      - name: Fetch FPL data
+        env:
+          ENTRY_ID: ${{ steps.cfg.outputs.entry_id }}
+          LEAGUE_ID: ${{ steps.cfg.outputs.league_id }}
+        run: |
+          set -euo pipefail
+          mkdir -p data
+          API="https://fantasy.premierleague.com/api"
+
+          # Fetch a URL and save it pretty-printed. Pretty-printing matters:
+          # it puts each field on its own line, so git diffs show you exactly
+          # which price or flag changed. Minified JSON would be one enormous
+          # line and every diff would be useless.
+          #
+          # Writes to a temp file first and only moves it into place if the
+          # response is valid JSON, so a failed request can never overwrite
+          # good data with an error page.
+          fetch() {
+            url="$1"; out="$2"
+            echo "Fetching $url"
+            if curl -sS --fail --max-time 60 \
+                 -H 'User-Agent: fpl-mirror (personal use)' \
+                 "$url" -o /tmp/raw.json; then
+              if jq empty /tmp/raw.json 2>/dev/null; then
+                jq -S . /tmp/raw.json > "$out"
+                echo "  -> $out ($(wc -c < "$out") bytes)"
+              else
+                echo "  !! response was not valid JSON, keeping previous $out"
+              fi
+            else
+              echo "  !! request failed, keeping previous $out"
+            fi
+          }
+
+          fetch "$API/bootstrap-static/" data/bootstrap-static.json
+          fetch "$API/fixtures/"        data/fixtures.json
+          fetch "$API/event-status/"    data/event-status.json
+
+          # Work out the current gameweek from the data we just pulled, so the
+          # picks fetch below asks for the right one without being told.
+          CURRENT_GW=$(jq -r '[.events[] | select(.is_current == true) | .id] | first // empty' data/bootstrap-static.json)
+          if [ -z "$CURRENT_GW" ]; then
+            # Before the season starts nothing is "current" yet, so fall back
+            # to the next upcoming gameweek.
+            CURRENT_GW=$(jq -r '[.events[] | select(.is_next == true) | .id] | first // empty' data/bootstrap-static.json)
+          fi
+          echo "Current/next gameweek: ${CURRENT_GW:-unknown}"
+
+          if [ -n "${ENTRY_ID:-}" ]; then
+            fetch "$API/entry/$ENTRY_ID/"         data/entry.json
+            fetch "$API/entry/$ENTRY_ID/history/" data/entry-history.json
+            # Picks only exist once a gameweek has started.
+            if [ -n "$CURRENT_GW" ]; then
+              fetch "$API/entry/$ENTRY_ID/event/$CURRENT_GW/picks/" data/picks-latest.json
+            fi
+          else
+            echo "No entry_id in config.json - skipping personal endpoints."
+          fi
+
+          if [ -n "${LEAGUE_ID:-}" ]; then
+            fetch "$API/leagues-classic/$LEAGUE_ID/standings/" data/league-standings.json
+          else
+            echo "No league_id in config.json - skipping league endpoint."
+          fi
+
+          date -u +"%Y-%m-%dT%H:%M:%SZ" > data/last-updated.txt
+
+      - name: Commit any changes
+        run: |
+          git config user.name  "fpl-mirror bot"
+          git config user.email "actions@github.com"
+          git add data
+          # git commit fails if nothing changed, which is normal on a quiet
+          # day - so check first rather than letting the run go red.
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Snapshot $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git push
+            echo "Committed."
+          fi
