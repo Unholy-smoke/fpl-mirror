@@ -1,5 +1,5 @@
 {
-  "last_updated_data": null,
+  "last_updated_data": "2026-08-22T03:07:56Z",
   "league": {
     "admin_entry": 118670,
     "closed": false,
@@ -18,68 +18,111 @@
   "new_entries": {
     "has_next": false,
     "page": 1,
-    "results": [
-      {
-        "entry": 7519117,
-        "entry_name": "Zero Fox Given",
-        "joined_time": "2026-08-21T02:58:54.494708Z",
-        "player_first_name": "Matt",
-        "player_last_name": "Fox"
-      },
-      {
-        "entry": 7307209,
-        "entry_name": "JesusSelsPopeSenesi",
-        "joined_time": "2026-08-20T21:16:39.973893Z",
-        "player_first_name": "Chris",
-        "player_last_name": "Hodierne"
-      },
-      {
-        "entry": 6231483,
-        "entry_name": "WhenTheYrEndsIn7",
-        "joined_time": "2026-08-19T15:34:43.206026Z",
-        "player_first_name": "Richard",
-        "player_last_name": "Wisdom"
-      },
-      {
-        "entry": 3866837,
-        "entry_name": "The Krejci Gang",
-        "joined_time": "2026-08-11T15:51:49.924846Z",
-        "player_first_name": "Craig",
-        "player_last_name": "Bowen"
-      },
-      {
-        "entry": 1539533,
-        "entry_name": "ifor's Team",
-        "joined_time": "2026-07-26T14:55:31.004120Z",
-        "player_first_name": "ifor",
-        "player_last_name": "jones"
-      },
-      {
-        "entry": 88625,
-        "entry_name": "Dean's Team",
-        "joined_time": "2026-07-23T13:12:14.258688Z",
-        "player_first_name": "Dean",
-        "player_last_name": "Barr"
-      },
-      {
-        "entry": 10324,
-        "entry_name": "The Special Wan",
-        "joined_time": "2026-07-23T13:12:14.178818Z",
-        "player_first_name": "Ken",
-        "player_last_name": "Wan"
-      },
-      {
-        "entry": 118670,
-        "entry_name": "Ugarte Freund in Mee",
-        "joined_time": "2026-07-23T13:12:14.138163Z",
-        "player_first_name": "Michael",
-        "player_last_name": "Jones"
-      }
-    ]
+    "results": []
   },
   "standings": {
     "has_next": false,
     "page": 1,
-    "results": []
+    "results": [
+      {
+        "club_badge_src": null,
+        "entry": 1539533,
+        "entry_name": "ifor's Team",
+        "event_total": 26,
+        "last_rank": 0,
+        "player_name": "ifor jones",
+        "rank": 1,
+        "rank_sort": 1,
+        "total": 26
+      },
+      {
+        "club_badge_src": null,
+        "entry": 8280153,
+        "entry_name": "Nwaneris Mate!",
+        "event_total": 25,
+        "last_rank": 0,
+        "player_name": "B Kites",
+        "rank": 2,
+        "rank_sort": 2,
+        "total": 25
+      },
+      {
+        "club_badge_src": null,
+        "entry": 118670,
+        "entry_name": "Ugarte Freund in Mee",
+        "event_total": 21,
+        "last_rank": 0,
+        "player_name": "Michael Jones",
+        "rank": 3,
+        "rank_sort": 3,
+        "total": 21
+      },
+      {
+        "club_badge_src": null,
+        "entry": 10324,
+        "entry_name": "The Special Wan",
+        "event_total": 20,
+        "last_rank": 0,
+        "player_name": "Ken Wan",
+        "rank": 4,
+        "rank_sort": 4,
+        "total": 20
+      },
+      {
+        "club_badge_src": null,
+        "entry": 7307209,
+        "entry_name": "JesusSelsPopeSenesi",
+        "event_total": 16,
+        "last_rank": 0,
+        "player_name": "Chris Hodierne",
+        "rank": 5,
+        "rank_sort": 5,
+        "total": 16
+      },
+      {
+        "club_badge_src": null,
+        "entry": 3866837,
+        "entry_name": "The Krejci Gang",
+        "event_total": 15,
+        "last_rank": 0,
+        "player_name": "Craig Bowen",
+        "rank": 6,
+        "rank_sort": 6,
+        "total": 15
+      },
+      {
+        "club_badge_src": null,
+        "entry": 88625,
+        "entry_name": "Dean's Team",
+        "event_total": 14,
+        "last_rank": 0,
+        "player_name": "Dean Barr",
+        "rank": 7,
+        "rank_sort": 7,
+        "total": 14
+      },
+      {
+        "club_badge_src": null,
+        "entry": 6231483,
+        "entry_name": "WhenTheYrEndsIn7",
+        "event_total": 9,
+        "last_rank": 0,
+        "player_name": "Richard Wisdom",
+        "rank": 8,
+        "rank_sort": 8,
+        "total": 9
+      },
+      {
+        "club_badge_src": null,
+        "entry": 7519117,
+        "entry_name": "Zero Fox Given",
+        "event_total": 9,
+        "last_rank": 0,
+        "player_name": "Matt Fox",
+        "rank": 8,
+        "rank_sort": 9,
+        "total": 9
+      }
+    ]
   }
 }

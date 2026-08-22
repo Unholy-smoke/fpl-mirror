@@ -1,6 +1,28 @@
 {
-  "chips": [],
-  "current": [],
+  "chips": [
+    {
+      "event": 1,
+      "name": "bboost",
+      "time": "2026-08-13T08:39:30.112454Z"
+    }
+  ],
+  "current": [
+    {
+      "bank": 0,
+      "event": 1,
+      "event_transfers": 0,
+      "event_transfers_cost": 0,
+      "overall_rank": 885437,
+      "overall_rank_percentage": "10",
+      "percentile_rank": 10,
+      "points": 21,
+      "points_on_bench": 0,
+      "rank": 885437,
+      "rank_sort": 895957,
+      "total_points": 21,
+      "value": 1000
+    }
+  ],
   "past": [
     {
       "rank": 393478,
