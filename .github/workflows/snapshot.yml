@@ -1,19 +1,32 @@
 name: Snapshot FPL data
 
-# Runs every day at 02:30 UTC, which is after the overnight price changes
-# have settled. You can also run it by hand from the Actions tab any time.
+# GitHub's scheduled runs are best-effort. They sit on a shared queue and get
+# delayed under load - normally by around an hour, occasionally by ten. There
+# is no way to make a single daily run punctual, so instead we ask three times
+# a day at spread-out, uncongested times. Any one of them landing is enough.
+#
+# You can also run it by hand from the Actions tab any time.
 on:
   schedule:
-    - cron: '30 2 * * *'
+    - cron: '11 1 * * *'    # after the midnight UK price changes have settled
+    - cron: '11 7 * * *'    # morning catch-up, before the deadline brief runs
+    - cron: '11 13 * * *'   # afternoon, ahead of Friday evening deadlines
   workflow_dispatch:
 
 # The job commits back into this repo, so it needs write permission.
 permissions:
   contents: write
 
+# Delayed runs can bunch up and collide when pushing. Let a running job finish
+# rather than cancelling it, but never allow two at once.
+concurrency:
+  group: snapshot-fpl-data
+  cancel-in-progress: false
+
 jobs:
   snapshot:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
 
     steps:
       - name: Check out the repository
@@ -35,8 +48,21 @@ jobs:
           LEAGUE_ID: ${{ steps.cfg.outputs.league_id }}
         run: |
           set -euo pipefail
-          mkdir -p data
+          mkdir -p data data/rivals
           API="https://fantasy.premierleague.com/api"
+          RUN_STAMP=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+
+          # Per-file freshness tracking.
+          #
+          # The old last-updated.txt recorded when the JOB ran, not when the
+          # DATA was refreshed. Because a failed request quietly keeps the
+          # previous file, a run where every single fetch failed would still
+          # stamp a fresh timestamp over fifteen stale files - and anything
+          # reading the mirror would have believed it.
+          #
+          # Each fetch now records its own outcome, so a stale file can no
+          # longer hide behind a successful run.
+          : > /tmp/status.jsonl
 
           # Fetch a URL and save it pretty-printed. Pretty-printing matters:
           # it puts each field on its own line, so git diffs show you exactly
@@ -55,12 +81,15 @@ jobs:
               if jq empty /tmp/raw.json 2>/dev/null; then
                 jq -S . /tmp/raw.json > "$out"
                 echo "  -> $out ($(wc -c < "$out") bytes)"
-              else
-                echo "  !! response was not valid JSON, keeping previous $out"
+                jq -nc --arg f "$out" '{file:$f, ok:true}' >> /tmp/status.jsonl
+                return 0
               fi
+              echo "  !! response was not valid JSON, keeping previous $out"
             else
               echo "  !! request failed, keeping previous $out"
             fi
+            jq -nc --arg f "$out" '{file:$f, ok:false}' >> /tmp/status.jsonl
+            return 0
           }
 
           fetch "$API/bootstrap-static/" data/bootstrap-static.json
@@ -94,7 +123,53 @@ jobs:
             echo "No league_id in config.json - skipping league endpoint."
           fi
 
-          date -u +"%Y-%m-%dT%H:%M:%SZ" > data/last-updated.txt
+          # Rival squads - the piece that makes differential analysis possible.
+          #
+          # Entry IDs are read straight out of the standings we just fetched,
+          # so this keeps working by itself as people join or leave the league.
+          # One file per manager per gameweek, so the history accumulates.
+          if [ -n "$CURRENT_GW" ] && [ -f data/league-standings.json ]; then
+            RIVALS=$(jq -r '[.standings.results[].entry] | unique | .[]' data/league-standings.json)
+            RIVAL_COUNT=$(echo "$RIVALS" | grep -c . || true)
+            echo "Fetching picks for $RIVAL_COUNT league members, gameweek $CURRENT_GW"
+            for RID in $RIVALS; do
+              fetch "$API/entry/$RID/event/$CURRENT_GW/picks/" \
+                    "data/rivals/gw${CURRENT_GW}-entry${RID}.json"
+              sleep 1   # be polite to the API
+            done
+          else
+            echo "No gameweek or no standings - skipping rival picks."
+          fi
+
+          # Merge this run's outcomes into the persistent status file, keeping
+          # the last SUCCESSFUL timestamp for anything that failed this time.
+          OLD_FILES='{}'
+          if [ -f data/fetch-status.json ]; then
+            OLD_FILES=$(jq -c '.files // {}' data/fetch-status.json)
+          fi
+
+          NEW_FILES=$(jq -sc --argjson old "$OLD_FILES" --arg t "$RUN_STAMP" '
+            reduce .[] as $r ($old;
+              if $r.ok
+              then .[$r.file] = { last_success: $t, last_result: "ok" }
+              else .[$r.file] = ( (.[$r.file] // { last_success: null })
+                                  | .last_result = "failed" )
+              end)
+          ' /tmp/status.jsonl)
+
+          FAILED=$(jq -r '[.[] | select(.ok == false)] | length' -s /tmp/status.jsonl)
+
+          jq -n --arg run "$RUN_STAMP" \
+                --argjson failed "$FAILED" \
+                --argjson files "$NEW_FILES" \
+                '{ run_at: $run, failed_this_run: $failed, files: $files }' \
+                > data/fetch-status.json
+
+          # Kept for backwards compatibility. NOTE: this is when the JOB ran.
+          # For whether the DATA is actually fresh, read fetch-status.json.
+          echo "$RUN_STAMP" > data/last-updated.txt
+
+          echo "Fetches failed this run: $FAILED"
 
       - name: Commit any changes
         run: |
@@ -105,8 +180,19 @@ jobs:
           # day - so check first rather than letting the run go red.
           if git diff --staged --quiet; then
             echo "No changes to commit."
-          else
-            git commit -m "Snapshot $(date -u +'%Y-%m-%d %H:%M UTC')"
-            git push
-            echo "Committed."
+            exit 0
           fi
+          git commit -m "Snapshot $(date -u +'%Y-%m-%d %H:%M UTC')"
+          # A badly delayed run can overlap with the next one. Rebase onto
+          # whatever landed first rather than failing the push.
+          for attempt in 1 2 3; do
+            if git push; then
+              echo "Committed."
+              exit 0
+            fi
+            echo "Push rejected, rebasing and retrying (attempt $attempt)..."
+            git pull --rebase origin main
+            sleep 5
+          done
+          echo "Could not push after 3 attempts." >&2
+          exit 1
