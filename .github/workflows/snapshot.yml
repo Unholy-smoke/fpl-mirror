@@ -7,11 +7,32 @@ name: Snapshot FPL data
 #
 # You can also run it by hand from the Actions tab any time.
 on:
+  # Every three hours. This is deliberately more often than it looks like
+  # it needs to be, and the reason is worth writing down:
+  #
+  # Nothing else can trigger this workflow. The Cowork cloud container can
+  # read raw.githubusercontent and even git-clone over https, but the egress
+  # proxy blocks the repo-scoped REST API that workflow_dispatch requires.
+  # And Claude can only dispatch it via Ben's PC when a folder is connected -
+  # which is granted per session, with the approval prompt appearing on the
+  # PC itself, so it is unavailable precisely when Ben is away from home.
+  #
+  # Conclusion: the schedule is the only reliable freshness mechanism, so it
+  # has to be dense enough that nobody ever needs to force a run. GitHub's
+  # scheduler is also chronically late - up to an hour, occasionally ten -
+  # so more slots also means more chances for one to land on time.
+  #
+  # Public repos get unlimited Actions minutes. Eight runs a day at ~45s is
+  # about six minutes of compute. It costs nothing.
   schedule:
     - cron: '11 1 * * *'    # after the midnight UK price changes have settled
-    - cron: '11 7 * * *'    # morning catch-up, before the deadline brief runs
-    - cron: '11 13 * * *'   # afternoon, ahead of Friday evening deadlines
-    - cron: '30 21 * * *'   # evening - captures a full Sunday/Saturday slate
+    - cron: '0 4 * * *'
+    - cron: '11 7 * * *'    # before the Thursday deadline brief runs
+    - cron: '0 10 * * *'
+    - cron: '11 13 * * *'
+    - cron: '0 16 * * *'
+    - cron: '0 19 * * *'    # ~90 min after a Friday 17:30 UTC deadline
+    - cron: '30 21 * * *'   # evening - captures a full Saturday/Sunday slate
   workflow_dispatch:
     inputs:
       full_watchlist:
