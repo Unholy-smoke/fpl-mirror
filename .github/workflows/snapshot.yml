@@ -2,8 +2,8 @@ name: Snapshot FPL data
 
 # GitHub's scheduled runs are best-effort. They sit on a shared queue and get
 # delayed under load - normally by around an hour, occasionally by ten. There
-# is no way to make a single daily run punctual, so instead we ask three times
-# a day at spread-out, uncongested times. Any one of them landing is enough.
+# is no way to make a single daily run punctual, so instead we ask several
+# times a day at spread-out, uncongested times. Any one landing is enough.
 #
 # You can also run it by hand from the Actions tab any time.
 on:
@@ -11,14 +11,17 @@ on:
     - cron: '11 1 * * *'    # after the midnight UK price changes have settled
     - cron: '11 7 * * *'    # morning catch-up, before the deadline brief runs
     - cron: '11 13 * * *'   # afternoon, ahead of Friday evening deadlines
+    - cron: '30 21 * * *'   # evening - captures a full Sunday/Saturday slate
   workflow_dispatch:
+    inputs:
+      full_watchlist:
+        description: 'Also refresh element-summary for the watchlist (normally Tuesdays only)'
+        type: boolean
+        default: false
 
-# The job commits back into this repo, so it needs write permission.
 permissions:
   contents: write
 
-# Delayed runs can bunch up and collide when pushing. Let a running job finish
-# rather than cancelling it, but never allow two at once.
 concurrency:
   group: snapshot-fpl-data
   cancel-in-progress: false
@@ -26,7 +29,8 @@ concurrency:
 jobs:
   snapshot:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    # Raised from 10: the watchlist sweep adds ~150 polite requests on Tuesdays.
+    timeout-minutes: 25
 
     steps:
       - name: Check out the repository
@@ -46,28 +50,31 @@ jobs:
         env:
           ENTRY_ID: ${{ steps.cfg.outputs.entry_id }}
           LEAGUE_ID: ${{ steps.cfg.outputs.league_id }}
+          FORCE_WATCHLIST: ${{ github.event.inputs.full_watchlist }}
         run: |
           set -euo pipefail
-          mkdir -p data data/rivals
+          mkdir -p data data/rivals data/live data/transfers data/elements \
+                   data/history data/history/ownership
           API="https://fantasy.premierleague.com/api"
           RUN_STAMP=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+          RUN_DATE=$(date -u +"%Y-%m-%d")
+          RUN_DOW=$(date -u +"%u")     # 1=Mon .. 7=Sun
 
-          # Per-file freshness tracking.
-          #
-          # The old last-updated.txt recorded when the JOB ran, not when the
-          # DATA was refreshed. Because a failed request quietly keeps the
-          # previous file, a run where every single fetch failed would still
-          # stamp a fresh timestamp over fifteen stale files - and anything
-          # reading the mirror would have believed it.
-          #
-          # Each fetch now records its own outcome, so a stale file can no
-          # longer hide behind a successful run.
           : > /tmp/status.jsonl
+
+          # Keep the PREVIOUS bootstrap so we can diff prices and ownership
+          # after the new one lands. This is what gives us a time series
+          # without needing api.github.com, which the analysis container
+          # cannot reach.
+          if [ -f data/bootstrap-static.json ]; then
+            cp data/bootstrap-static.json /tmp/bootstrap-prev.json
+          else
+            echo '{"elements":[],"teams":[]}' > /tmp/bootstrap-prev.json
+          fi
 
           # Fetch a URL and save it pretty-printed. Pretty-printing matters:
           # it puts each field on its own line, so git diffs show you exactly
-          # which price or flag changed. Minified JSON would be one enormous
-          # line and every diff would be useless.
+          # which price or flag changed.
           #
           # Writes to a temp file first and only moves it into place if the
           # response is valid JSON, so a failed request can never overwrite
@@ -96,20 +103,36 @@ jobs:
           fetch "$API/fixtures/"        data/fixtures.json
           fetch "$API/event-status/"    data/event-status.json
 
-          # Work out the current gameweek from the data we just pulled, so the
-          # picks fetch below asks for the right one without being told.
           CURRENT_GW=$(jq -r '[.events[] | select(.is_current == true) | .id] | first // empty' data/bootstrap-static.json)
           if [ -z "$CURRENT_GW" ]; then
-            # Before the season starts nothing is "current" yet, so fall back
-            # to the next upcoming gameweek.
             CURRENT_GW=$(jq -r '[.events[] | select(.is_next == true) | .id] | first // empty' data/bootstrap-static.json)
           fi
           echo "Current/next gameweek: ${CURRENT_GW:-unknown}"
 
+          # ---------------------------------------------------------------
+          # NEW: per-gameweek live data.
+          #
+          # One request per gameweek returns every player's stats for that
+          # gameweek - minutes, STARTS, goals, bps, bonus and the points
+          # breakdown. bootstrap-static only carries season aggregates, so
+          # without this you cannot tell a player who is nailed and was
+          # injured from one who has been dropped three weeks running.
+          #
+          # We refetch the previous gameweek too, because bonus points settle
+          # a day or two after the matches finish.
+          # ---------------------------------------------------------------
+          if [ -n "$CURRENT_GW" ]; then
+            for GW in "$CURRENT_GW" $((CURRENT_GW - 1)); do
+              if [ "$GW" -ge 1 ] 2>/dev/null; then
+                fetch "$API/event/$GW/live/" "data/live/gw${GW}.json"
+                sleep 1
+              fi
+            done
+          fi
+
           if [ -n "${ENTRY_ID:-}" ]; then
             fetch "$API/entry/$ENTRY_ID/"         data/entry.json
             fetch "$API/entry/$ENTRY_ID/history/" data/entry-history.json
-            # Picks only exist once a gameweek has started.
             if [ -n "$CURRENT_GW" ]; then
               fetch "$API/entry/$ENTRY_ID/event/$CURRENT_GW/picks/" data/picks-latest.json
             fi
@@ -123,22 +146,117 @@ jobs:
             echo "No league_id in config.json - skipping league endpoint."
           fi
 
-          # Rival squads - the piece that makes differential analysis possible.
+          # Rival squads, plus - NEW - their transfer logs and season history.
           #
-          # Entry IDs are read straight out of the standings we just fetched,
-          # so this keeps working by itself as people join or leave the league.
-          # One file per manager per gameweek, so the history accumulates.
+          # entry/<id>/transfers/ carries element_in_cost and element_out_cost,
+          # which is the ONLY place purchase prices are exposed. Without it,
+          # selling prices can only be reconstructed while a manager has made
+          # no transfers at all. It breaks the moment anyone transfers.
           if [ -n "$CURRENT_GW" ] && [ -f data/league-standings.json ]; then
             RIVALS=$(jq -r '[.standings.results[].entry] | unique | .[]' data/league-standings.json)
             RIVAL_COUNT=$(echo "$RIVALS" | grep -c . || true)
-            echo "Fetching picks for $RIVAL_COUNT league members, gameweek $CURRENT_GW"
+            echo "Fetching picks, transfers and history for $RIVAL_COUNT league members, gameweek $CURRENT_GW"
             for RID in $RIVALS; do
               fetch "$API/entry/$RID/event/$CURRENT_GW/picks/" \
                     "data/rivals/gw${CURRENT_GW}-entry${RID}.json"
-              sleep 1   # be polite to the API
+              sleep 1
+              fetch "$API/entry/$RID/transfers/" "data/transfers/entry${RID}.json"
+              sleep 1
+              fetch "$API/entry/$RID/history/"   "data/rivals/history-entry${RID}.json"
+              sleep 1
             done
           else
-            echo "No gameweek or no standings - skipping rival picks."
+            echo "No gameweek or no standings - skipping rival endpoints."
+          fi
+
+          # ---------------------------------------------------------------
+          # NEW: watchlist element-summary sweep (Tuesdays, or on demand).
+          #
+          # element-summary carries history_past - previous-season totals -
+          # and per-fixture splits. Too expensive for all 600+ players on
+          # every run, so we take the union of: your squad, everything owned
+          # by anyone in the league, and the top 100 by ownership.
+          # ---------------------------------------------------------------
+          # NB: written as if-blocks, not `[ ... ] && VAR=true`. Under
+          # `set -e` a failing test at the end of an && list kills the whole
+          # script, so on any day that is not Tuesday the run would abort here.
+          RUN_WATCHLIST=false
+          if [ "$RUN_DOW" = "2" ]; then RUN_WATCHLIST=true; fi
+          if [ "${FORCE_WATCHLIST:-false}" = "true" ]; then RUN_WATCHLIST=true; fi
+
+          if [ "$RUN_WATCHLIST" = "true" ]; then
+            # nullglob so an empty data/rivals/ yields no iterations rather
+            # than passing the literal glob string to jq.
+            shopt -s nullglob
+            {
+              if [ -f data/picks-latest.json ]; then
+                jq -r '.picks[].element' data/picks-latest.json
+              fi
+              for f in data/rivals/gw*-entry*.json; do
+                jq -r '.picks[]?.element' "$f"
+              done
+              jq -r '.elements | sort_by(-(.selected_by_percent|tonumber)) | .[0:100] | .[].id' \
+                 data/bootstrap-static.json
+            } 2>/dev/null | sort -un > /tmp/watchlist.txt || true
+            shopt -u nullglob
+
+            WL_COUNT=$(wc -l < /tmp/watchlist.txt)
+            echo "Watchlist sweep: $WL_COUNT players"
+            while read -r PID; do
+              [ -n "$PID" ] || continue
+              fetch "$API/element-summary/$PID/" "data/elements/${PID}.json"
+              sleep 0.3
+            done < /tmp/watchlist.txt
+          else
+            echo "Not Tuesday and not forced - skipping watchlist sweep."
+          fi
+
+          # ---------------------------------------------------------------
+          # NEW: price change log.
+          #
+          # Append-only. One row per observed price change, ever. Small - only
+          # a few dozen players move on a busy night - and it answers the
+          # question no live endpoint can: "when did he start rising?"
+          # ---------------------------------------------------------------
+          PRICES=data/history/prices.csv
+          if [ ! -f "$PRICES" ]; then
+            echo 'observed_at,element_id,web_name,team,element_type,old_cost,new_cost,delta,selected_by_percent,transfers_in_event,transfers_out_event' > "$PRICES"
+          fi
+          jq -r -n --arg d "$RUN_STAMP" \
+            --slurpfile prev /tmp/bootstrap-prev.json \
+            --slurpfile cur  data/bootstrap-static.json '
+            ($cur[0].teams | map({key:(.id|tostring), value:.short_name}) | from_entries) as $tm
+            | ($prev[0].elements | map({key:(.id|tostring), value:.now_cost}) | from_entries) as $pm
+            | $cur[0].elements[]
+            | select($pm[(.id|tostring)] != null and $pm[(.id|tostring)] != .now_cost)
+            | [$d, .id, .web_name, $tm[(.team|tostring)], .element_type,
+               $pm[(.id|tostring)], .now_cost, (.now_cost - $pm[(.id|tostring)]),
+               .selected_by_percent, .transfers_in_event, .transfers_out_event]
+            | @csv' >> "$PRICES" || true
+          echo "Price log now $(( $(wc -l < "$PRICES") - 1 )) rows."
+
+          # ---------------------------------------------------------------
+          # NEW: daily ownership snapshot, one file per day.
+          #
+          # Written once a day (first run that finds no file for today), so
+          # the repo gains ~40KB a day rather than a single ever-growing file
+          # that churns the diff on every run.
+          # ---------------------------------------------------------------
+          OWN="data/history/ownership/${RUN_DATE}.csv"
+          if [ ! -f "$OWN" ]; then
+            {
+              echo 'element_id,web_name,team,element_type,now_cost,selected_by_percent,transfers_in_event,transfers_out_event,total_points,minutes,starts'
+              jq -r '
+                (.teams | map({key:(.id|tostring), value:.short_name}) | from_entries) as $tm
+                | .elements[]
+                | [.id, .web_name, $tm[(.team|tostring)], .element_type, .now_cost,
+                   .selected_by_percent, .transfers_in_event, .transfers_out_event,
+                   .total_points, .minutes, .starts]
+                | @csv' data/bootstrap-static.json
+            } > "$OWN"
+            echo "Wrote ownership snapshot $OWN"
+          else
+            echo "Ownership snapshot for $RUN_DATE already exists - skipping."
           fi
 
           # Merge this run's outcomes into the persistent status file, keeping
@@ -176,15 +294,11 @@ jobs:
           git config user.name  "fpl-mirror bot"
           git config user.email "actions@github.com"
           git add data
-          # git commit fails if nothing changed, which is normal on a quiet
-          # day - so check first rather than letting the run go red.
           if git diff --staged --quiet; then
             echo "No changes to commit."
             exit 0
           fi
           git commit -m "Snapshot $(date -u +'%Y-%m-%d %H:%M UTC')"
-          # A badly delayed run can overlap with the next one. Rebase onto
-          # whatever landed first rather than failing the push.
           for attempt in 1 2 3; do
             if git push; then
               echo "Committed."
