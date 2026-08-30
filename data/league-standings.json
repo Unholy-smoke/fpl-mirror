@@ -1,5 +1,5 @@
 {
-  "last_updated_data": "2026-08-30T14:42:31Z",
+  "last_updated_data": "2026-08-30T14:59:12Z",
   "league": {
     "admin_entry": 118670,
     "closed": false,
@@ -48,36 +48,36 @@
       },
       {
         "club_badge_src": null,
-        "entry": 1539533,
-        "entry_name": "Cherki Cherki cheep",
-        "event_total": 54,
-        "last_rank": 4,
-        "player_name": "ifor jones",
+        "entry": 118670,
+        "entry_name": "Ugarte Freund in Mee",
+        "event_total": 50,
+        "last_rank": 3,
+        "player_name": "Michael Jones",
         "rank": 3,
         "rank_sort": 3,
-        "total": 113
+        "total": 116
       },
       {
         "club_badge_src": null,
-        "entry": 118670,
-        "entry_name": "Ugarte Freund in Mee",
-        "event_total": 44,
-        "last_rank": 3,
-        "player_name": "Michael Jones",
+        "entry": 1539533,
+        "entry_name": "Cherki Cherki cheep",
+        "event_total": 53,
+        "last_rank": 4,
+        "player_name": "ifor jones",
         "rank": 4,
         "rank_sort": 4,
-        "total": 110
+        "total": 112
       },
       {
         "club_badge_src": null,
         "entry": 7307209,
         "entry_name": "JesusSelsPopeSenesi",
-        "event_total": 54,
+        "event_total": 59,
         "last_rank": 7,
         "player_name": "Chris Hodierne",
         "rank": 5,
         "rank_sort": 5,
-        "total": 98
+        "total": 103
       },
       {
         "club_badge_src": null,
@@ -105,12 +105,12 @@
         "club_badge_src": null,
         "entry": 7519117,
         "entry_name": "Zero Fox Given",
-        "event_total": 28,
+        "event_total": 34,
         "last_rank": 8,
         "player_name": "Matt Fox",
         "rank": 8,
         "rank_sort": 8,
-        "total": 63
+        "total": 69
       },
       {
         "club_badge_src": null,
