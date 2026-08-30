@@ -5812,7 +5812,7 @@
           },
           {
             "element": 161,
-            "value": 30
+            "value": 32
           },
           {
             "element": 40,
@@ -5876,15 +5876,15 @@
             "value": 8
           },
           {
+            "element": 130,
+            "value": 7
+          },
+          {
             "element": 605,
             "value": 7
           },
           {
             "element": 124,
-            "value": 6
-          },
-          {
-            "element": 130,
             "value": 6
           },
           {
@@ -5930,11 +5930,11 @@
             "value": 8
           },
           {
-            "element": 148,
-            "value": 6
+            "element": 161,
+            "value": 7
           },
           {
-            "element": 161,
+            "element": 148,
             "value": 6
           },
           {
