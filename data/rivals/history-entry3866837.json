@@ -1,0 +1,163 @@
+{
+  "chips": [
+    {
+      "event": 2,
+      "name": "bboost",
+      "time": "2026-08-22T07:33:32.425580Z"
+    }
+  ],
+  "current": [
+    {
+      "bank": 0,
+      "event": 1,
+      "event_transfers": 0,
+      "event_transfers_cost": 0,
+      "overall_rank": 2677591,
+      "overall_rank_percentage": "30",
+      "percentile_rank": 35,
+      "points": 56,
+      "points_on_bench": 6,
+      "rank": 2677595,
+      "rank_sort": 2789390,
+      "total_points": 56,
+      "value": 1000
+    },
+    {
+      "bank": 0,
+      "event": 2,
+      "event_transfers": 0,
+      "event_transfers_cost": 0,
+      "overall_rank": 451388,
+      "overall_rank_percentage": "5",
+      "percentile_rank": 10,
+      "points": 49,
+      "points_on_bench": 0,
+      "rank": 548268,
+      "rank_sort": 566948,
+      "total_points": 105,
+      "value": 1002
+    }
+  ],
+  "past": [
+    {
+      "rank": 59040,
+      "rank_percentage": "5",
+      "season_name": "2006/07",
+      "total_points": 1863
+    },
+    {
+      "rank": 39725,
+      "rank_percentage": "2",
+      "season_name": "2007/08",
+      "total_points": 2125
+    },
+    {
+      "rank": 219836,
+      "rank_percentage": "11",
+      "season_name": "2008/09",
+      "total_points": 1824
+    },
+    {
+      "rank": 12810,
+      "rank_percentage": "0.6",
+      "season_name": "2009/10",
+      "total_points": 2324
+    },
+    {
+      "rank": 5664,
+      "rank_percentage": "0.2",
+      "season_name": "2010/11",
+      "total_points": 2133
+    },
+    {
+      "rank": 28387,
+      "rank_percentage": "1",
+      "season_name": "2011/12",
+      "total_points": 2122
+    },
+    {
+      "rank": 79398,
+      "rank_percentage": "3",
+      "season_name": "2012/13",
+      "total_points": 2086
+    },
+    {
+      "rank": 156001,
+      "rank_percentage": "5",
+      "season_name": "2013/14",
+      "total_points": 2255
+    },
+    {
+      "rank": 33820,
+      "rank_percentage": "1.0",
+      "season_name": "2014/15",
+      "total_points": 2129
+    },
+    {
+      "rank": 2000,
+      "rank_percentage": "0.1",
+      "season_name": "2015/16",
+      "total_points": 2311
+    },
+    {
+      "rank": 235393,
+      "rank_percentage": "5",
+      "season_name": "2016/17",
+      "total_points": 2102
+    },
+    {
+      "rank": 434875,
+      "rank_percentage": "7",
+      "season_name": "2017/18",
+      "total_points": 2111
+    },
+    {
+      "rank": 152989,
+      "rank_percentage": "2",
+      "season_name": "2018/19",
+      "total_points": 2241
+    },
+    {
+      "rank": 348256,
+      "rank_percentage": "5",
+      "season_name": "2019/20",
+      "total_points": 2188
+    },
+    {
+      "rank": 60912,
+      "rank_percentage": "0.7",
+      "season_name": "2020/21",
+      "total_points": 2419
+    },
+    {
+      "rank": 87567,
+      "rank_percentage": "1.0",
+      "season_name": "2021/22",
+      "total_points": 2514
+    },
+    {
+      "rank": 127715,
+      "rank_percentage": "1",
+      "season_name": "2022/23",
+      "total_points": 2516
+    },
+    {
+      "rank": 219000,
+      "rank_percentage": "2",
+      "season_name": "2023/24",
+      "total_points": 2438
+    },
+    {
+      "rank": 444062,
+      "rank_percentage": "4",
+      "season_name": "2024/25",
+      "total_points": 2420
+    },
+    {
+      "rank": 252015,
+      "rank_percentage": "2",
+      "season_name": "2025/26",
+      "total_points": 2284
+    }
+  ]
+}

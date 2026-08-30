@@ -1,0 +1,97 @@
+{
+  "chips": [],
+  "current": [
+    {
+      "bank": 0,
+      "event": 1,
+      "event_transfers": 0,
+      "event_transfers_cost": 0,
+      "overall_rank": 6124832,
+      "overall_rank_percentage": "69",
+      "percentile_rank": 70,
+      "points": 44,
+      "points_on_bench": 9,
+      "rank": 6124842,
+      "rank_sort": 6334172,
+      "total_points": 44,
+      "value": 1000
+    },
+    {
+      "bank": 0,
+      "event": 2,
+      "event_transfers": 1,
+      "event_transfers_cost": 0,
+      "overall_rank": 3975804,
+      "overall_rank_percentage": "40",
+      "percentile_rank": 30,
+      "points": 37,
+      "points_on_bench": 1,
+      "rank": 2688222,
+      "rank_sort": 2755694,
+      "total_points": 81,
+      "value": 1003
+    }
+  ],
+  "past": [
+    {
+      "rank": 59331,
+      "rank_percentage": "2",
+      "season_name": "2011/12",
+      "total_points": 2077
+    },
+    {
+      "rank": 1180236,
+      "rank_percentage": "45",
+      "season_name": "2012/13",
+      "total_points": 1760
+    },
+    {
+      "rank": 1393621,
+      "rank_percentage": "40",
+      "season_name": "2014/15",
+      "total_points": 1746
+    },
+    {
+      "rank": 659460,
+      "rank_percentage": "18",
+      "season_name": "2015/16",
+      "total_points": 1998
+    },
+    {
+      "rank": 324997,
+      "rank_percentage": "7",
+      "season_name": "2016/17",
+      "total_points": 2071
+    },
+    {
+      "rank": 1352238,
+      "rank_percentage": "23",
+      "season_name": "2017/18",
+      "total_points": 1979
+    },
+    {
+      "rank": 1887004,
+      "rank_percentage": "30",
+      "season_name": "2018/19",
+      "total_points": 2000
+    },
+    {
+      "rank": 713288,
+      "rank_percentage": "9",
+      "season_name": "2019/20",
+      "total_points": 2126
+    },
+    {
+      "rank": 2564830,
+      "rank_percentage": "31",
+      "season_name": "2020/21",
+      "total_points": 2006
+    },
+    {
+      "rank": 3592417,
+      "rank_percentage": "39",
+      "season_name": "2021/22",
+      "total_points": 1918
+    }
+  ]
+}
