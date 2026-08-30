@@ -53,6 +53,20 @@ jobs:
           FORCE_WATCHLIST: ${{ github.event.inputs.full_watchlist }}
         run: |
           set -euo pipefail
+          # Fetch into a STAGING directory, never straight into data/.
+          #
+          # A queued GitHub Actions run checks out the commit it was PINNED to
+          # at dispatch time, not the latest main. A run that waits 20 minutes
+          # in the concurrency queue therefore starts 20 minutes behind, and
+          # its push is rejected. Rebasing wholesale-regenerated snapshot files
+          # conflicts every single time, which is how run 23 on 30 Aug died.
+          #
+          # So: fetch to staging here, and let the publish step sync to the
+          # real origin/main first and apply staging on top of it. Newer
+          # snapshot simply wins; there is no merge to perform.
+          STAGE=/tmp/stage
+          rm -rf "$STAGE"
+          mkdir -p "$STAGE" "$STAGE/rivals" "$STAGE/live" "$STAGE/transfers" "$STAGE/elements"
           mkdir -p data data/rivals data/live data/transfers data/elements \
                    data/history data/history/ownership
           API="https://fantasy.premierleague.com/api"
@@ -61,16 +75,6 @@ jobs:
           RUN_DOW=$(date -u +"%u")     # 1=Mon .. 7=Sun
 
           : > /tmp/status.jsonl
-
-          # Keep the PREVIOUS bootstrap so we can diff prices and ownership
-          # after the new one lands. This is what gives us a time series
-          # without needing api.github.com, which the analysis container
-          # cannot reach.
-          if [ -f data/bootstrap-static.json ]; then
-            cp data/bootstrap-static.json /tmp/bootstrap-prev.json
-          else
-            echo '{"elements":[],"teams":[]}' > /tmp/bootstrap-prev.json
-          fi
 
           # Fetch a URL and save it pretty-printed. Pretty-printing matters:
           # it puts each field on its own line, so git diffs show you exactly
@@ -99,13 +103,13 @@ jobs:
             return 0
           }
 
-          fetch "$API/bootstrap-static/" data/bootstrap-static.json
-          fetch "$API/fixtures/"        data/fixtures.json
-          fetch "$API/event-status/"    data/event-status.json
+          fetch "$API/bootstrap-static/" "$STAGE/bootstrap-static.json"
+          fetch "$API/fixtures/"        "$STAGE/fixtures.json"
+          fetch "$API/event-status/"    "$STAGE/event-status.json"
 
-          CURRENT_GW=$(jq -r '[.events[] | select(.is_current == true) | .id] | first // empty' data/bootstrap-static.json)
+          CURRENT_GW=$(jq -r '[.events[] | select(.is_current == true) | .id] | first // empty' "$STAGE/bootstrap-static.json")
           if [ -z "$CURRENT_GW" ]; then
-            CURRENT_GW=$(jq -r '[.events[] | select(.is_next == true) | .id] | first // empty' data/bootstrap-static.json)
+            CURRENT_GW=$(jq -r '[.events[] | select(.is_next == true) | .id] | first // empty' "$STAGE/bootstrap-static.json")
           fi
           echo "Current/next gameweek: ${CURRENT_GW:-unknown}"
 
@@ -124,24 +128,24 @@ jobs:
           if [ -n "$CURRENT_GW" ]; then
             for GW in "$CURRENT_GW" $((CURRENT_GW - 1)); do
               if [ "$GW" -ge 1 ] 2>/dev/null; then
-                fetch "$API/event/$GW/live/" "data/live/gw${GW}.json"
+                fetch "$API/event/$GW/live/" "$STAGE/live/gw${GW}.json"
                 sleep 1
               fi
             done
           fi
 
           if [ -n "${ENTRY_ID:-}" ]; then
-            fetch "$API/entry/$ENTRY_ID/"         data/entry.json
-            fetch "$API/entry/$ENTRY_ID/history/" data/entry-history.json
+            fetch "$API/entry/$ENTRY_ID/"         "$STAGE/entry.json"
+            fetch "$API/entry/$ENTRY_ID/history/" "$STAGE/entry-history.json"
             if [ -n "$CURRENT_GW" ]; then
-              fetch "$API/entry/$ENTRY_ID/event/$CURRENT_GW/picks/" data/picks-latest.json
+              fetch "$API/entry/$ENTRY_ID/event/$CURRENT_GW/picks/" "$STAGE/picks-latest.json"
             fi
           else
             echo "No entry_id in config.json - skipping personal endpoints."
           fi
 
           if [ -n "${LEAGUE_ID:-}" ]; then
-            fetch "$API/leagues-classic/$LEAGUE_ID/standings/" data/league-standings.json
+            fetch "$API/leagues-classic/$LEAGUE_ID/standings/" "$STAGE/league-standings.json"
           else
             echo "No league_id in config.json - skipping league endpoint."
           fi
@@ -152,17 +156,17 @@ jobs:
           # which is the ONLY place purchase prices are exposed. Without it,
           # selling prices can only be reconstructed while a manager has made
           # no transfers at all. It breaks the moment anyone transfers.
-          if [ -n "$CURRENT_GW" ] && [ -f data/league-standings.json ]; then
-            RIVALS=$(jq -r '[.standings.results[].entry] | unique | .[]' data/league-standings.json)
+          if [ -n "$CURRENT_GW" ] && [ -f "$STAGE/league-standings.json" ]; then
+            RIVALS=$(jq -r '[.standings.results[].entry] | unique | .[]' "$STAGE/league-standings.json")
             RIVAL_COUNT=$(echo "$RIVALS" | grep -c . || true)
             echo "Fetching picks, transfers and history for $RIVAL_COUNT league members, gameweek $CURRENT_GW"
             for RID in $RIVALS; do
               fetch "$API/entry/$RID/event/$CURRENT_GW/picks/" \
-                    "data/rivals/gw${CURRENT_GW}-entry${RID}.json"
+                    "$STAGE/rivals/gw${CURRENT_GW}-entry${RID}.json"
               sleep 1
-              fetch "$API/entry/$RID/transfers/" "data/transfers/entry${RID}.json"
+              fetch "$API/entry/$RID/transfers/" "$STAGE/transfers/entry${RID}.json"
               sleep 1
-              fetch "$API/entry/$RID/history/"   "data/rivals/history-entry${RID}.json"
+              fetch "$API/entry/$RID/history/"   "$STAGE/rivals/history-entry${RID}.json"
               sleep 1
             done
           else
@@ -189,14 +193,14 @@ jobs:
             # than passing the literal glob string to jq.
             shopt -s nullglob
             {
-              if [ -f data/picks-latest.json ]; then
-                jq -r '.picks[].element' data/picks-latest.json
+              if [ -f "$STAGE/picks-latest.json" ]; then
+                jq -r '.picks[].element' "$STAGE/picks-latest.json"
               fi
-              for f in data/rivals/gw*-entry*.json; do
+              for f in "$STAGE"/rivals/gw*-entry*.json; do
                 jq -r '.picks[]?.element' "$f"
               done
               jq -r '.elements | sort_by(-(.selected_by_percent|tonumber)) | .[0:100] | .[].id' \
-                 data/bootstrap-static.json
+                 "$STAGE/bootstrap-static.json"
             } 2>/dev/null | sort -un > /tmp/watchlist.txt || true
             shopt -u nullglob
 
@@ -204,109 +208,146 @@ jobs:
             echo "Watchlist sweep: $WL_COUNT players"
             while read -r PID; do
               [ -n "$PID" ] || continue
-              fetch "$API/element-summary/$PID/" "data/elements/${PID}.json"
+              fetch "$API/element-summary/$PID/" "$STAGE/elements/${PID}.json"
               sleep 0.3
             done < /tmp/watchlist.txt
           else
             echo "Not Tuesday and not forced - skipping watchlist sweep."
           fi
 
-          # ---------------------------------------------------------------
-          # NEW: price change log.
-          #
-          # Append-only. One row per observed price change, ever. Small - only
-          # a few dozen players move on a busy night - and it answers the
-          # question no live endpoint can: "when did he start rising?"
-          # ---------------------------------------------------------------
-          PRICES=data/history/prices.csv
-          if [ ! -f "$PRICES" ]; then
-            echo 'observed_at,element_id,web_name,team,element_type,old_cost,new_cost,delta,selected_by_percent,transfers_in_event,transfers_out_event' > "$PRICES"
-          fi
-          jq -r -n --arg d "$RUN_STAMP" \
-            --slurpfile prev /tmp/bootstrap-prev.json \
-            --slurpfile cur  data/bootstrap-static.json '
-            ($cur[0].teams | map({key:(.id|tostring), value:.short_name}) | from_entries) as $tm
-            | ($prev[0].elements | map({key:(.id|tostring), value:.now_cost}) | from_entries) as $pm
-            | $cur[0].elements[]
-            | select($pm[(.id|tostring)] != null and $pm[(.id|tostring)] != .now_cost)
-            | [$d, .id, .web_name, $tm[(.team|tostring)], .element_type,
-               $pm[(.id|tostring)], .now_cost, (.now_cost - $pm[(.id|tostring)]),
-               .selected_by_percent, .transfers_in_event, .transfers_out_event]
-            | @csv' >> "$PRICES" || true
-          echo "Price log now $(( $(wc -l < "$PRICES") - 1 )) rows."
+          # Persist this run's fetch outcomes for the publish step.
+          cp /tmp/status.jsonl "$STAGE/.status.jsonl"
+          echo "$RUN_STAMP" > "$STAGE/.run-stamp"
+          echo "Fetch stage complete. Staged $(find "$STAGE" -type f -name '*.json' | wc -l) JSON files."
 
-          # ---------------------------------------------------------------
-          # NEW: daily ownership snapshot, one file per day.
-          #
-          # Written once a day (first run that finds no file for today), so
-          # the repo gains ~40KB a day rather than a single ever-growing file
-          # that churns the diff on every run.
-          # ---------------------------------------------------------------
-          OWN="data/history/ownership/${RUN_DATE}.csv"
-          if [ ! -f "$OWN" ]; then
-            {
-              echo 'element_id,web_name,team,element_type,now_cost,selected_by_percent,transfers_in_event,transfers_out_event,total_points,minutes,starts'
-              jq -r '
-                (.teams | map({key:(.id|tostring), value:.short_name}) | from_entries) as $tm
-                | .elements[]
-                | [.id, .web_name, $tm[(.team|tostring)], .element_type, .now_cost,
-                   .selected_by_percent, .transfers_in_event, .transfers_out_event,
-                   .total_points, .minutes, .starts]
-                | @csv' data/bootstrap-static.json
-            } > "$OWN"
-            echo "Wrote ownership snapshot $OWN"
-          else
-            echo "Ownership snapshot for $RUN_DATE already exists - skipping."
-          fi
-
-          # Merge this run's outcomes into the persistent status file, keeping
-          # the last SUCCESSFUL timestamp for anything that failed this time.
-          OLD_FILES='{}'
-          if [ -f data/fetch-status.json ]; then
-            OLD_FILES=$(jq -c '.files // {}' data/fetch-status.json)
-          fi
-
-          NEW_FILES=$(jq -sc --argjson old "$OLD_FILES" --arg t "$RUN_STAMP" '
-            reduce .[] as $r ($old;
-              if $r.ok
-              then .[$r.file] = { last_success: $t, last_result: "ok" }
-              else .[$r.file] = ( (.[$r.file] // { last_success: null })
-                                  | .last_result = "failed" )
-              end)
-          ' /tmp/status.jsonl)
-
-          FAILED=$(jq -r '[.[] | select(.ok == false)] | length' -s /tmp/status.jsonl)
-
-          jq -n --arg run "$RUN_STAMP" \
-                --argjson failed "$FAILED" \
-                --argjson files "$NEW_FILES" \
-                '{ run_at: $run, failed_this_run: $failed, files: $files }' \
-                > data/fetch-status.json
-
-          # Kept for backwards compatibility. NOTE: this is when the JOB ran.
-          # For whether the DATA is actually fresh, read fetch-status.json.
-          echo "$RUN_STAMP" > data/last-updated.txt
-
-          echo "Fetches failed this run: $FAILED"
-
-      - name: Commit any changes
+      # =====================================================================
+      # PUBLISH
+      #
+      # Sync to the REAL origin/main first, then lay staging on top, then
+      # derive the append-only files against that true base, then commit.
+      #
+      # This is the fix for the 30 Aug run-23 failure. Previously the job
+      # fetched straight into data/ on its pinned checkout and, if the push
+      # was rejected, tried `git pull --rebase`. Every snapshot file is
+      # regenerated wholesale each run, so that rebase conflicted on eight
+      # files at once and left the repo mid-rebase with nothing recoverable.
+      #
+      # Snapshots do not merge - the newer one simply wins. The only file
+      # that genuinely accumulates is prices.csv, and it is recomputed here
+      # against whatever bootstrap origin actually has, so a delayed run can
+      # neither lose rows nor double-count them.
+      # =====================================================================
+      - name: Publish
         run: |
+          set -euo pipefail
+          STAGE=/tmp/stage
+          RUN_STAMP=$(cat "$STAGE/.run-stamp")
+          RUN_DATE="${RUN_STAMP%%T*}"
+
           git config user.name  "fpl-mirror bot"
           git config user.email "actions@github.com"
-          git add data
-          if git diff --staged --quiet; then
-            echo "No changes to commit."
-            exit 0
-          fi
-          git commit -m "Snapshot $(date -u +'%Y-%m-%d %H:%M UTC')"
+
+          published=false
           for attempt in 1 2 3; do
-            if git push; then
-              echo "Committed."
-              exit 0
+            echo "--- publish attempt $attempt ---"
+
+            # 1. Move to whatever main actually is right now. Discards our
+            #    pinned checkout's data/, which is exactly what we want.
+            git fetch origin main
+            git reset --hard origin/main
+            mkdir -p data data/rivals data/live data/transfers data/elements \
+                     data/history data/history/ownership
+
+            # 2. Capture origin's bootstrap as the true "previous" BEFORE we
+            #    overwrite it, so the price diff is against real history.
+            if [ -f data/bootstrap-static.json ]; then
+              cp data/bootstrap-static.json /tmp/prev-bootstrap.json
+            else
+              echo '{"elements":[],"teams":[]}' > /tmp/prev-bootstrap.json
             fi
-            echo "Push rejected, rebasing and retrying (attempt $attempt)..."
-            git pull --rebase origin main
-            sleep 5
+
+            # 3. Lay staging over the top. Newer snapshot wins.
+            cp -f "$STAGE"/*.json data/ 2>/dev/null || true
+            for sub in rivals live transfers elements; do
+              if compgen -G "$STAGE/$sub/*.json" > /dev/null; then
+                cp -f "$STAGE/$sub"/*.json "data/$sub/"
+              fi
+            done
+
+            # 4. Price change log, derived against origin's bootstrap.
+            PRICES=data/history/prices.csv
+            if [ ! -f "$PRICES" ]; then
+              echo 'observed_at,element_id,web_name,team,element_type,old_cost,new_cost,delta,selected_by_percent,transfers_in_event,transfers_out_event' > "$PRICES"
+            fi
+            if [ -f data/bootstrap-static.json ]; then
+              jq -r -n --arg d "$RUN_STAMP" \
+                --slurpfile prev /tmp/prev-bootstrap.json \
+                --slurpfile cur  data/bootstrap-static.json '
+                ($cur[0].teams | map({key:(.id|tostring), value:.short_name}) | from_entries) as $tm
+                | (($prev[0].elements // []) | map({key:(.id|tostring), value:.now_cost}) | from_entries) as $pm
+                | $cur[0].elements[]
+                | select($pm[(.id|tostring)] != null and $pm[(.id|tostring)] != .now_cost)
+                | [$d, .id, .web_name, $tm[(.team|tostring)], .element_type,
+                   $pm[(.id|tostring)], .now_cost, (.now_cost - $pm[(.id|tostring)]),
+                   .selected_by_percent, .transfers_in_event, .transfers_out_event]
+                | @csv' >> "$PRICES" || true
+            fi
+            echo "Price log: $(( $(wc -l < "$PRICES") - 1 )) rows."
+
+            # 5. Daily ownership snapshot, once per day.
+            OWN="data/history/ownership/${RUN_DATE}.csv"
+            if [ ! -f "$OWN" ] && [ -f data/bootstrap-static.json ]; then
+              {
+                echo 'element_id,web_name,team,element_type,now_cost,selected_by_percent,transfers_in_event,transfers_out_event,total_points,minutes,starts'
+                jq -r '
+                  (.teams | map({key:(.id|tostring), value:.short_name}) | from_entries) as $tm
+                  | .elements[]
+                  | [.id, .web_name, $tm[(.team|tostring)], .element_type, .now_cost,
+                     .selected_by_percent, .transfers_in_event, .transfers_out_event,
+                     .total_points, .minutes, .starts]
+                  | @csv' data/bootstrap-static.json
+              } > "$OWN"
+              echo "Wrote $OWN"
+            fi
+
+            # 6. Freshness tracking, merged onto whatever origin had.
+            OLD_FILES='{}'
+            if [ -f data/fetch-status.json ]; then
+              OLD_FILES=$(jq -c '.files // {}' data/fetch-status.json)
+            fi
+            NEW_FILES=$(jq -sc --argjson old "$OLD_FILES" --arg t "$RUN_STAMP" '
+              reduce .[] as $r ($old;
+                if $r.ok
+                then .[$r.file] = { last_success: $t, last_result: "ok" }
+                else .[$r.file] = ( (.[$r.file] // { last_success: null })
+                                    | .last_result = "failed" )
+                end)
+            ' "$STAGE/.status.jsonl")
+            FAILED=$(jq -r '[.[] | select(.ok == false)] | length' -s "$STAGE/.status.jsonl")
+            jq -n --arg run "$RUN_STAMP" --argjson failed "$FAILED" --argjson files "$NEW_FILES" \
+              '{ run_at: $run, failed_this_run: $failed, files: $files }' > data/fetch-status.json
+            echo "$RUN_STAMP" > data/last-updated.txt
+            echo "Fetches failed this run: $FAILED"
+
+            # 7. Commit and push. On rejection, loop: attempt 2 re-syncs to the
+            #    new origin/main and re-derives everything against it.
+            git add data
+            if git diff --staged --quiet; then
+              echo "No changes to commit."
+              published=true
+              break
+            fi
+            git commit -q -m "Snapshot $(date -u -d "$RUN_STAMP" +'%Y-%m-%d %H:%M UTC' 2>/dev/null || echo "$RUN_STAMP")"
+            if git push; then
+              echo "Published on attempt $attempt."
+              published=true
+              break
+            fi
+            echo "Push rejected - origin moved. Re-syncing and rebuilding."
+            sleep $(( attempt * 5 ))
           done
-          echo "Could not push after 3 attempts." >&2
-          exit 1
+
+          if [ "$published" != "true" ]; then
+            echo "Could not publish after 3 attempts." >&2
+            exit 1
+          fi
