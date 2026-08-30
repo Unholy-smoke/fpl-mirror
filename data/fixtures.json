@@ -5593,7 +5593,7 @@
     "finished_provisional": false,
     "id": 16,
     "kickoff_time": "2026-08-30T13:00:00Z",
-    "minutes": 45,
+    "minutes": 49,
     "provisional_start_time": false,
     "pulse_id": 0,
     "started": true,
@@ -5725,12 +5725,12 @@
             "value": -2
           },
           {
-            "element": 504,
+            "element": 114,
             "value": -4
           },
           {
-            "element": 114,
-            "value": -7
+            "element": 504,
+            "value": -6
           },
           {
             "element": 115,
@@ -5744,7 +5744,7 @@
         "h": [
           {
             "element": 165,
-            "value": 35
+            "value": 34
           },
           {
             "element": 156,
@@ -5764,11 +5764,15 @@
           },
           {
             "element": 28,
-            "value": 9
+            "value": 10
           },
           {
             "element": 154,
             "value": 3
+          },
+          {
+            "element": 149,
+            "value": 2
           },
           {
             "element": 145,
@@ -5792,11 +5796,15 @@
             "value": 6
           },
           {
+            "element": 130,
+            "value": 4
+          },
+          {
             "element": 138,
             "value": 4
           },
           {
-            "element": 130,
+            "element": 124,
             "value": 3
           },
           {
@@ -5812,33 +5820,29 @@
             "value": 2
           },
           {
-            "element": 124,
-            "value": 2
-          },
-          {
             "element": 127,
-            "value": 1
+            "value": 2
           }
         ],
         "h": [
           {
             "element": 145,
-            "value": 6
+            "value": 7
           },
           {
             "element": 149,
-            "value": 5
+            "value": 6
           },
           {
             "element": 161,
             "value": 5
           },
           {
-            "element": 165,
-            "value": 4
+            "element": 40,
+            "value": 3
           },
           {
-            "element": 40,
+            "element": 165,
             "value": 3
           },
           {
@@ -5850,12 +5854,12 @@
             "value": 2
           },
           {
-            "element": 156,
+            "element": 148,
             "value": 2
           },
           {
-            "element": 148,
-            "value": 1
+            "element": 156,
+            "value": 2
           },
           {
             "element": 154,
@@ -5879,7 +5883,7 @@
     "finished_provisional": false,
     "id": 17,
     "kickoff_time": "2026-08-30T13:00:00Z",
-    "minutes": 45,
+    "minutes": 47,
     "provisional_start_time": false,
     "pulse_id": 0,
     "started": true,
@@ -5966,7 +5970,7 @@
         "a": [
           {
             "element": 94,
-            "value": 33
+            "value": 32
           },
           {
             "element": 86,
@@ -6039,8 +6043,16 @@
             "value": 4
           },
           {
+            "element": 260,
+            "value": 3
+          },
+          {
             "element": 330,
-            "value": 2
+            "value": 3
+          },
+          {
+            "element": 345,
+            "value": 3
           },
           {
             "element": 338,
@@ -6064,12 +6076,12 @@
             "value": 7
           },
           {
-            "element": 98,
+            "element": 86,
             "value": 6
           },
           {
-            "element": 86,
-            "value": 5
+            "element": 98,
+            "value": 6
           },
           {
             "element": 96,
@@ -6159,7 +6171,7 @@
     "finished_provisional": false,
     "id": 19,
     "kickoff_time": "2026-08-30T13:00:00Z",
-    "minutes": 45,
+    "minutes": 52,
     "provisional_start_time": false,
     "pulse_id": 0,
     "started": true,
@@ -6218,17 +6230,17 @@
         "a": [
           {
             "element": 257,
-            "value": 2
+            "value": 1
           }
         ],
         "h": [
           {
-            "element": 544,
+            "element": 545,
             "value": 3
           },
           {
-            "element": 533,
-            "value": 1
+            "element": 544,
+            "value": 2
           }
         ],
         "identifier": "bonus"
@@ -6244,12 +6256,20 @@
             "value": 9
           },
           {
+            "element": 254,
+            "value": 8
+          },
+          {
             "element": 250,
             "value": 6
           },
           {
-            "element": 254,
+            "element": 570,
             "value": 6
+          },
+          {
+            "element": 253,
+            "value": 4
           },
           {
             "element": 258,
@@ -6257,10 +6277,6 @@
           },
           {
             "element": 264,
-            "value": 4
-          },
-          {
-            "element": 570,
             "value": 4
           },
           {
@@ -6278,36 +6294,36 @@
         ],
         "h": [
           {
+            "element": 545,
+            "value": 15
+          },
+          {
             "element": 544,
-            "value": 12
+            "value": 13
           },
           {
             "element": 533,
             "value": 10
           },
           {
+            "element": 541,
+            "value": 10
+          },
+          {
+            "element": 551,
+            "value": 9
+          },
+          {
             "element": 532,
             "value": 8
           },
           {
+            "element": 534,
+            "value": 7
+          },
+          {
             "element": 536,
             "value": 7
-          },
-          {
-            "element": 545,
-            "value": 7
-          },
-          {
-            "element": 551,
-            "value": 7
-          },
-          {
-            "element": 541,
-            "value": 6
-          },
-          {
-            "element": 534,
-            "value": 5
           },
           {
             "element": 529,
@@ -6319,7 +6335,7 @@
           },
           {
             "element": 552,
-            "value": 3
+            "value": 2
           }
         ],
         "identifier": "bps"
@@ -6328,7 +6344,7 @@
         "a": [
           {
             "element": 570,
-            "value": 7
+            "value": 9
           },
           {
             "element": 253,
@@ -6336,10 +6352,18 @@
           },
           {
             "element": 257,
-            "value": 3
+            "value": 5
           },
           {
             "element": 268,
+            "value": 4
+          },
+          {
+            "element": 254,
+            "value": 3
+          },
+          {
+            "element": 264,
             "value": 3
           },
           {
@@ -6347,19 +6371,11 @@
             "value": 3
           },
           {
-            "element": 254,
-            "value": 2
-          },
-          {
             "element": 258,
             "value": 2
           },
           {
             "element": 261,
-            "value": 2
-          },
-          {
-            "element": 264,
             "value": 2
           },
           {
@@ -6373,20 +6389,24 @@
             "value": 8
           },
           {
+            "element": 551,
+            "value": 4
+          },
+          {
+            "element": 534,
+            "value": 3
+          },
+          {
             "element": 544,
             "value": 3
           },
           {
-            "element": 551,
+            "element": 545,
             "value": 3
           },
           {
             "element": 552,
             "value": 3
-          },
-          {
-            "element": 534,
-            "value": 2
           },
           {
             "element": 536,
@@ -6397,15 +6417,11 @@
             "value": 2
           },
           {
-            "element": 545,
+            "element": 542,
             "value": 2
           },
           {
             "element": 532,
-            "value": 1
-          },
-          {
-            "element": 542,
             "value": 1
           }
         ],

@@ -1,5 +1,5 @@
 {
-  "last_updated_data": "2026-08-30T14:04:15Z",
+  "last_updated_data": "2026-08-30T14:13:43Z",
   "league": {
     "admin_entry": 118670,
     "closed": false,
@@ -116,12 +116,12 @@
         "club_badge_src": null,
         "entry": 6231483,
         "entry_name": "WhenTheYrEndsIn7",
-        "event_total": 29,
+        "event_total": 30,
         "last_rank": 9,
         "player_name": "Richard Wisdom",
         "rank": 9,
         "rank_sort": 9,
-        "total": 52
+        "total": 53
       }
     ]
   }
