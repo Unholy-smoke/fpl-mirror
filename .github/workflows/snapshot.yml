@@ -85,21 +85,27 @@ jobs:
           # good data with an error page.
           fetch() {
             url="$1"; out="$2"
+            # Record the PUBLISHED path (data/...), not the staging path.
+            # Getting this wrong silently breaks fetch-status.json, which is
+            # the one file everything else trusts to say whether the data is
+            # fresh - it would keep reporting the stale data/ timestamps while
+            # logging successes against /tmp paths nothing ever reads.
+            logical="data/${out#$STAGE/}"
             echo "Fetching $url"
             if curl -sS --fail --max-time 60 \
                  -H 'User-Agent: fpl-mirror (personal use)' \
                  "$url" -o /tmp/raw.json; then
               if jq empty /tmp/raw.json 2>/dev/null; then
                 jq -S . /tmp/raw.json > "$out"
-                echo "  -> $out ($(wc -c < "$out") bytes)"
-                jq -nc --arg f "$out" '{file:$f, ok:true}' >> /tmp/status.jsonl
+                echo "  -> $logical ($(wc -c < "$out") bytes)"
+                jq -nc --arg f "$logical" '{file:$f, ok:true}' >> /tmp/status.jsonl
                 return 0
               fi
-              echo "  !! response was not valid JSON, keeping previous $out"
+              echo "  !! response was not valid JSON, keeping previous $logical"
             else
-              echo "  !! request failed, keeping previous $out"
+              echo "  !! request failed, keeping previous $logical"
             fi
-            jq -nc --arg f "$out" '{file:$f, ok:false}' >> /tmp/status.jsonl
+            jq -nc --arg f "$logical" '{file:$f, ok:false}' >> /tmp/status.jsonl
             return 0
           }
 
@@ -313,7 +319,10 @@ jobs:
             # 6. Freshness tracking, merged onto whatever origin had.
             OLD_FILES='{}'
             if [ -f data/fetch-status.json ]; then
-              OLD_FILES=$(jq -c '.files // {}' data/fetch-status.json)
+              # Drop any key that is not a data/ path. Run 24 (30 Aug) wrote
+              # 36 keys under /tmp/stage/ because fetch() logged the staging
+              # path; this prunes that debris and guards against a recurrence.
+              OLD_FILES=$(jq -c '(.files // {}) | with_entries(select(.key | startswith("data/")))' data/fetch-status.json)
             fi
             NEW_FILES=$(jq -sc --argjson old "$OLD_FILES" --arg t "$RUN_STAMP" '
               reduce .[] as $r ($old;
