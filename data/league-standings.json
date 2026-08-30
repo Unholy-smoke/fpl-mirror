@@ -1,5 +1,5 @@
 {
-  "last_updated_data": "2026-08-30T18:53:58Z",
+  "last_updated_data": "2026-08-30T21:39:08Z",
   "league": {
     "admin_entry": 118670,
     "closed": false,
@@ -61,12 +61,12 @@
         "club_badge_src": null,
         "entry": 8280153,
         "entry_name": "Nwaneris Mate!",
-        "event_total": 64,
+        "event_total": 66,
         "last_rank": 1,
         "player_name": "B Kites",
         "rank": 4,
         "rank_sort": 4,
-        "total": 138
+        "total": 140
       },
       {
         "club_badge_src": null,
