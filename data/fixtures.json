@@ -7089,7 +7089,7 @@
     "code": 2645206,
     "event": 2,
     "finished": false,
-    "finished_provisional": false,
+    "finished_provisional": true,
     "id": 20,
     "kickoff_time": "2026-08-31T19:00:00Z",
     "minutes": 90,
@@ -7228,7 +7228,7 @@
           },
           {
             "element": 17,
-            "value": 8
+            "value": 7
           },
           {
             "element": 14,
@@ -7243,11 +7243,11 @@
             "value": 5
           },
           {
-            "element": 31,
-            "value": 3
+            "element": 452,
+            "value": 4
           },
           {
-            "element": 452,
+            "element": 31,
             "value": 3
           },
           {
@@ -7265,8 +7265,8 @@
             "value": 14
           },
           {
-            "element": 37,
-            "value": 9
+            "element": 166,
+            "value": 11
           },
           {
             "element": 41,
@@ -7277,12 +7277,16 @@
             "value": 8
           },
           {
-            "element": 34,
+            "element": 597,
             "value": 8
           },
           {
-            "element": 597,
+            "element": 37,
             "value": 7
+          },
+          {
+            "element": 34,
+            "value": 6
           },
           {
             "element": 51,
@@ -7290,7 +7294,7 @@
           },
           {
             "element": 611,
-            "value": 5
+            "value": 4
           },
           {
             "element": 56,
@@ -7362,16 +7366,16 @@
             "value": 3
           },
           {
-            "element": 557,
+            "element": 19,
             "value": 3
           },
           {
-            "element": 19,
-            "value": 2
+            "element": 452,
+            "value": 3
           },
           {
-            "element": 452,
-            "value": 2
+            "element": 557,
+            "value": 3
           },
           {
             "element": 31,
@@ -7414,6 +7418,10 @@
           {
             "element": 45,
             "value": 4
+          },
+          {
+            "element": 166,
+            "value": 3
           },
           {
             "element": 52,
