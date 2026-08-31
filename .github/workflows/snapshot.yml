@@ -18,20 +18,29 @@ on:
   # PC itself, so it is unavailable precisely when Ben is away from home.
   #
   # Conclusion: the schedule is the only reliable freshness mechanism, so it
-  # has to be dense enough that nobody ever needs to force a run. GitHub's
-  # scheduler is also chronically late - up to an hour, occasionally ten -
-  # so more slots also means more chances for one to land on time.
+  # has to be dense enough that nobody ever needs to force a run.
+  #
+  # How late, measured from this repo's own commit history on 31 Aug 2026,
+  # excluding manual dispatches: median 112 minutes, max 182, and one
+  # overnight window where consecutive snapshots were 7h20m apart. So do NOT
+  # design anything downstream around a slot landing at a particular time.
+  # Density is the mitigation; punctuality is not available at any price.
   #
   # Public repos get unlimited Actions minutes. Eight runs a day at ~45s is
   # about six minutes of compute. It costs nothing.
+  # Every slot is deliberately OFF the hour. GitHub queues scheduled runs for
+  # every repository on the platform and explicitly advises avoiding the top
+  # of the hour, which is the most congested minute. We have not yet measured
+  # whether it helps here - too few clean data points - so treat this as
+  # following the platform's own advice, not as a proven local result.
   schedule:
     - cron: '11 1 * * *'    # after the midnight UK price changes have settled
-    - cron: '0 4 * * *'
-    - cron: '11 7 * * *'    # before the Thursday deadline brief runs
-    - cron: '0 10 * * *'
+    - cron: '47 3 * * *'
+    - cron: '11 7 * * *'
+    - cron: '52 9 * * *'
     - cron: '11 13 * * *'
-    - cron: '0 16 * * *'
-    - cron: '0 19 * * *'    # ~90 min after a Friday 17:30 UTC deadline
+    - cron: '53 15 * * *'
+    - cron: '49 18 * * *'   # feeds the post-deadline roundup later that evening
     - cron: '30 21 * * *'   # evening - captures a full Saturday/Sunday slate
   workflow_dispatch:
     inputs:
@@ -300,6 +309,39 @@ jobs:
                 cp -f "$STAGE/$sub"/*.json "data/$sub/"
               fi
             done
+
+            # 3b. Small events index.
+            #
+            # bootstrap-static.json is 2.3MB and 626 players. Every scheduled
+            # task needs exactly one thing from it to decide whether it has
+            # any work to do: which gameweek we are in and when the next
+            # deadline falls. Making each of those runs pull 2.3MB to answer
+            # a two-field question is the single easiest waste to remove, so
+            # publish the answer as its own ~15KB file.
+            #
+            # Also the diff target for deadline drift: this file changing is
+            # a visible, greppable event in the repo history.
+            if [ -f data/bootstrap-static.json ]; then
+              jq --arg t "$RUN_STAMP" '{
+                generated_at: $t,
+                total_players: .total_players,
+                current_event: ([.events[] | select(.is_current) | .id] | first),
+                next_event:    ([.events[] | select(.is_next)    | .id] | first),
+                next_deadline_utc: ([.events[] | select(.is_next) | .deadline_time] | first),
+                events: [ .events[] | {
+                  id, name, deadline_time,
+                  is_current, is_next, is_previous,
+                  finished, data_checked,
+                  average_entry_score, highest_score,
+                  transfers_made, most_captained, most_selected
+                } ],
+                chips: [ .chips[]? | {name, start_event, stop_event} ],
+                phases: [ .phases[] | {id, name, start_event, stop_event} ]
+              }' data/bootstrap-static.json > /tmp/events.json.new \
+              && mv /tmp/events.json.new data/events.json \
+              && echo "events.json: $(wc -c < data/events.json) bytes, current_event=$(jq -r '.current_event // "none"' data/events.json), next_deadline=$(jq -r '.next_deadline_utc // "none"' data/events.json)" \
+              || echo "!! events.json generation FAILED - keeping the previous copy. Downstream tasks will see a stale generated_at. Fix the jq."
+            fi
 
             # 4. Price change log, derived against origin's bootstrap.
             PRICES=data/history/prices.csv
