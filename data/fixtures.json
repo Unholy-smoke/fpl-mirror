@@ -7207,12 +7207,12 @@
             "value": 25
           },
           {
-            "element": 1,
+            "element": 4,
             "value": 23
           },
           {
-            "element": 4,
-            "value": 22
+            "element": 1,
+            "value": 21
           },
           {
             "element": 13,
@@ -7262,11 +7262,15 @@
           },
           {
             "element": 47,
-            "value": 14
+            "value": 13
           },
           {
             "element": 166,
             "value": 11
+          },
+          {
+            "element": 37,
+            "value": 10
           },
           {
             "element": 41,
@@ -7279,10 +7283,6 @@
           {
             "element": 597,
             "value": 8
-          },
-          {
-            "element": 37,
-            "value": 7
           },
           {
             "element": 34,
@@ -7314,7 +7314,7 @@
           },
           {
             "element": 36,
-            "value": -6
+            "value": -5
           }
         ],
         "identifier": "bps"
@@ -7322,11 +7322,11 @@
       {
         "a": [
           {
-            "element": 12,
-            "value": 11
+            "element": 13,
+            "value": 12
           },
           {
-            "element": 13,
+            "element": 12,
             "value": 11
           },
           {
@@ -7350,6 +7350,10 @@
             "value": 4
           },
           {
+            "element": 11,
+            "value": 4
+          },
+          {
             "element": 17,
             "value": 4
           },
@@ -7358,15 +7362,7 @@
             "value": 3
           },
           {
-            "element": 11,
-            "value": 3
-          },
-          {
             "element": 14,
-            "value": 3
-          },
-          {
-            "element": 19,
             "value": 3
           },
           {
@@ -7376,6 +7372,10 @@
           {
             "element": 557,
             "value": 3
+          },
+          {
+            "element": 19,
+            "value": 2
           },
           {
             "element": 31,
@@ -7388,24 +7388,24 @@
             "value": 10
           },
           {
+            "element": 36,
+            "value": 8
+          },
+          {
             "element": 47,
             "value": 8
+          },
+          {
+            "element": 37,
+            "value": 7
           },
           {
             "element": 32,
             "value": 6
           },
           {
-            "element": 37,
-            "value": 6
-          },
-          {
             "element": 51,
             "value": 6
-          },
-          {
-            "element": 36,
-            "value": 5
           },
           {
             "element": 41,
