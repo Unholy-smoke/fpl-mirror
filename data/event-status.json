@@ -1,29 +1,29 @@
 {
-  "leagues": "",
+  "leagues": "Updating",
   "status": [
     {
-      "bonus_added": false,
+      "bonus_added": true,
       "date": "2026-08-28",
       "event": 2,
-      "points": "p"
+      "points": "r"
     },
     {
-      "bonus_added": false,
+      "bonus_added": true,
       "date": "2026-08-29",
       "event": 2,
-      "points": "p"
+      "points": "r"
     },
     {
-      "bonus_added": false,
+      "bonus_added": true,
       "date": "2026-08-30",
       "event": 2,
-      "points": "p"
+      "points": "r"
     },
     {
-      "bonus_added": false,
+      "bonus_added": true,
       "date": "2026-08-31",
       "event": 2,
-      "points": "p"
+      "points": "r"
     }
   ]
 }
