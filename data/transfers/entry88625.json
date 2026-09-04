@@ -1,5 +1,14 @@
 [
   {
+    "element_in": 399,
+    "element_in_cost": 77,
+    "element_out": 40,
+    "element_out_cost": 75,
+    "entry": 88625,
+    "event": 3,
+    "time": "2026-09-04T15:40:33.759441Z"
+  },
+  {
     "element_in": 557,
     "element_in_cost": 65,
     "element_out": 480,

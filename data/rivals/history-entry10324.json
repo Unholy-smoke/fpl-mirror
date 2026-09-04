@@ -4,6 +4,11 @@
       "event": 1,
       "name": "bboost",
       "time": "2026-08-21T05:58:36.255337Z"
+    },
+    {
+      "event": 3,
+      "name": "wildcard",
+      "time": "2026-09-03T04:27:07.918208Z"
     }
   ],
   "current": [
@@ -36,6 +41,21 @@
       "rank_sort": 845769,
       "total_points": 174,
       "value": 1002
+    },
+    {
+      "bank": 1,
+      "event": 3,
+      "event_transfers": 0,
+      "event_transfers_cost": 0,
+      "overall_rank": 338418,
+      "overall_rank_percentage": null,
+      "percentile_rank": null,
+      "points": 0,
+      "points_on_bench": 0,
+      "rank": null,
+      "rank_sort": null,
+      "total_points": 174,
+      "value": 1004
     }
   ],
   "past": [

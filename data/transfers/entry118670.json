@@ -1,1 +1,29 @@
-[]
+[
+  {
+    "element_in": 454,
+    "element_in_cost": 61,
+    "element_out": 557,
+    "element_out_cost": 65,
+    "entry": 118670,
+    "event": 3,
+    "time": "2026-09-04T15:39:40.939095Z"
+  },
+  {
+    "element_in": 398,
+    "element_in_cost": 70,
+    "element_out": 427,
+    "element_out_cost": 80,
+    "entry": 118670,
+    "event": 3,
+    "time": "2026-09-04T15:11:21.755720Z"
+  },
+  {
+    "element_in": 449,
+    "element_in_cost": 51,
+    "element_out": 11,
+    "element_out_cost": 55,
+    "entry": 118670,
+    "event": 3,
+    "time": "2026-09-04T15:11:21.748301Z"
+  }
+]
