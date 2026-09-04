@@ -1,5 +1,5 @@
 {
-  "last_updated_data": "2026-09-04T19:53:58Z",
+  "last_updated_data": "2026-09-04T20:59:27Z",
   "league": {
     "admin_entry": 118670,
     "closed": false,
@@ -26,22 +26,22 @@
     "results": [
       {
         "club_badge_src": null,
+        "entry": 8280153,
+        "entry_name": "Nwaneris Mate!",
+        "event_total": 13,
+        "last_rank": 4,
+        "player_name": "B Kites",
+        "rank": 1,
+        "rank_sort": 1,
+        "total": 175
+      },
+      {
+        "club_badge_src": null,
         "entry": 10324,
         "entry_name": "The Special Wan",
         "event_total": 0,
         "last_rank": 2,
         "player_name": "Ken Wan",
-        "rank": 1,
-        "rank_sort": 1,
-        "total": 174
-      },
-      {
-        "club_badge_src": null,
-        "entry": 8280153,
-        "entry_name": "Nwaneris Mate!",
-        "event_total": 12,
-        "last_rank": 4,
-        "player_name": "B Kites",
         "rank": 2,
         "rank_sort": 2,
         "total": 174
@@ -61,67 +61,67 @@
         "club_badge_src": null,
         "entry": 3866837,
         "entry_name": "The Krejci Gang",
-        "event_total": 1,
+        "event_total": 3,
         "last_rank": 3,
         "player_name": "Craig Bowen",
         "rank": 4,
         "rank_sort": 4,
-        "total": 171
+        "total": 173
       },
       {
         "club_badge_src": null,
         "entry": 1539533,
         "entry_name": "Cherki Cherki cheep",
-        "event_total": 2,
+        "event_total": 9,
         "last_rank": 5,
         "player_name": "ifor jones",
         "rank": 5,
         "rank_sort": 5,
-        "total": 164
+        "total": 171
       },
       {
         "club_badge_src": null,
         "entry": 88625,
         "entry_name": "Dean's Team",
-        "event_total": 13,
+        "event_total": 16,
         "last_rank": 6,
         "player_name": "Dean Barr",
         "rank": 6,
         "rank_sort": 6,
-        "total": 164
-      },
-      {
-        "club_badge_src": null,
-        "entry": 7519117,
-        "entry_name": "Zero Fox Given",
-        "event_total": 12,
-        "last_rank": 8,
-        "player_name": "Matt Fox",
-        "rank": 7,
-        "rank_sort": 7,
-        "total": 145
+        "total": 167
       },
       {
         "club_badge_src": null,
         "entry": 7307209,
         "entry_name": "JesusSelsPopeSenesi",
-        "event_total": 2,
+        "event_total": 6,
         "last_rank": 7,
         "player_name": "Chris Hodierne",
+        "rank": 7,
+        "rank_sort": 7,
+        "total": 148
+      },
+      {
+        "club_badge_src": null,
+        "entry": 7519117,
+        "entry_name": "Zero Fox Given",
+        "event_total": 13,
+        "last_rank": 8,
+        "player_name": "Matt Fox",
         "rank": 8,
         "rank_sort": 8,
-        "total": 144
+        "total": 146
       },
       {
         "club_badge_src": null,
         "entry": 6231483,
         "entry_name": "WhenTheYrEndsIn7",
-        "event_total": 1,
+        "event_total": 2,
         "last_rank": 9,
         "player_name": "Richard Wisdom",
         "rank": 9,
         "rank_sort": 9,
-        "total": 92
+        "total": 93
       }
     ]
   }
