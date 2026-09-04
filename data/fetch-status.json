@@ -1,13 +1,13 @@
 {
-  "run_at": "2026-09-04T18:00:21Z",
+  "run_at": "2026-09-04T18:01:51Z",
   "failed_this_run": 4,
   "files": {
     "data/bootstrap-static.json": {
-      "last_success": "2026-09-04T18:00:21Z",
+      "last_success": "2026-09-04T18:01:51Z",
       "last_result": "ok"
     },
     "data/fixtures.json": {
-      "last_success": "2026-09-04T18:00:21Z",
+      "last_success": "2026-09-04T18:01:51Z",
       "last_result": "ok"
     },
     "data/event-status.json": {
@@ -23,7 +23,7 @@
       "last_result": "failed"
     },
     "data/picks-latest.json": {
-      "last_success": "2026-09-04T18:00:21Z",
+      "last_success": "2026-09-04T18:01:51Z",
       "last_result": "ok"
     },
     "data/league-standings.json": {
@@ -103,11 +103,11 @@
       "last_result": "ok"
     },
     "data/live/gw2.json": {
-      "last_success": "2026-09-04T18:00:21Z",
+      "last_success": "2026-09-04T18:01:51Z",
       "last_result": "ok"
     },
     "data/live/gw1.json": {
-      "last_success": "2026-09-04T18:00:21Z",
+      "last_success": "2026-09-04T18:01:51Z",
       "last_result": "ok"
     },
     "data/transfers/entry10324.json": {
