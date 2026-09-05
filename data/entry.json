@@ -48,7 +48,7 @@
         "entry_can_leave": false,
         "entry_last_rank": 52680,
         "entry_percentile_rank": 10,
-        "entry_rank": 166724,
+        "entry_rank": 177167,
         "featured_entry_ids": [],
         "has_cup": true,
         "id": 16,
@@ -94,7 +94,7 @@
         "entry_can_leave": false,
         "entry_last_rank": 37,
         "entry_percentile_rank": 5,
-        "entry_rank": 159,
+        "entry_rank": 174,
         "featured_entry_ids": [],
         "has_cup": true,
         "id": 21,
@@ -140,7 +140,7 @@
         "entry_can_leave": false,
         "entry_last_rank": 231905,
         "entry_percentile_rank": 10,
-        "entry_rank": 857212,
+        "entry_rank": 916071,
         "featured_entry_ids": [],
         "has_cup": false,
         "id": 276,
@@ -160,10 +160,10 @@
             "last_rank": 231905,
             "league_id": 314,
             "phase": 1,
-            "rank": 655975,
-            "rank_count": 10409972,
-            "rank_sort": 656021,
-            "total": 174
+            "rank": 913973,
+            "rank_count": 10409391,
+            "rank_sort": 914060,
+            "total": 203
           },
           {
             "entry_percentile_rank": 100,
@@ -186,7 +186,7 @@
         "entry_can_leave": false,
         "entry_last_rank": 231905,
         "entry_percentile_rank": 10,
-        "entry_rank": 857219,
+        "entry_rank": 916084,
         "featured_entry_ids": [],
         "has_cup": true,
         "id": 314,
@@ -194,7 +194,7 @@
         "max_entries": null,
         "name": "Overall",
         "rank": null,
-        "rank_count": 10409972,
+        "rank_count": 10409391,
         "scoring": "c",
         "short_name": "overall",
         "start_event": 1
@@ -255,7 +255,7 @@
             "rank": 1,
             "rank_count": 9,
             "rank_sort": 1,
-            "total": 174
+            "total": 203
           },
           {
             "entry_percentile_rank": 100,
@@ -362,8 +362,8 @@
   "player_region_name": "Afghanistan",
   "started_event": 1,
   "summary_event_points": 29,
-  "summary_event_rank": 7506303,
+  "summary_event_rank": 7872700,
   "summary_overall_points": 203,
-  "summary_overall_rank": 857219,
+  "summary_overall_rank": 916084,
   "years_active": 15
 }
