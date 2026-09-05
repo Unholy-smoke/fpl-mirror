@@ -7795,17 +7795,311 @@
     "finished_provisional": false,
     "id": 27,
     "kickoff_time": "2026-09-05T11:30:00Z",
-    "minutes": 0,
+    "minutes": 70,
     "provisional_start_time": false,
     "pulse_id": 0,
-    "started": false,
-    "stats": [],
+    "started": true,
+    "stats": [
+      {
+        "a": [
+          {
+            "element": 68,
+            "value": 1
+          }
+        ],
+        "h": [
+          {
+            "element": 453,
+            "value": 1
+          }
+        ],
+        "identifier": "goals_scored"
+      },
+      {
+        "a": [
+          {
+            "element": 69,
+            "value": 2
+          }
+        ],
+        "h": [
+          {
+            "element": 449,
+            "value": 1
+          }
+        ],
+        "identifier": "assists"
+      },
+      {
+        "a": [],
+        "h": [
+          {
+            "element": 445,
+            "value": 1
+          }
+        ],
+        "identifier": "own_goals"
+      },
+      {
+        "a": [],
+        "h": [],
+        "identifier": "penalties_saved"
+      },
+      {
+        "a": [],
+        "h": [],
+        "identifier": "penalties_missed"
+      },
+      {
+        "a": [
+          {
+            "element": 70,
+            "value": 1
+          }
+        ],
+        "h": [
+          {
+            "element": 454,
+            "value": 1
+          },
+          {
+            "element": 464,
+            "value": 1
+          }
+        ],
+        "identifier": "yellow_cards"
+      },
+      {
+        "a": [],
+        "h": [],
+        "identifier": "red_cards"
+      },
+      {
+        "a": [],
+        "h": [
+          {
+            "element": 567,
+            "value": 4
+          }
+        ],
+        "identifier": "saves"
+      },
+      {
+        "a": [
+          {
+            "element": 68,
+            "value": 3
+          },
+          {
+            "element": 69,
+            "value": 2
+          }
+        ],
+        "h": [
+          {
+            "element": 453,
+            "value": 1
+          }
+        ],
+        "identifier": "bonus"
+      },
+      {
+        "a": [
+          {
+            "element": 68,
+            "value": 39
+          },
+          {
+            "element": 69,
+            "value": 32
+          },
+          {
+            "element": 73,
+            "value": 12
+          },
+          {
+            "element": 566,
+            "value": 12
+          },
+          {
+            "element": 60,
+            "value": 8
+          },
+          {
+            "element": 64,
+            "value": 7
+          },
+          {
+            "element": 67,
+            "value": 6
+          },
+          {
+            "element": 70,
+            "value": 6
+          },
+          {
+            "element": 57,
+            "value": 4
+          },
+          {
+            "element": 61,
+            "value": 4
+          },
+          {
+            "element": 79,
+            "value": 4
+          }
+        ],
+        "h": [
+          {
+            "element": 453,
+            "value": 27
+          },
+          {
+            "element": 449,
+            "value": 18
+          },
+          {
+            "element": 405,
+            "value": 12
+          },
+          {
+            "element": 567,
+            "value": 12
+          },
+          {
+            "element": 459,
+            "value": 11
+          },
+          {
+            "element": 454,
+            "value": 8
+          },
+          {
+            "element": 460,
+            "value": 6
+          },
+          {
+            "element": 464,
+            "value": 4
+          },
+          {
+            "element": 634,
+            "value": 4
+          },
+          {
+            "element": 456,
+            "value": 3
+          },
+          {
+            "element": 447,
+            "value": 1
+          },
+          {
+            "element": 445,
+            "value": -3
+          }
+        ],
+        "identifier": "bps"
+      },
+      {
+        "a": [
+          {
+            "element": 69,
+            "value": 10
+          },
+          {
+            "element": 73,
+            "value": 9
+          },
+          {
+            "element": 68,
+            "value": 8
+          },
+          {
+            "element": 79,
+            "value": 7
+          },
+          {
+            "element": 60,
+            "value": 5
+          },
+          {
+            "element": 61,
+            "value": 5
+          },
+          {
+            "element": 566,
+            "value": 5
+          },
+          {
+            "element": 70,
+            "value": 4
+          },
+          {
+            "element": 64,
+            "value": 2
+          },
+          {
+            "element": 67,
+            "value": 2
+          }
+        ],
+        "h": [
+          {
+            "element": 405,
+            "value": 7
+          },
+          {
+            "element": 449,
+            "value": 6
+          },
+          {
+            "element": 447,
+            "value": 5
+          },
+          {
+            "element": 453,
+            "value": 4
+          },
+          {
+            "element": 454,
+            "value": 4
+          },
+          {
+            "element": 459,
+            "value": 4
+          },
+          {
+            "element": 460,
+            "value": 3
+          },
+          {
+            "element": 445,
+            "value": 2
+          },
+          {
+            "element": 464,
+            "value": 2
+          },
+          {
+            "element": 456,
+            "value": 1
+          },
+          {
+            "element": 593,
+            "value": 1
+          }
+        ],
+        "identifier": "defensive_contribution"
+      }
+    ],
     "team_a": 3,
     "team_a_difficulty": 3,
-    "team_a_score": null,
+    "team_a_score": 2,
     "team_h": 17,
     "team_h_difficulty": 3,
-    "team_h_score": null
+    "team_h_score": 1
   },
   {
     "code": 2645216,
