@@ -1,5 +1,5 @@
 {
-  "last_updated_data": "2026-09-12T16:24:25Z",
+  "last_updated_data": "2026-09-12T17:51:44Z",
   "league": {
     "admin_entry": 118670,
     "closed": false,
@@ -28,12 +28,12 @@
         "club_badge_src": null,
         "entry": 1539533,
         "entry_name": "Cene Juan Cene Jamal",
-        "event_total": 38,
+        "event_total": 40,
         "last_rank": 3,
         "player_name": "ifor jones",
         "rank": 1,
         "rank_sort": 1,
-        "total": 252
+        "total": 254
       },
       {
         "club_badge_src": null,
@@ -50,12 +50,12 @@
         "club_badge_src": null,
         "entry": 3866837,
         "entry_name": "The Krejci Gang",
-        "event_total": 15,
+        "event_total": 16,
         "last_rank": 1,
         "player_name": "Craig Bowen",
         "rank": 3,
         "rank_sort": 3,
-        "total": 245
+        "total": 246
       },
       {
         "club_badge_src": null,
@@ -83,12 +83,12 @@
         "club_badge_src": null,
         "entry": 88625,
         "entry_name": "Dean's Team",
-        "event_total": 20,
+        "event_total": 21,
         "last_rank": 6,
         "player_name": "Dean Barr",
         "rank": 6,
         "rank_sort": 6,
-        "total": 219
+        "total": 220
       },
       {
         "club_badge_src": null,
