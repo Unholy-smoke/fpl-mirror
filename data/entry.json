@@ -167,14 +167,14 @@
             "total": 279
           },
           {
-            "entry_percentile_rank": 90,
+            "entry_percentile_rank": 70,
             "last_rank": 9768007,
             "league_id": 314,
             "phase": 3,
-            "rank": 9271085,
-            "rank_count": 10675167,
-            "rank_sort": 9271113,
-            "total": 72
+            "rank": 7344772,
+            "rank_count": 10674555,
+            "rank_sort": 7344858,
+            "total": 105
           }
         ],
         "admin_entry": null,
@@ -259,14 +259,14 @@
             "total": 279
           },
           {
-            "entry_percentile_rank": 80,
+            "entry_percentile_rank": 60,
             "last_rank": 8,
             "league_id": 578200,
             "phase": 3,
-            "rank": 7,
+            "rank": 5,
             "rank_count": 9,
-            "rank_sort": 7,
-            "total": 72
+            "rank_sort": 5,
+            "total": 105
           }
         ],
         "admin_entry": 2864254,
@@ -363,7 +363,7 @@
   "player_region_name": "Afghanistan",
   "started_event": 1,
   "summary_event_points": 69,
-  "summary_event_rank": 3921174,
+  "summary_event_rank": 3921175,
   "summary_overall_points": 279,
   "summary_overall_rank": 1640858,
   "years_active": 15
