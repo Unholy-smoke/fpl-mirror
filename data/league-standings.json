@@ -1,5 +1,5 @@
 {
-  "last_updated_data": "2026-09-13T16:56:25Z",
+  "last_updated_data": "2026-09-13T17:59:18Z",
   "league": {
     "admin_entry": 118670,
     "closed": false,
@@ -28,12 +28,12 @@
         "club_badge_src": null,
         "entry": 1539533,
         "entry_name": "Cene Juan Cene Jamal",
-        "event_total": 81,
+        "event_total": 80,
         "last_rank": 3,
         "player_name": "ifor jones",
         "rank": 1,
         "rank_sort": 1,
-        "total": 295
+        "total": 294
       },
       {
         "club_badge_src": null,
@@ -61,12 +61,12 @@
         "club_badge_src": null,
         "entry": 8280153,
         "entry_name": "Nwaneris Mate!",
-        "event_total": 69,
+        "event_total": 70,
         "last_rank": 2,
         "player_name": "B Kites",
         "rank": 4,
         "rank_sort": 4,
-        "total": 289
+        "total": 290
       },
       {
         "club_badge_src": null,
@@ -83,12 +83,12 @@
         "club_badge_src": null,
         "entry": 7307209,
         "entry_name": "JesusSelsPopeSenesi",
-        "event_total": 89,
+        "event_total": 88,
         "last_rank": 7,
         "player_name": "Chris Hodierne",
         "rank": 6,
         "rank_sort": 6,
-        "total": 275
+        "total": 274
       },
       {
         "club_badge_src": null,
@@ -116,12 +116,12 @@
         "club_badge_src": null,
         "entry": 6231483,
         "entry_name": "WhenTheYrEndsIn7",
-        "event_total": 79,
+        "event_total": 78,
         "last_rank": 9,
         "player_name": "Richard Wisdom",
         "rank": 9,
         "rank_sort": 9,
-        "total": 214
+        "total": 213
       }
     ]
   }
