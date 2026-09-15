@@ -1,5 +1,5 @@
 {
-  "last_updated_data": "2026-09-15T08:57:08Z",
+  "last_updated_data": "2026-09-15T12:24:14Z",
   "league": {
     "admin_entry": 118670,
     "closed": false,
@@ -72,12 +72,12 @@
         "club_badge_src": null,
         "entry": 118670,
         "entry_name": "Ugarte Freund in Mee",
-        "event_total": 77,
+        "event_total": 80,
         "last_rank": 5,
         "player_name": "Michael Jones",
         "rank": 5,
         "rank_sort": 5,
-        "total": 287
+        "total": 290
       },
       {
         "club_badge_src": null,
