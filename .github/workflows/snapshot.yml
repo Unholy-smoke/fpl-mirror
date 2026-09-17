@@ -379,6 +379,63 @@ jobs:
               echo "Wrote $OWN"
             fi
 
+            # 5b. Price-progress snapshot, appended every run.
+            #
+            # FPL publishes its own price predictor on every element of
+            # bootstrap-static.json: price_change_percent (the page's
+            # Progress, 100 = trigger), price_change_projections (offsets
+            # 0/1/2 = today/+1d/+2d, each with projected_percent and a
+            # signed 1-5 likelihood), price_change_hourly_rate,
+            # price_change_locked_until and price_change_calibrating.
+            # Established 13 Sep 2026; nothing captured any of it until now.
+            #
+            # It is written HERE rather than by a cloud scheduled task
+            # because this is the only place that gets all 659 elements,
+            # all eight runs a day INCLUDING the overnight ones - which is
+            # when prices actually change - and a timestamp that is the
+            # fetch time by construction rather than the time some later
+            # run happened to notice. A cloud task firing 3x/day captures
+            # 3 of 8 snapshots and none of the overnight ones.
+            # See the project's reference/price-progress-spec.md.
+            #
+            # progress_pct and proj_0 are DIFFERENT NUMBERS and both are
+            # carried. Progress is where he is now; Predicted Progress is
+            # where the engine expects him to end today. Conflating them
+            # has already caused one published error.
+            #
+            # Join on element_id, never on web_name: 17 web_name values are
+            # duplicated in the 2026/27 game.
+            PROG="data/history/progress/${RUN_DATE}.csv"
+            mkdir -p data/history/progress
+            if [ -f data/bootstrap-static.json ]; then
+              if [ ! -f "$PROG" ]; then
+                echo 'snapshot_utc,element_id,web_name,team,progress_pct,proj_0,proj_1,proj_2,likelihood,hourly_rate,selected_by_percent,now_cost,transfers_in_event,transfers_out_event,total_points,minutes,form,status,cost_change_event,cost_change_start,locked_until,calibrating' > "$PROG"
+              fi
+              # Dedupe on the stamp, so a re-run of the same workflow run
+              # cannot double-write. (A retry inside the publish loop below
+              # re-syncs to origin first, so it re-derives rather than
+              # appending twice.)
+              if grep -q "^\"${RUN_STAMP}\"," "$PROG"; then
+                echo "Progress log: ${RUN_STAMP} already present, skipping."
+              else
+                jq -r -n --arg d "$RUN_STAMP" --slurpfile cur data/bootstrap-static.json '
+                  ($cur[0].teams | map({key:(.id|tostring), value:.short_name}) | from_entries) as $tm
+                  | $cur[0].elements[]
+                  | ([.price_change_projections[]? | {key:(.offset|tostring), value:.}] | from_entries) as $pr
+                  | [$d, .id, .web_name, $tm[(.team|tostring)],
+                     .price_change_percent,
+                     $pr["0"].projected_percent, $pr["1"].projected_percent, $pr["2"].projected_percent,
+                     $pr["0"].likelihood, .price_change_hourly_rate,
+                     .selected_by_percent, .now_cost,
+                     .transfers_in_event, .transfers_out_event,
+                     .total_points, .minutes, .form,
+                     .status, .cost_change_event, .cost_change_start,
+                     .price_change_locked_until, (.price_change_calibrating|tostring)]
+                  | @csv' >> "$PROG" || echo "!! progress append FAILED - continuing; the snapshot itself is unaffected."
+                echo "Progress log: $(( $(wc -l < "$PROG") - 1 )) rows in $PROG"
+              fi
+            fi
+
             # 6. Freshness tracking, merged onto whatever origin had.
             OLD_FILES='{}'
             if [ -f data/fetch-status.json ]; then
