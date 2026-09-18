@@ -14761,7 +14761,7 @@
     "finished_provisional": false,
     "id": 41,
     "kickoff_time": "2026-09-18T19:00:00Z",
-    "minutes": 54,
+    "minutes": 59,
     "provisional_start_time": false,
     "pulse_id": 0,
     "started": true,
@@ -14823,25 +14823,21 @@
             "value": 3
           },
           {
-            "element": 101,
+            "element": 145,
             "value": 1
           },
           {
-            "element": 145,
+            "element": 583,
             "value": 1
           }
         ],
         "h": [
           {
-            "element": 98,
-            "value": 2
-          },
-          {
-            "element": 87,
-            "value": 1
-          },
-          {
             "element": 102,
+            "value": 3
+          },
+          {
+            "element": 98,
             "value": 1
           }
         ],
@@ -14854,36 +14850,36 @@
             "value": 15
           },
           {
+            "element": 145,
+            "value": 12
+          },
+          {
+            "element": 583,
+            "value": 12
+          },
+          {
             "element": 101,
             "value": 11
           },
           {
-            "element": 145,
-            "value": 11
+            "element": 28,
+            "value": 10
           },
           {
-            "element": 28,
-            "value": 9
+            "element": 40,
+            "value": 10
+          },
+          {
+            "element": 149,
+            "value": 10
           },
           {
             "element": 200,
-            "value": 9
+            "value": 10
           },
           {
             "element": 154,
             "value": 8
-          },
-          {
-            "element": 583,
-            "value": 8
-          },
-          {
-            "element": 40,
-            "value": 6
-          },
-          {
-            "element": 149,
-            "value": 6
           },
           {
             "element": 156,
@@ -14896,15 +14892,15 @@
         ],
         "h": [
           {
+            "element": 102,
+            "value": 15
+          },
+          {
             "element": 98,
             "value": 12
           },
           {
             "element": 87,
-            "value": 11
-          },
-          {
-            "element": 102,
             "value": 11
           },
           {
@@ -14920,11 +14916,11 @@
             "value": 6
           },
           {
-            "element": 93,
-            "value": 5
+            "element": 96,
+            "value": 6
           },
           {
-            "element": 96,
+            "element": 93,
             "value": 5
           },
           {
@@ -14934,10 +14930,6 @@
           {
             "element": 88,
             "value": 3
-          },
-          {
-            "element": 106,
-            "value": 1
           }
         ],
         "identifier": "bps"
@@ -14946,7 +14938,7 @@
         "a": [
           {
             "element": 145,
-            "value": 12
+            "value": 14
           },
           {
             "element": 40,
@@ -14970,11 +14962,11 @@
           },
           {
             "element": 200,
-            "value": 5
+            "value": 6
           },
           {
             "element": 583,
-            "value": 5
+            "value": 6
           },
           {
             "element": 136,
@@ -15000,7 +14992,7 @@
           },
           {
             "element": 96,
-            "value": 5
+            "value": 6
           },
           {
             "element": 87,
@@ -15020,6 +15012,10 @@
           },
           {
             "element": 88,
+            "value": 1
+          },
+          {
+            "element": 105,
             "value": 1
           }
         ],
