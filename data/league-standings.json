@@ -1,5 +1,5 @@
 {
-  "last_updated_data": "2026-09-19T18:13:08Z",
+  "last_updated_data": "2026-09-19T20:59:33Z",
   "league": {
     "admin_entry": 118670,
     "closed": false,
@@ -28,34 +28,34 @@
         "club_badge_src": null,
         "entry": 8280153,
         "entry_name": "Nwaneris Mate!",
-        "event_total": 28,
+        "event_total": 27,
         "last_rank": 1,
         "player_name": "B Kites",
         "rank": 1,
         "rank_sort": 1,
-        "total": 326
+        "total": 325
       },
       {
         "club_badge_src": null,
         "entry": 118670,
         "entry_name": "Ugarte Freund in Mee",
-        "event_total": 32,
+        "event_total": 33,
         "last_rank": 5,
         "player_name": "Michael Jones",
         "rank": 2,
         "rank_sort": 2,
-        "total": 322
+        "total": 323
       },
       {
         "club_badge_src": null,
         "entry": 10324,
         "entry_name": "The Special Wan",
-        "event_total": 24,
+        "event_total": 25,
         "last_rank": 2,
         "player_name": "Ken Wan",
         "rank": 3,
         "rank_sort": 3,
-        "total": 321
+        "total": 322
       },
       {
         "club_badge_src": null,
