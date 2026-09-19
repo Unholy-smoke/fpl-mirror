@@ -1,5 +1,5 @@
 {
-  "last_updated_data": "2026-09-19T11:53:52Z",
+  "last_updated_data": "2026-09-19T13:28:59Z",
   "league": {
     "admin_entry": 118670,
     "closed": false,
@@ -61,23 +61,23 @@
         "club_badge_src": null,
         "entry": 3866837,
         "entry_name": "The Krejci Gang",
-        "event_total": 1,
+        "event_total": 2,
         "last_rank": 4,
         "player_name": "Craig Bowen",
-        "rank": 4,
+        "rank": 3,
         "rank_sort": 4,
-        "total": 297
+        "total": 298
       },
       {
         "club_badge_src": null,
         "entry": 118670,
         "entry_name": "Ugarte Freund in Mee",
-        "event_total": 3,
+        "event_total": 4,
         "last_rank": 5,
         "player_name": "Michael Jones",
         "rank": 5,
         "rank_sort": 5,
-        "total": 293
+        "total": 294
       },
       {
         "club_badge_src": null,
@@ -94,12 +94,12 @@
         "club_badge_src": null,
         "entry": 88625,
         "entry_name": "Dean's Team",
-        "event_total": 3,
+        "event_total": 4,
         "last_rank": 7,
         "player_name": "Dean Barr",
         "rank": 7,
         "rank_sort": 7,
-        "total": 253
+        "total": 254
       },
       {
         "club_badge_src": null,
@@ -116,12 +116,12 @@
         "club_badge_src": null,
         "entry": 6231483,
         "entry_name": "WhenTheYrEndsIn7",
-        "event_total": 1,
+        "event_total": 2,
         "last_rank": 9,
         "player_name": "Richard Wisdom",
         "rank": 9,
         "rank_sort": 9,
-        "total": 217
+        "total": 218
       }
     ]
   }
