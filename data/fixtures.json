@@ -17788,7 +17788,7 @@
           },
           {
             "element": 544,
-            "value": 24
+            "value": 25
           },
           {
             "element": 551,
@@ -17803,12 +17803,12 @@
             "value": 6
           },
           {
-            "element": 541,
+            "element": 533,
             "value": 5
           },
           {
-            "element": 533,
-            "value": 3
+            "element": 541,
+            "value": 5
           },
           {
             "element": 553,
@@ -17820,7 +17820,7 @@
           },
           {
             "element": 501,
-            "value": -7
+            "value": -8
           },
           {
             "element": 529,
@@ -17850,7 +17850,7 @@
           },
           {
             "element": 237,
-            "value": 30
+            "value": 31
           },
           {
             "element": 411,
@@ -17866,7 +17866,7 @@
           },
           {
             "element": 388,
-            "value": 12
+            "value": 13
           },
           {
             "element": 384,
@@ -17891,14 +17891,14 @@
         "a": [
           {
             "element": 532,
-            "value": 13
-          },
-          {
-            "element": 501,
-            "value": 9
+            "value": 14
           },
           {
             "element": 533,
+            "value": 9
+          },
+          {
+            "element": 501,
             "value": 8
           },
           {
@@ -17941,11 +17941,11 @@
         "h": [
           {
             "element": 389,
-            "value": 10
+            "value": 9
           },
           {
             "element": 481,
-            "value": 8
+            "value": 9
           },
           {
             "element": 391,
@@ -18255,19 +18255,23 @@
           },
           {
             "element": 419,
-            "value": 3
+            "value": 4
+          },
+          {
+            "element": 427,
+            "value": 4
           },
           {
             "element": 423,
             "value": 3
           },
           {
-            "element": 427,
+            "element": 428,
             "value": 3
           },
           {
-            "element": 428,
-            "value": 3
+            "element": 415,
+            "value": 2
           },
           {
             "element": 417,
@@ -18276,10 +18280,6 @@
           {
             "element": 429,
             "value": 2
-          },
-          {
-            "element": 415,
-            "value": 1
           },
           {
             "element": 430,
@@ -18313,7 +18313,7 @@
           },
           {
             "element": 261,
-            "value": 6
+            "value": 7
           },
           {
             "element": 264,
@@ -18344,12 +18344,12 @@
             "value": 2
           },
           {
-            "element": 271,
+            "element": 569,
             "value": 2
           },
           {
-            "element": 569,
-            "value": 2
+            "element": 271,
+            "value": 1
           }
         ],
         "identifier": "defensive_contribution"
