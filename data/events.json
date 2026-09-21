@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-21T09:18:22Z",
-  "total_players": 10927980,
+  "generated_at": "2026-09-21T14:03:26Z",
+  "total_players": 10931606,
   "current_event": 5,
   "next_event": 6,
   "next_deadline_utc": "2026-10-10T10:00:00Z",
@@ -72,10 +72,10 @@
       "is_current": true,
       "is_next": false,
       "is_previous": false,
-      "finished": false,
-      "data_checked": false,
-      "average_entry_score": 44,
-      "highest_score": 124,
+      "finished": true,
+      "data_checked": true,
+      "average_entry_score": 48,
+      "highest_score": 126,
       "transfers_made": 18907524,
       "most_captained": 411,
       "most_selected": 411
@@ -91,7 +91,7 @@
       "data_checked": false,
       "average_entry_score": 0,
       "highest_score": null,
-      "transfers_made": 0,
+      "transfers_made": 4611571,
       "most_captained": null,
       "most_selected": null
     },
