@@ -36,9 +36,18 @@ from collections import defaultdict
 
 R = "https://raw.githubusercontent.com/Unholy-smoke/fpl-mirror/main"
 g = lambda p: json.load(urllib.request.urlopen(f"{R}/{p}"))
+# Usage: fixture-model.py [START [END]] [--squad PATH]
+#   --squad PATH  a squad-state/1 JSON (the project's claude/state/squad.json) to mark
+#                 Ben's CURRENT clubs with a star. Without it the stars come from
+#                 picks-latest.json, which is the last FINISHED gameweek's squad, and the
+#                 output says so.
+ARGS  = sys.argv[1:]
+SQUAD = None
+if "--squad" in ARGS:
+    i = ARGS.index("--squad"); SQUAD = ARGS[i + 1]; del ARGS[i:i + 2]
 NEXT  = g("data/events.json")["next_event"] or 1
-START = int(sys.argv[1]) if len(sys.argv) > 1 else NEXT
-END   = int(sys.argv[2]) if len(sys.argv) > 2 else START + 7
+START = int(ARGS[0]) if len(ARGS) > 0 else NEXT
+END   = int(ARGS[1]) if len(ARGS) > 1 else START + 7
 
 # --- TUNABLES ----------------------------------------------------------------
 K_PSEUDO   = 6.0    # pseudo-matches of prior. Higher = trust the prior longer.
@@ -55,8 +64,18 @@ name   = {t["id"]: t["short_name"] for t in bs["teams"]}
 team_of= {e["id"]: e["team"] for e in bs["elements"]}
 byid   = {e["id"]: e for e in bs["elements"]}
 owned  = defaultdict(list)
-for p in g("data/picks-latest.json")["picks"]:
-    owned[byid[p["element"]]["team"]].append(byid[p["element"]]["web_name"])
+if SQUAD:
+    _sq = json.load(open(SQUAD, encoding="utf-8"))
+    OWN_IDS = [p["element_id"] for p in _sq["picks"]]
+    OWN_NOTE = f"squad file fetched {_sq.get('fetched_utc')} (GW{_sq.get('applies_to_gw')})"
+else:
+    _pl = g("data/picks-latest.json")
+    OWN_IDS = [p["element"] for p in _pl["picks"]]
+    OWN_NOTE = (f"picks-latest.json = GW{_pl.get('entry_history', {}).get('event')} squad, the last FINISHED "
+                "gameweek; it may not be the current squad. Pass --squad for the live one")
+for pid in OWN_IDS:
+    if pid in byid:
+        owned[byid[pid]["team"]].append(byid[pid]["web_name"])
 
 # tier: the difficulty an opponent faces when visiting this club
 tier = {}
@@ -151,14 +170,21 @@ def window(t, lo, hi):
 print(f"# Fixture model v0.2 — GW{START}–{END}\n")
 print(f"**Generated** {dt.datetime.now(dt.timezone.utc).strftime('%Y-%m-%d %H:%M UTC')} from mirror `{stamp}`.")
 wmin, wmax = min(w.values()), max(w.values())
-print(f"**Observed** {len(gws)} gameweek(s) — {gws}. With k={K_PSEUDO:.0f} pseudo-matches, ratings are "
-      f"**{(1-wmax)*100:.0f}% prior / {wmax*100:.0f}% data** for the {sum(1 for t in name if n[t]==max(n.values()))} clubs on "
-      f"{max(n.values())} matches, and **{(1-wmin)*100:.0f}% / {wmin*100:.0f}%** for the "
-      f"{sum(1 for t in name if n[t]==min(n.values()))} on {min(n.values())}. That weight shifts toward data every week.\n")
+if max(n.values()) == min(n.values()):
+    print(f"**Observed** {len(gws)} gameweek(s) — {gws}. With k={K_PSEUDO:.0f} pseudo-matches, ratings are "
+          f"**{(1-wmax)*100:.0f}% prior / {wmax*100:.0f}% data** for all 20 clubs on {max(n.values())} matches. "
+          "That weight shifts toward data every week.\n")
+else:
+    print(f"**Observed** {len(gws)} gameweek(s) — {gws}. With k={K_PSEUDO:.0f} pseudo-matches, ratings are "
+          f"**{(1-wmax)*100:.0f}% prior / {wmax*100:.0f}% data** for the {sum(1 for t in name if n[t]==max(n.values()))} clubs on "
+          f"{max(n.values())} matches, and **{(1-wmin)*100:.0f}% / {wmin*100:.0f}%** for the "
+          f"{sum(1 for t in name if n[t]==min(n.values()))} on {min(n.values())}. That weight shifts toward data every week.\n")
 print(f"League mean xG per team-match **{M:.2f}**; home {LH:.2f} / away {LA:.2f} at an assumed home advantage of ×{HOME_ADV}.\n")
 print("> **Read this as a first iteration, not an oracle.** The prior mapping and home advantage are assumptions to be\n"
       "> refit around GW10. Ratings are mostly prior right now *by design* — that is what stops one bad afternoon\n"
-      "> becoming a permanent verdict. ARS and AVL have played one match.\n")
+      "> becoming a permanent verdict." + (
+      f" Fewest matches: {', '.join(name[t] for t in name if n[t] == min(n.values()))} on {min(n.values())}.\n"
+      if max(n.values()) != min(n.values()) else "\n"))
 SHORT = min(START + 3, END)
 WIDE  = END > START + 3          # suppress the long window when it duplicates the short one
 print(f"## Next {END-START+1} gameweeks\n")
@@ -167,7 +193,7 @@ print(f"**xG / CS** = expected goals created and expected clean sheets over GW{S
       "beside it \u2014 the gap between them is how flattering the fixtures have been. **Def** is the xG a club "
       "concedes relative to average, so *lower is better*. Both are centred on 1.00. **G\u2212xG** is finishing "
       "over/underperformance so far \u2014 not in the model, shown to see whether it is worth adding. "
-      "\u2605 = Ben owns a player.\n")
+      f"\u2605 = Ben owns a player, per {OWN_NOTE}.\n")
 hdr = f"| Club | Att *(raw)* | Def | xG{START}\u2013{SHORT} | CS{START}\u2013{SHORT}"
 if WIDE: hdr += f" | xG{START}\u2013{END} | CS{START}\u2013{END}"
 hdr += " | G\u2212xG | Owned |"
