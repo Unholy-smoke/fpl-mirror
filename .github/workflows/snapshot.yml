@@ -436,6 +436,27 @@ jobs:
               fi
             fi
 
+            # 5c. Derived files, computed by the scripts in tools/.
+            #
+            # Added 25 Sep 2026 (streamline plan, Phase 2). These replace facts that
+            # used to be recomputed, or retyped, by every Claude run: the deadline
+            # table and its drift log, all nine managers' free transfers, bank and
+            # selling prices, and the running score of FPL's own price predictor.
+            # Computed here, once per snapshot, from the data just published, they
+            # sit in git where they cannot be paraphrased.
+            #
+            # Every call is guarded with || echo. A bug in a derived file must never
+            # stop the snapshot itself from publishing.
+            mkdir -p data/derived
+            python3 tools/deadlines.py --out data/derived/deadlines.csv \
+              --prev /tmp/prev-bootstrap.json --log data/derived/deadline-changes.csv \
+              --stamp "$RUN_STAMP" \
+              || echo "!! deadlines.py FAILED - continuing"
+            python3 tools/league_state.py --out data/derived/league-state.json --stamp "$RUN_STAMP" \
+              || echo "!! league_state.py FAILED - continuing"
+            python3 tools/price_scores.py fpl --out data/derived/fpl-proj-scores.csv \
+              || echo "!! price_scores.py FAILED - continuing"
+
             # 6. Freshness tracking, merged onto whatever origin had.
             OLD_FILES='{}'
             if [ -f data/fetch-status.json ]; then
