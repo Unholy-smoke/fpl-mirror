@@ -1,109 +1,72 @@
 # fpl-mirror
 
-A daily snapshot of the Fantasy Premier League API, committed to this repository.
+Snapshots of the public Fantasy Premier League API, committed to git eight times a day, plus a few
+files derived from them. It exists for two reasons:
 
-The FPL API is public but only ever shows you *right now* — there is no history and no way to ask what a price was last Tuesday. This repo fixes that by fetching the data every night and committing it. Two things fall out of that:
+1. **Reachability.** Claude's cloud sessions can read `raw.githubusercontent.com` and `git clone` this
+   repo, but can't reach the FPL API.
+2. **History.** The FPL API only ever shows *now*. Every snapshot here is a commit, so git history
+   is the time series: prices, ownership, flags and deadlines, as they were.
 
-1. **Reliable access.** Some tools can read files from GitHub but can't reach the FPL API directly. This repo bridges that gap.
-2. **A free time series.** Because every snapshot is a commit, the git history becomes a complete record of every price change, ownership swing and injury flag, going back to whenever you set this up. That's data you cannot get retrospectively — the API won't tell you, so the only way to have it is to start collecting.
+No login is used. Every endpoint is public. Ben's private squad state (bank, selling prices, pending
+transfers) is **not** here. It lives in the Claude project, read from the FPL site in Ben's own
+browser session.
 
-Nothing here is authenticated. Every endpoint used is one anyone can open in a browser.
+## Schedule
 
-## What gets saved
+`.github/workflows/snapshot.yml` runs at `01:11 03:47 07:11 09:52 13:11 15:53 18:49 21:30` UTC (GitHub cron is UTC
+only), plus on demand (Actions → *Snapshot FPL data* → *Run workflow*, or the dispatch API). GitHub's
+scheduler is best-effort and often runs one to three hours late. Design nothing around a slot landing on time.
 
-Everything lands in `data/`:
+## What's in `data/`
 
-| File | What's in it |
+| File | What it is |
 |---|---|
-| `bootstrap-static.json` | Every player — price, ownership, position, availability, injury news, set-piece order — plus all 20 teams and all 38 gameweek deadlines |
-| `fixtures.json` | Every fixture, kick-off time and difficulty rating |
-| `event-status.json` | Whether bonus points and league tables have settled |
-| `entry.json` | Your team — overall rank, squad value, money in the bank, chips used |
-| `entry-history.json` | Your gameweek-by-gameweek history |
-| `picks-latest.json` | Your XI, bench and captain for the current gameweek |
-| `league-standings.json` | Your mini-league table, including each rival's entry ID |
-| `last-updated.txt` | When the snapshot last ran successfully |
+| `events.json` | **Start here** (~16 KB). Current/next gameweek, `next_deadline_utc`, every gameweek's deadline and status, chip windows |
+| `fetch-status.json` | `run_at`, `failed_this_run`, and per-file `last_success`. **Judge freshness by `last_success` on the keys you need** |
+| `bootstrap-static.json` | Every player, team and gameweek (~2.5 MB; filter it, never read it whole) |
+| `fixtures.json` | Every fixture, kick-off (UTC) and FDR |
+| `event-status.json` | Whether bonus and league tables have settled |
+| `entry.json`, `entry-history.json` | Ben's entry and per-gameweek history |
+| `picks-latest.json` | Ben's picks for the **current gameweek, i.e. the last one whose deadline has passed**. Not the upcoming one, and nothing in the file says so |
+| `league-standings.json` | The mini-league table and every entry id |
+| `rivals/gw<N>-entry<ID>.json` | Every league member's picks for gameweek N (frozen once N stops being current) |
+| `rivals/history-entry<ID>.json` | Every member's per-gameweek history and chips |
+| `transfers/entry<ID>.json` | Every member's transfer log, with purchase (`element_in_cost`) and sale prices |
+| `live/gw<N>.json` | Per-player stats for the current and previous gameweek |
+| `elements/<id>.json` | Element summaries for a watchlist (Tuesdays, or on demand) |
+| `history/prices.csv` | Every observed price change, stamped at the fetch that saw it |
+| `history/ownership/<date>.csv` | One ownership/price snapshot per day |
+| `history/progress/<date>.csv` | FPL's own price predictor (`price_change_percent`, projections) for every player at every fetch |
+| `derived/deadlines.csv` | Every deadline in UTC and UK local, first fixture, and the "deadline = first kick-off − 90 min" check |
+| `derived/deadline-changes.csv` | Append-only: every time a deadline moved, and when it was seen |
+| `derived/league-state.json` | All nine managers at the last deadline: bank, **free transfers**, chips held, squad with **selling prices** |
+| `derived/fpl-proj-scores.csv` | How well FPL's predictor (progress, proj_0/1/2) called each night's price changes |
 
-## Setting it up
+**Traps:** prices are in tenths (`155` = £15.5m); positions are 1 GK / 2 DEF / 3 MID / 4 FWD; every
+timestamp is **UTC** (convert before telling a human); key players on `id`, never `web_name`
+(names are duplicated). Ids are stable within a season in practice, but new players are appended, so be
+wary of an id remembered from weeks ago.
 
-No command line needed — all of this can be done on github.com.
+## Tools (`tools/`, Python standard library only, run from the repo root)
 
-### 1. Create the repository
+| Script | Does |
+|---|---|
+| `deadlines.py` | Deadline table, drift log, 90-minute invariant. Prints the next deadline in UK time |
+| `league_state.py` | Free transfers, bank, chips and selling prices for all nine managers |
+| `price_scores.py fpl` | Scores FPL's predictor against actual changes |
+| `price_scores.py calls FILES` | Scores Claude's own price calls (CSV files kept in the project) |
+| `health.py` | Freshness and completeness check: one OK/WARN/FAIL line per check |
+| `fixture-model.py [START END] [--squad squad.json]` | Pairwise fixture model v0.2 (a tie-breaker, never a lead) |
+| `fixture-matrix.py` | FDR matrix |
 
-New repository, name it `fpl-mirror`, set it to **Public**, and tick "Add a README file". Public matters: it's what lets tools read the raw files without a token, and there's nothing private in here.
+The first three run inside the workflow on every snapshot (step 5c) and write `data/derived/`. A failure
+there is logged and never blocks the snapshot.
 
-### 2. Add the files
+## Maintenance
 
-Use **Add file → Create new file** for each one. To create a file in a folder, just type the path with slashes — `.github/workflows/snapshot.yml` — and GitHub makes the folders for you.
-
-You need:
-
-- `.github/workflows/snapshot.yml`
-- `config.json`
-- this `README.md` (optional, but you'll thank yourself later)
-
-### 3. Find your two ID numbers
-
-**Entry ID** — your own team's ID. Log in to the FPL site, go to the Points tab, and look at the address bar:
-
-```
-https://fantasy.premierleague.com/entry/1234567/event/1
-                                        ^^^^^^^ this is your entry ID
-```
-
-**League ID** — open your mini-league from the Leagues tab:
-
-```
-https://fantasy.premierleague.com/leagues/987654/standings/c
-                                          ^^^^^^ this is your league ID
-```
-
-Put both into `config.json` as plain numbers, no quotes:
-
-```json
-{
-  "entry_id": 1234567,
-  "league_id": 987654
-}
-```
-
-### 4. Let the workflow write to the repo
-
-Settings → Actions → General → scroll to **Workflow permissions** → select **Read and write permissions** → Save.
-
-Without this the fetch works but the commit is rejected, which is a confusing failure to debug. Do it before the first run.
-
-### 5. Run it once by hand
-
-Actions tab → **Snapshot FPL data** → **Run workflow**. It takes under a minute. Click into the run to watch the log; each fetch prints the file it wrote and how big it was.
-
-If it went well, `data/` now has files in it and you'll see a commit from "fpl-mirror bot".
-
-## When it runs
-
-Every day at 02:30 UTC, plus whenever you trigger it manually. That timing is deliberate — FPL prices change around 01:30 UK time, so this catches the settled overnight state.
-
-Two things worth knowing:
-
-- **GitHub's scheduler is best-effort.** On a busy morning a scheduled run can be delayed by a while, occasionally skipped. Fine for daily snapshots; don't rely on it landing to the minute.
-- **Scheduled workflows get switched off after 60 days without repository activity.** The daily commits normally count as activity, so this shouldn't bite — but if snapshots stop appearing, check the Actions tab for a "this workflow was disabled" banner and re-enable it.
-
-## If a run fails
-
-Click the failed run in the Actions tab and read the log — the step that failed is marked in red.
-
-The usual suspects:
-
-- **"Permission denied" on push** — step 4 above wasn't done.
-- **A fetch printing `request failed`** — the FPL API was briefly unavailable, or an ID in `config.json` is wrong. The workflow keeps the previous good file rather than overwriting it with an error page, so nothing is lost. Check your IDs.
-- **`picks-latest.json` missing before the season starts** — expected. Picks don't exist until a gameweek is live.
-
-## Reading the data
-
-Raw files are at:
-
-```
-https://raw.githubusercontent.com/<your-username>/fpl-mirror/main/data/bootstrap-static.json
-```
-
-A couple of things that will trip you up if nobody warns you: prices are in tenths, so `155` means £15.5m. Positions are numbers — 1 goalkeeper, 2 defender, 3 midfielder, 4 forward. And availability is a single letter in `status`: `a` available, `d` doubtful, `i` injured, `s` suspended, `u` unavailable.
+- Workflow and tool changes are made in `C:\Users\ben\Cowork\FPL\mirror-repo\` (the authoritative copy)
+  and uploaded here by Ben via *Add file → Upload files*. After an upload, run the workflow once by hand
+  and check the log for `!!` lines.
+- Scheduled workflows are disabled after 60 days without repo activity. The snapshot commits count, but
+  if snapshots stop, check the Actions tab for a "disabled" banner.
