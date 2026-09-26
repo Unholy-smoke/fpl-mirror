@@ -479,6 +479,18 @@ jobs:
             echo "$RUN_STAMP" > data/last-updated.txt
             echo "Fetches failed this run: $FAILED"
 
+            # 6b. Derived files that need this run's fetch-status (added 26 Sep 2026).
+            #
+            # Scheduled Claude runs read these as data, and never execute repo code.
+            # That is deliberate: an unattended session running scripts it cloned
+            # from GitHub trips its own safety guardrails, and it should. So every
+            # script a run would need is run HERE instead, and its output published.
+            python3 tools/health.py --out data/derived/health.json > /dev/null \
+              || echo "!! health.py FAILED - continuing"
+            python3 tools/fixture-model.py --data . > /tmp/fixture-model.md \
+              && mv /tmp/fixture-model.md data/derived/fixture-model.md \
+              || echo "!! fixture-model.py FAILED - continuing"
+
             # 7. Commit and push. On rejection, loop: attempt 2 re-syncs to the
             #    new origin/main and re-derives everything against it.
             git add data
