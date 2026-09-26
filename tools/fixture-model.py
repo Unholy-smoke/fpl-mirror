@@ -35,7 +35,17 @@ import json, sys, urllib.request, math, datetime as dt
 from collections import defaultdict
 
 R = "https://raw.githubusercontent.com/Unholy-smoke/fpl-mirror/main"
-g = lambda p: json.load(urllib.request.urlopen(f"{R}/{p}"))
+# --data DIR: read from a local checkout (DIR is the repo root) instead of the network.
+# The workflow uses this to write data/derived/fixture-model.md on every snapshot.
+LOCAL = None
+if "--data" in sys.argv:
+    _i = sys.argv.index("--data"); LOCAL = sys.argv[_i + 1]; del sys.argv[_i:_i + 2]
+def g(p):
+    if LOCAL:
+        import os
+        with open(os.path.join(LOCAL, p), encoding="utf-8") as f:
+            return json.load(f)
+    return json.load(urllib.request.urlopen(f"{R}/{p}"))
 # Usage: fixture-model.py [START [END]] [--squad PATH]
 #   --squad PATH  a squad-state/1 JSON (the project's claude/state/squad.json) to mark
 #                 Ben's CURRENT clubs with a star. Without it the stars come from

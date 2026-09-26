@@ -6,6 +6,8 @@ Two jobs, one ruler:
   fpl    Score FPL's own predictor, from the mirror alone. For every nightly batch in
          history/prices.csv, take the readings in history/progress/ that came before it
          and ask whether each limb called the movers:
+           same_night  progress >= 100 OR proj_0 >= 100 at the last reading before the batch
+                       (the rule proj-scoring-log.md and price-model.md §9f use)
            tonight  proj_0 at the last reading before the batch
            +1 day   proj_1 at the last reading >= 18h before that
            +2 days  proj_2 at the last reading >= 42h before that
@@ -79,11 +81,14 @@ if a.mode == "fpl":
         if r0 is None:
             continue
         actual = {e: (1 if v > 0 else -1) for e, v in batches[b].items()}
-        for limb, idx, back in (("progress", 0, 0), ("proj_0", 1, 0), ("proj_1", 2, 18), ("proj_2", 3, 42)):
+        for limb, idx, back in (("same_night", None, 0), ("progress", 0, 0), ("proj_0", 1, 0), ("proj_1", 2, 18), ("proj_2", 3, 42)):
             rt = r0 if back == 0 else last_before(r0 - dt.timedelta(hours=back) + dt.timedelta(seconds=1))
             if rt is None or rt < rstamps[0]:
                 continue
-            pred = {e: sign(v[idx]) for e, v in readings[rt].items() if sign(v[idx])}
+            if idx is None:   # proj-scoring-log.md rule: called if progress >= 100 OR proj_0 >= 100
+                pred = {e: (sign(v[0]) or sign(v[1])) for e, v in readings[rt].items() if sign(v[0]) or sign(v[1])}
+            else:
+                pred = {e: sign(v[idx]) for e, v in readings[rt].items() if sign(v[idx])}
             h, fa, mi = score(pred, actual)
             rows.append([iso(b), uk(b), limb, iso(rt), len(actual), len(pred), h, fa, mi])
             t = tot[limb]; t[0] += 1; t[1] += h; t[2] += fa; t[3] += mi
@@ -92,7 +97,7 @@ if a.mode == "fpl":
                           "false_alarms", "misses"], rows)
     print(f"FPL predictor, {len(bstamps)} batches in prices.csv, readings from {iso(rstamps[0])}.")
     print(f"{'limb':<9}{'batches':>8}{'hits':>6}{'false+':>8}{'missed':>8}  precision  recall")
-    for limb in ("progress", "proj_0", "proj_1", "proj_2"):
+    for limb in ("same_night", "progress", "proj_0", "proj_1", "proj_2"):
         n, h, fa, mi = tot[limb]
         if n:
             p = h / (h + fa) if h + fa else float("nan"); r = h / (h + mi) if h + mi else float("nan")

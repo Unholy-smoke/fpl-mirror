@@ -6,6 +6,10 @@ check, OK / WARN / FAIL. Exits 0 unless --strict and something FAILed.
 
   python3 tools/health.py            # from the repo root, after git clone / pull
   python3 tools/health.py --json     # machine-readable
+  python3 tools/health.py --out data/derived/health.json   # what the workflow runs
+
+In the workflow it runs AFTER fetch-status.json is written, so "freshness" there is always ~0h.
+A reader judges the snapshot's age itself: now minus fetch-status.json run_at.
 
 Checks
   freshness   fetch-status run_at age (WARN > 4h, FAIL > 9h; the measured
@@ -26,6 +30,7 @@ ap = argparse.ArgumentParser()
 ap.add_argument("--data")
 ap.add_argument("--json", action="store_true")
 ap.add_argument("--strict", action="store_true")
+ap.add_argument("--out", help="also write the results as JSON to this path (the workflow writes data/derived/health.json)")
 a = ap.parse_args()
 d = data_dir(a.data)
 now = dt.datetime.now(dt.timezone.utc)
@@ -105,8 +110,15 @@ else:
            json.load(open(p)).get("source_run_at") not in (None, fs["run_at"])]
     add("OK" if not old else "WARN", "derived", f"{len(der)} files" + (f"; behind snapshot: {old}" if old else ""))
 
+report = {"checked_utc": iso(now), "snapshot_run_at": fs["run_at"],
+          "worst": "FAIL" if any(r["level"] == "FAIL" for r in res) else "WARN" if any(r["level"] == "WARN" for r in res) else "OK",
+          "results": res}
+if a.out:
+    os.makedirs(os.path.dirname(a.out) or ".", exist_ok=True)
+    with open(a.out, "w", encoding="utf-8") as f:
+        json.dump(report, f, indent=1)
 if a.json:
-    print(json.dumps({"checked_utc": iso(now), "results": res}, indent=1))
+    print(json.dumps(report, indent=1))
 else:
     for r in res:
         print(f"{r['level']:<5} {r['check']:<10} {r['msg']}")
