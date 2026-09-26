@@ -1,0 +1,37 @@
+{
+ "checked_utc": "2026-09-26T08:13:33Z",
+ "snapshot_run_at": "2026-09-26T08:13:00Z",
+ "worst": "OK",
+ "results": [
+  {
+   "level": "OK",
+   "check": "freshness",
+   "msg": "last snapshot 2026-09-26T08:13:00Z (Sat 26 Sep 09:13 BST), 0.0h old"
+  },
+  {
+   "level": "OK",
+   "check": "fetches",
+   "msg": "failed_this_run=0; core keys fresh"
+  },
+  {
+   "level": "OK",
+   "check": "rivals",
+   "msg": "9 entries, GW5 picks + transfers present for all"
+  },
+  {
+   "level": "OK",
+   "check": "progress",
+   "msg": "2026-09-26.csv: 2 stamps, rows/stamp [667]; newest stamp matches bootstrap (667 elements)"
+  },
+  {
+   "level": "OK",
+   "check": "prices",
+   "msg": "395 rows; newest batch 2026-09-25T23:59:17Z (Sat 26 Sep 00:59 BST)"
+  },
+  {
+   "level": "OK",
+   "check": "derived",
+   "msg": "3 files"
+  }
+ ]
+}
