@@ -41,7 +41,9 @@ scheduler is best-effort and often runs one to three hours late. Design nothing 
 | `derived/deadlines.csv` | Every deadline in UTC and UK local, first fixture, and the "deadline = first kick-off − 90 min" check |
 | `derived/deadline-changes.csv` | Append-only: every time a deadline moved, and when it was seen |
 | `derived/league-state.json` | All nine managers at the last deadline: bank, **free transfers**, chips held, squad with **selling prices** |
-| `derived/fpl-proj-scores.csv` | How well FPL's predictor (progress, proj_0/1/2) called each night's price changes |
+| `derived/fpl-proj-scores.csv` | How well FPL's predictor (same-night, progress, proj_0/1/2) called each night's price changes |
+| `derived/health.json` | Freshness/completeness checks at snapshot time (`worst`: OK/WARN/FAIL). Judge current age yourself from `fetch-status.json` `run_at` |
+| `derived/fixture-model.md` | The fixture model's output for the next eight gameweeks, regenerated every snapshot (★ = Ben's last *finished* gameweek squad) |
 
 **Traps:** prices are in tenths (`155` = £15.5m); positions are 1 GK / 2 DEF / 3 MID / 4 FWD; every
 timestamp is **UTC** (convert before telling a human); key players on `id`, never `web_name`
@@ -60,8 +62,9 @@ wary of an id remembered from weeks ago.
 | `fixture-model.py [START END] [--squad squad.json]` | Pairwise fixture model v0.2 (a tie-breaker, never a lead) |
 | `fixture-matrix.py` | FDR matrix |
 
-The first three run inside the workflow on every snapshot (step 5c) and write `data/derived/`. A failure
-there is logged and never blocks the snapshot.
+**All of them except `fixture-matrix.py` run inside the workflow on every snapshot** (steps 5c and 6b) and write
+`data/derived/`. A failure there is logged and never blocks the snapshot. **Scheduled Claude runs read those
+outputs; they never execute code from this repo.** Running the tools by hand in a live session is fine.
 
 ## Maintenance
 
