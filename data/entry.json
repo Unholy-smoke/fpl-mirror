@@ -142,7 +142,7 @@
         "entry_can_leave": false,
         "entry_last_rank": 1284660,
         "entry_percentile_rank": 10,
-        "entry_rank": 639399,
+        "entry_rank": 639398,
         "featured_entry_ids": [],
         "has_cup": false,
         "id": 276,
@@ -188,7 +188,7 @@
         "entry_can_leave": false,
         "entry_last_rank": 1284684,
         "entry_percentile_rank": 10,
-        "entry_rank": 639410,
+        "entry_rank": 639409,
         "featured_entry_ids": [],
         "has_cup": true,
         "id": 314,
@@ -402,6 +402,6 @@
   "summary_event_points": 63,
   "summary_event_rank": 1154640,
   "summary_overall_points": 353,
-  "summary_overall_rank": 639410,
+  "summary_overall_rank": 639409,
   "years_active": 15
 }
