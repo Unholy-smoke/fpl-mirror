@@ -2,7 +2,7 @@
  "schema": "league-state/1",
  "as_of_gw": 5,
  "ft_for_gw": 6,
- "source_run_at": "2026-10-06T22:48:02Z",
+ "source_run_at": "2026-10-07T00:52:06Z",
  "league": "Shabanga",
  "entries": [
   {
@@ -344,7 +344,7 @@
      "captain": false,
      "vice": false,
      "purchase": 7.7,
-     "now": 7.7,
+     "now": 7.8,
      "selling": 7.7,
      "purchase_source": "transfer log",
      "status": "a"
@@ -745,7 +745,7 @@
    "chips_held_now": [
     "freehit"
    ],
-   "selling_value": 100.6,
+   "selling_value": 100.7,
    "squad": [
     {
      "element_id": 1,
@@ -868,8 +868,8 @@
      "captain": false,
      "vice": false,
      "purchase": 7.6,
-     "now": 7.7,
-     "selling": 7.6,
+     "now": 7.8,
+     "selling": 7.7,
      "purchase_source": "transfer log",
      "status": "a"
     },
@@ -1550,7 +1550,7 @@
      "captain": false,
      "vice": true,
      "purchase": 7.7,
-     "now": 7.7,
+     "now": 7.8,
      "selling": 7.7,
      "purchase_source": "transfer log",
      "status": "a"
@@ -2008,7 +2008,7 @@
      "captain": false,
      "vice": false,
      "purchase": 7.5,
-     "now": 7.7,
+     "now": 7.8,
      "selling": 7.6,
      "purchase_source": "start price",
      "status": "a"
