@@ -3,9 +3,9 @@ gw,deadline_utc,deadline_uk,first_kickoff_utc,first_kickoff_uk,first_fixture,ko_
 2,2026-08-28T17:30:00Z,Fri 28 Aug 18:30 BST,2026-08-28T19:00:00Z,Fri 28 Aug 20:00 BST,CRY v MCI,90,yes,true,false,false
 3,2026-09-04T17:30:00Z,Fri 04 Sep 18:30 BST,2026-09-04T19:00:00Z,Fri 04 Sep 20:00 BST,IPS v LIV,90,yes,true,false,false
 4,2026-09-12T12:30:00Z,Sat 12 Sep 13:30 BST,2026-09-12T14:00:00Z,Sat 12 Sep 15:00 BST,AVL v NFO,90,yes,true,false,false
-5,2026-09-18T17:30:00Z,Fri 18 Sep 18:30 BST,2026-09-18T19:00:00Z,Fri 18 Sep 20:00 BST,BRE v CHE,90,yes,true,true,false
-6,2026-10-10T10:00:00Z,Sat 10 Oct 11:00 BST,2026-10-10T11:30:00Z,Sat 10 Oct 12:30 BST,ARS v LEE,90,yes,false,false,true
-7,2026-10-17T10:00:00Z,Sat 17 Oct 11:00 BST,2026-10-17T11:30:00Z,Sat 17 Oct 12:30 BST,EVE v CHE,90,yes,false,false,false
+5,2026-09-18T17:30:00Z,Fri 18 Sep 18:30 BST,2026-09-18T19:00:00Z,Fri 18 Sep 20:00 BST,BRE v CHE,90,yes,true,false,false
+6,2026-10-10T10:00:00Z,Sat 10 Oct 11:00 BST,2026-10-10T11:30:00Z,Sat 10 Oct 12:30 BST,ARS v LEE,90,yes,false,true,false
+7,2026-10-17T10:00:00Z,Sat 17 Oct 11:00 BST,2026-10-17T11:30:00Z,Sat 17 Oct 12:30 BST,EVE v CHE,90,yes,false,false,true
 8,2026-10-23T17:30:00Z,Fri 23 Oct 18:30 BST,2026-10-23T19:00:00Z,Fri 23 Oct 20:00 BST,IPS v NFO,90,yes,false,false,false
 9,2026-10-31T11:00:00Z,Sat 31 Oct 11:00 GMT,2026-10-31T12:30:00Z,Sat 31 Oct 12:30 GMT,CHE v MUN,90,yes,false,false,false
 10,2026-11-06T18:30:00Z,Fri 06 Nov 18:30 GMT,2026-11-06T20:00:00Z,Fri 06 Nov 20:00 GMT,EVE v COV,90,yes,false,false,false

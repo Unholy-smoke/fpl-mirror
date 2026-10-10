@@ -1,27 +1,27 @@
 {
- "checked_utc": "2026-10-10T10:08:19Z",
- "snapshot_run_at": "2026-10-10T10:08:14Z",
+ "checked_utc": "2026-10-10T10:59:32Z",
+ "snapshot_run_at": "2026-10-10T10:57:48Z",
  "worst": "WARN",
  "results": [
   {
    "level": "OK",
    "check": "freshness",
-   "msg": "last snapshot 2026-10-10T10:08:14Z (Sat 10 Oct 11:08 BST), 0.0h old"
+   "msg": "last snapshot 2026-10-10T10:57:48Z (Sat 10 Oct 11:57 BST), 0.0h old"
   },
   {
    "level": "WARN",
    "check": "fetches",
-   "msg": "failed_this_run=4; core keys fresh"
+   "msg": "failed_this_run=1; core keys fresh"
   },
   {
    "level": "OK",
    "check": "rivals",
-   "msg": "9 entries, GW5 picks + transfers present for all"
+   "msg": "9 entries, GW6 picks + transfers present for all"
   },
   {
    "level": "OK",
    "check": "progress",
-   "msg": "2026-10-10.csv: 3 stamps, rows/stamp [667]; newest stamp matches bootstrap (667 elements)"
+   "msg": "2026-10-10.csv: 4 stamps, rows/stamp [667]; newest stamp matches bootstrap (667 elements)"
   },
   {
    "level": "OK",
