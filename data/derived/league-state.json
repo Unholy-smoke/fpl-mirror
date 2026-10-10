@@ -2,7 +2,7 @@
  "schema": "league-state/1",
  "as_of_gw": 6,
  "ft_for_gw": 7,
- "source_run_at": "2026-10-10T16:14:47Z",
+ "source_run_at": "2026-10-10T17:48:27Z",
  "league": "Shabanga",
  "entries": [
   {
@@ -214,7 +214,7 @@
      "now": 6.2,
      "selling": 6.2,
      "purchase_source": "transfer log",
-     "status": "a"
+     "status": "d"
     },
     {
      "element_id": 277,
@@ -336,7 +336,7 @@
      "now": 6.2,
      "selling": 6.1,
      "purchase_source": "transfer log",
-     "status": "a"
+     "status": "d"
     },
     {
      "element_id": 542,
@@ -877,7 +877,7 @@
      "now": 6.2,
      "selling": 6.1,
      "purchase_source": "start price",
-     "status": "a"
+     "status": "d"
     },
     {
      "element_id": 411,
@@ -971,8 +971,8 @@
    "manager": "Craig Bowen",
    "team_name": "The Krejci Gang",
    "rank": 5,
-   "total": 374,
-   "gw_points": 42,
+   "total": 376,
+   "gw_points": 44,
    "bank": 0.3,
    "free_transfers": 2,
    "transfers_total": 4,
@@ -1335,7 +1335,7 @@
      "now": 6.2,
      "selling": 6.2,
      "purchase_source": "transfer log",
-     "status": "a"
+     "status": "d"
     },
     {
      "element_id": 138,
@@ -1443,8 +1443,8 @@
    "manager": "Dean Barr",
    "team_name": "Dean's Team",
    "rank": 7,
-   "total": 338,
-   "gw_points": 46,
+   "total": 339,
+   "gw_points": 47,
    "bank": 1.8,
    "free_transfers": 2,
    "transfers_total": 4,
@@ -1643,7 +1643,7 @@
      "now": 6.2,
      "selling": 6.1,
      "purchase_source": "transfer log",
-     "status": "a"
+     "status": "d"
     },
     {
      "element_id": 391,
@@ -1681,8 +1681,8 @@
    "manager": "Matt Fox",
    "team_name": "Zero Fox Given",
    "rank": 8,
-   "total": 315,
-   "gw_points": 50,
+   "total": 320,
+   "gw_points": 55,
    "bank": 0.6,
    "free_transfers": 3,
    "transfers_total": 3,
@@ -1919,8 +1919,8 @@
    "manager": "Richard Wisdom",
    "team_name": "WhenTheYrEndsIn7",
    "rank": 9,
-   "total": 307,
-   "gw_points": 30,
+   "total": 308,
+   "gw_points": 31,
    "bank": 0.3,
    "free_transfers": 2,
    "transfers_total": 5,

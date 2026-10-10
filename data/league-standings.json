@@ -1,5 +1,5 @@
 {
-  "last_updated_data": "2026-10-10T16:10:09Z",
+  "last_updated_data": "2026-10-10T17:47:05Z",
   "league": {
     "admin_entry": 118670,
     "closed": false,
@@ -72,12 +72,12 @@
         "club_badge_src": null,
         "entry": 3866837,
         "entry_name": "The Krejci Gang",
-        "event_total": 42,
+        "event_total": 44,
         "last_rank": 5,
         "player_name": "Craig Bowen",
         "rank": 5,
         "rank_sort": 5,
-        "total": 374
+        "total": 376
       },
       {
         "club_badge_src": null,
@@ -94,34 +94,34 @@
         "club_badge_src": null,
         "entry": 88625,
         "entry_name": "Dean's Team",
-        "event_total": 46,
+        "event_total": 47,
         "last_rank": 7,
         "player_name": "Dean Barr",
         "rank": 7,
         "rank_sort": 7,
-        "total": 338
+        "total": 339
       },
       {
         "club_badge_src": null,
         "entry": 7519117,
         "entry_name": "Zero Fox Given",
-        "event_total": 50,
+        "event_total": 55,
         "last_rank": 9,
         "player_name": "Matt Fox",
         "rank": 8,
         "rank_sort": 8,
-        "total": 315
+        "total": 320
       },
       {
         "club_badge_src": null,
         "entry": 6231483,
         "entry_name": "WhenTheYrEndsIn7",
-        "event_total": 30,
+        "event_total": 31,
         "last_rank": 8,
         "player_name": "Richard Wisdom",
         "rank": 9,
         "rank_sort": 9,
-        "total": 307
+        "total": 308
       }
     ]
   }
