@@ -1,12 +1,12 @@
 {
- "checked_utc": "2026-10-10T22:00:51Z",
- "snapshot_run_at": "2026-10-10T22:00:14Z",
+ "checked_utc": "2026-10-11T00:18:01Z",
+ "snapshot_run_at": "2026-10-11T00:17:23Z",
  "worst": "OK",
  "results": [
   {
    "level": "OK",
    "check": "freshness",
-   "msg": "last snapshot 2026-10-10T22:00:14Z (Sat 10 Oct 23:00 BST), 0.0h old"
+   "msg": "last snapshot 2026-10-11T00:17:23Z (Sun 11 Oct 01:17 BST), 0.0h old"
   },
   {
    "level": "OK",
@@ -21,12 +21,12 @@
   {
    "level": "OK",
    "check": "progress",
-   "msg": "2026-10-10.csv: 11 stamps, rows/stamp [667]; newest stamp matches bootstrap (667 elements)"
+   "msg": "2026-10-11.csv: 1 stamps, rows/stamp [667]; newest stamp matches bootstrap (667 elements)"
   },
   {
    "level": "OK",
    "check": "prices",
-   "msg": "446 rows; newest batch 2026-10-10T01:03:19Z (Sat 10 Oct 02:03 BST)"
+   "msg": "467 rows; newest batch 2026-10-11T00:17:23Z (Sun 11 Oct 01:17 BST)"
   },
   {
    "level": "OK",
