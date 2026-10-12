@@ -2,7 +2,7 @@
  "schema": "league-state/1",
  "as_of_gw": 6,
  "ft_for_gw": 7,
- "source_run_at": "2026-10-12T19:23:20Z",
+ "source_run_at": "2026-10-12T21:42:28Z",
  "league": "Shabanga",
  "entries": [
   {
@@ -252,8 +252,8 @@
    "manager": "B Kites",
    "team_name": "Nwaneris Mate!",
    "rank": 2,
-   "total": 418,
-   "gw_points": 57,
+   "total": 419,
+   "gw_points": 58,
    "bank": 2.8,
    "free_transfers": 1,
    "transfers_total": 5,
@@ -485,9 +485,9 @@
    "is_ben": false,
    "manager": "Ken Wan",
    "team_name": "The Special Wan",
-   "rank": 2,
-   "total": 418,
-   "gw_points": 78,
+   "rank": 3,
+   "total": 417,
+   "gw_points": 77,
    "bank": 1.0,
    "free_transfers": 1,
    "transfers_total": 5,
@@ -730,8 +730,8 @@
    "manager": "ifor jones",
    "team_name": "Cene Juan Cene Jamal",
    "rank": 4,
-   "total": 397,
-   "gw_points": 55,
+   "total": 398,
+   "gw_points": 56,
    "bank": 1.9,
    "free_transfers": 3,
    "transfers_total": 3,
@@ -1171,7 +1171,7 @@
      "now": 4.3,
      "selling": 4.3,
      "purchase_source": "start price",
-     "status": "a"
+     "status": "d"
     },
     {
      "element_id": 173,
@@ -1443,8 +1443,8 @@
    "manager": "Dean Barr",
    "team_name": "Dean's Team",
    "rank": 7,
-   "total": 358,
-   "gw_points": 66,
+   "total": 363,
+   "gw_points": 71,
    "bank": 1.8,
    "free_transfers": 2,
    "transfers_total": 4,
@@ -1905,7 +1905,7 @@
      "now": 4.3,
      "selling": 4.3,
      "purchase_source": "start price",
-     "status": "a"
+     "status": "d"
     }
    ]
   },
