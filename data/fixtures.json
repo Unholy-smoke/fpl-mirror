@@ -21768,17 +21768,208 @@
     "finished_provisional": false,
     "id": 54,
     "kickoff_time": "2026-10-12T19:00:00Z",
-    "minutes": 0,
+    "minutes": 16,
     "provisional_start_time": false,
     "pulse_id": 0,
-    "started": false,
-    "stats": [],
+    "started": true,
+    "stats": [
+      {
+        "a": [],
+        "h": [
+          {
+            "element": 183,
+            "value": 1
+          }
+        ],
+        "identifier": "goals_scored"
+      },
+      {
+        "a": [],
+        "h": [
+          {
+            "element": 599,
+            "value": 1
+          }
+        ],
+        "identifier": "assists"
+      },
+      {
+        "a": [],
+        "h": [],
+        "identifier": "own_goals"
+      },
+      {
+        "a": [],
+        "h": [],
+        "identifier": "penalties_saved"
+      },
+      {
+        "a": [],
+        "h": [],
+        "identifier": "penalties_missed"
+      },
+      {
+        "a": [],
+        "h": [],
+        "identifier": "yellow_cards"
+      },
+      {
+        "a": [],
+        "h": [],
+        "identifier": "red_cards"
+      },
+      {
+        "a": [],
+        "h": [
+          {
+            "element": 110,
+            "value": 1
+          }
+        ],
+        "identifier": "saves"
+      },
+      {
+        "a": [],
+        "h": [],
+        "identifier": "bonus"
+      },
+      {
+        "a": [
+          {
+            "element": 453,
+            "value": 5
+          },
+          {
+            "element": 459,
+            "value": 5
+          },
+          {
+            "element": 460,
+            "value": 5
+          },
+          {
+            "element": 634,
+            "value": 4
+          },
+          {
+            "element": 405,
+            "value": 3
+          },
+          {
+            "element": 457,
+            "value": 2
+          },
+          {
+            "element": 464,
+            "value": 2
+          },
+          {
+            "element": 445,
+            "value": -1
+          },
+          {
+            "element": 447,
+            "value": -1
+          },
+          {
+            "element": 449,
+            "value": -1
+          },
+          {
+            "element": 567,
+            "value": -5
+          }
+        ],
+        "h": [
+          {
+            "element": 183,
+            "value": 22
+          },
+          {
+            "element": 599,
+            "value": 12
+          },
+          {
+            "element": 110,
+            "value": 6
+          },
+          {
+            "element": 173,
+            "value": 4
+          },
+          {
+            "element": 194,
+            "value": 4
+          },
+          {
+            "element": 91,
+            "value": 3
+          },
+          {
+            "element": 176,
+            "value": 3
+          },
+          {
+            "element": 184,
+            "value": 3
+          },
+          {
+            "element": 186,
+            "value": 3
+          },
+          {
+            "element": 575,
+            "value": 3
+          },
+          {
+            "element": 175,
+            "value": 2
+          }
+        ],
+        "identifier": "bps"
+      },
+      {
+        "a": [
+          {
+            "element": 459,
+            "value": 3
+          },
+          {
+            "element": 447,
+            "value": 1
+          },
+          {
+            "element": 460,
+            "value": 1
+          },
+          {
+            "element": 634,
+            "value": 1
+          }
+        ],
+        "h": [
+          {
+            "element": 173,
+            "value": 5
+          },
+          {
+            "element": 183,
+            "value": 1
+          },
+          {
+            "element": 575,
+            "value": 1
+          }
+        ],
+        "identifier": "defensive_contribution"
+      }
+    ],
     "team_a": 17,
     "team_a_difficulty": 2,
-    "team_a_score": null,
+    "team_a_score": 0,
     "team_h": 7,
     "team_h_difficulty": 3,
-    "team_h_score": null
+    "team_h_score": 1
   },
   {
     "code": 2645258,
