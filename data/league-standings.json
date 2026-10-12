@@ -1,5 +1,5 @@
 {
-  "last_updated_data": "2026-10-12T07:15:00Z",
+  "last_updated_data": "2026-10-12T11:20:02Z",
   "league": {
     "admin_entry": 118670,
     "closed": false,
@@ -37,22 +37,22 @@
       },
       {
         "club_badge_src": null,
-        "entry": 10324,
-        "entry_name": "The Special Wan",
-        "event_total": 77,
-        "last_rank": 4,
-        "player_name": "Ken Wan",
+        "entry": 8280153,
+        "entry_name": "Nwaneris Mate!",
+        "event_total": 56,
+        "last_rank": 1,
+        "player_name": "B Kites",
         "rank": 2,
         "rank_sort": 2,
         "total": 417
       },
       {
         "club_badge_src": null,
-        "entry": 8280153,
-        "entry_name": "Nwaneris Mate!",
-        "event_total": 56,
-        "last_rank": 1,
-        "player_name": "B Kites",
+        "entry": 10324,
+        "entry_name": "The Special Wan",
+        "event_total": 77,
+        "last_rank": 4,
+        "player_name": "Ken Wan",
         "rank": 2,
         "rank_sort": 3,
         "total": 417
