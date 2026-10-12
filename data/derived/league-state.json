@@ -2,7 +2,7 @@
  "schema": "league-state/1",
  "as_of_gw": 6,
  "ft_for_gw": 7,
- "source_run_at": "2026-10-11T22:28:50Z",
+ "source_run_at": "2026-10-12T00:39:49Z",
  "league": "Shabanga",
  "entries": [
   {
@@ -32,7 +32,7 @@
     "freehit",
     "3xc"
    ],
-   "selling_value": 99.9,
+   "selling_value": 100.1,
    "squad": [
     {
      "element_id": 1,
@@ -85,8 +85,8 @@
      "captain": false,
      "vice": false,
      "purchase": 4.9,
-     "now": 5.0,
-     "selling": 4.9,
+     "now": 5.1,
+     "selling": 5.0,
      "purchase_source": "transfer log",
      "status": "a"
     },
@@ -113,8 +113,8 @@
      "captain": false,
      "vice": false,
      "purchase": 7.7,
-     "now": 7.8,
-     "selling": 7.7,
+     "now": 7.9,
+     "selling": 7.8,
      "purchase_source": "transfer log",
      "status": "a"
     },
@@ -155,7 +155,7 @@
      "captain": false,
      "vice": false,
      "purchase": 7.7,
-     "now": 7.7,
+     "now": 7.8,
      "selling": 7.7,
      "purchase_source": "transfer log",
      "status": "a"
@@ -242,250 +242,6 @@
      "now": 5.0,
      "selling": 5.0,
      "purchase_source": "start price",
-     "status": "a"
-    }
-   ]
-  },
-  {
-   "entry": 10324,
-   "is_ben": false,
-   "manager": "Ken Wan",
-   "team_name": "The Special Wan",
-   "rank": 2,
-   "total": 417,
-   "gw_points": 77,
-   "bank": 1.0,
-   "free_transfers": 1,
-   "transfers_total": 5,
-   "hits_total": 4,
-   "active_chip_gw": null,
-   "chips_played": [
-    {
-     "name": "bboost",
-     "gw": 1
-    },
-    {
-     "name": "wildcard",
-     "gw": 3
-    },
-    {
-     "name": "3xc",
-     "gw": 4
-    }
-   ],
-   "chips_held_now": [
-    "freehit"
-   ],
-   "selling_value": 99.9,
-   "squad": [
-    {
-     "element_id": 1,
-     "web_name": "Raya",
-     "team": "ARS",
-     "pos": "GK",
-     "slot": 1,
-     "captain": false,
-     "vice": false,
-     "purchase": 6.0,
-     "now": 6.1,
-     "selling": 6.0,
-     "purchase_source": "transfer log",
-     "status": "a"
-    },
-    {
-     "element_id": 201,
-     "web_name": "Muñoz",
-     "team": "NFO",
-     "pos": "DEF",
-     "slot": 2,
-     "captain": false,
-     "vice": false,
-     "purchase": 5.4,
-     "now": 5.4,
-     "selling": 5.4,
-     "purchase_source": "transfer log",
-     "status": "a"
-    },
-    {
-     "element_id": 8,
-     "web_name": "Calafiori",
-     "team": "ARS",
-     "pos": "DEF",
-     "slot": 3,
-     "captain": false,
-     "vice": false,
-     "purchase": 5.5,
-     "now": 5.9,
-     "selling": 5.7,
-     "purchase_source": "start price",
-     "status": "a"
-    },
-    {
-     "element_id": 115,
-     "web_name": "De Cuyper",
-     "team": "BHA",
-     "pos": "DEF",
-     "slot": 4,
-     "captain": false,
-     "vice": false,
-     "purchase": 4.7,
-     "now": 5.0,
-     "selling": 4.8,
-     "purchase_source": "transfer log",
-     "status": "a"
-    },
-    {
-     "element_id": 449,
-     "web_name": "Hall",
-     "team": "NEW",
-     "pos": "DEF",
-     "slot": 5,
-     "captain": false,
-     "vice": false,
-     "purchase": 5.1,
-     "now": 5.3,
-     "selling": 5.2,
-     "purchase_source": "transfer log",
-     "status": "a"
-    },
-    {
-     "element_id": 480,
-     "web_name": "Gibbs-White",
-     "team": "NFO",
-     "pos": "MID",
-     "slot": 6,
-     "captain": false,
-     "vice": true,
-     "purchase": 7.9,
-     "now": 8.0,
-     "selling": 7.9,
-     "purchase_source": "transfer log",
-     "status": "a"
-    },
-    {
-     "element_id": 40,
-     "web_name": "Rogers",
-     "team": "CHE",
-     "pos": "MID",
-     "slot": 7,
-     "captain": false,
-     "vice": false,
-     "purchase": 7.6,
-     "now": 7.8,
-     "selling": 7.7,
-     "purchase_source": "transfer log",
-     "status": "a"
-    },
-    {
-     "element_id": 154,
-     "web_name": "Palmer",
-     "team": "CHE",
-     "pos": "MID",
-     "slot": 8,
-     "captain": false,
-     "vice": false,
-     "purchase": 9.6,
-     "now": 9.7,
-     "selling": 9.6,
-     "purchase_source": "transfer log",
-     "status": "a"
-    },
-    {
-     "element_id": 124,
-     "web_name": "Groß",
-     "team": "BHA",
-     "pos": "MID",
-     "slot": 9,
-     "captain": false,
-     "vice": false,
-     "purchase": 5.7,
-     "now": 6.0,
-     "selling": 5.8,
-     "purchase_source": "transfer log",
-     "status": "a"
-    },
-    {
-     "element_id": 165,
-     "web_name": "João Pedro",
-     "team": "CHE",
-     "pos": "FWD",
-     "slot": 10,
-     "captain": false,
-     "vice": false,
-     "purchase": 7.5,
-     "now": 7.7,
-     "selling": 7.6,
-     "purchase_source": "start price",
-     "status": "a"
-    },
-    {
-     "element_id": 411,
-     "web_name": "Haaland",
-     "team": "MCI",
-     "pos": "FWD",
-     "slot": 11,
-     "captain": true,
-     "vice": false,
-     "purchase": 15.5,
-     "now": 15.6,
-     "selling": 15.5,
-     "purchase_source": "transfer log",
-     "status": "a"
-    },
-    {
-     "element_id": 111,
-     "web_name": "Steele",
-     "team": "BHA",
-     "pos": "GK",
-     "slot": 12,
-     "captain": false,
-     "vice": false,
-     "purchase": 4.0,
-     "now": 4.0,
-     "selling": 4.0,
-     "purchase_source": "transfer log",
-     "status": "a"
-    },
-    {
-     "element_id": 464,
-     "web_name": "Wissa",
-     "team": "NEW",
-     "pos": "FWD",
-     "slot": 13,
-     "captain": false,
-     "vice": false,
-     "purchase": 6.1,
-     "now": 6.3,
-     "selling": 6.2,
-     "purchase_source": "transfer log",
-     "status": "a"
-    },
-    {
-     "element_id": 277,
-     "web_name": "Egan",
-     "team": "HUL",
-     "pos": "DEF",
-     "slot": 14,
-     "captain": false,
-     "vice": false,
-     "purchase": 4.0,
-     "now": 4.1,
-     "selling": 4.0,
-     "purchase_source": "transfer log",
-     "status": "a"
-    },
-    {
-     "element_id": 290,
-     "web_name": "Slater",
-     "team": "HUL",
-     "pos": "MID",
-     "slot": 15,
-     "captain": false,
-     "vice": false,
-     "purchase": 4.5,
-     "now": 4.5,
-     "selling": 4.5,
-     "purchase_source": "transfer log",
      "status": "a"
     }
    ]
@@ -661,7 +417,7 @@
      "captain": false,
      "vice": true,
      "purchase": 7.5,
-     "now": 7.7,
+     "now": 7.8,
      "selling": 7.6,
      "purchase_source": "start price",
      "status": "a"
@@ -720,6 +476,250 @@
      "now": 4.0,
      "selling": 4.0,
      "purchase_source": "start price",
+     "status": "a"
+    }
+   ]
+  },
+  {
+   "entry": 10324,
+   "is_ben": false,
+   "manager": "Ken Wan",
+   "team_name": "The Special Wan",
+   "rank": 2,
+   "total": 417,
+   "gw_points": 77,
+   "bank": 1.0,
+   "free_transfers": 1,
+   "transfers_total": 5,
+   "hits_total": 4,
+   "active_chip_gw": null,
+   "chips_played": [
+    {
+     "name": "bboost",
+     "gw": 1
+    },
+    {
+     "name": "wildcard",
+     "gw": 3
+    },
+    {
+     "name": "3xc",
+     "gw": 4
+    }
+   ],
+   "chips_held_now": [
+    "freehit"
+   ],
+   "selling_value": 100.0,
+   "squad": [
+    {
+     "element_id": 1,
+     "web_name": "Raya",
+     "team": "ARS",
+     "pos": "GK",
+     "slot": 1,
+     "captain": false,
+     "vice": false,
+     "purchase": 6.0,
+     "now": 6.1,
+     "selling": 6.0,
+     "purchase_source": "transfer log",
+     "status": "a"
+    },
+    {
+     "element_id": 201,
+     "web_name": "Muñoz",
+     "team": "NFO",
+     "pos": "DEF",
+     "slot": 2,
+     "captain": false,
+     "vice": false,
+     "purchase": 5.4,
+     "now": 5.4,
+     "selling": 5.4,
+     "purchase_source": "transfer log",
+     "status": "a"
+    },
+    {
+     "element_id": 8,
+     "web_name": "Calafiori",
+     "team": "ARS",
+     "pos": "DEF",
+     "slot": 3,
+     "captain": false,
+     "vice": false,
+     "purchase": 5.5,
+     "now": 5.9,
+     "selling": 5.7,
+     "purchase_source": "start price",
+     "status": "a"
+    },
+    {
+     "element_id": 115,
+     "web_name": "De Cuyper",
+     "team": "BHA",
+     "pos": "DEF",
+     "slot": 4,
+     "captain": false,
+     "vice": false,
+     "purchase": 4.7,
+     "now": 5.1,
+     "selling": 4.9,
+     "purchase_source": "transfer log",
+     "status": "a"
+    },
+    {
+     "element_id": 449,
+     "web_name": "Hall",
+     "team": "NEW",
+     "pos": "DEF",
+     "slot": 5,
+     "captain": false,
+     "vice": false,
+     "purchase": 5.1,
+     "now": 5.3,
+     "selling": 5.2,
+     "purchase_source": "transfer log",
+     "status": "a"
+    },
+    {
+     "element_id": 480,
+     "web_name": "Gibbs-White",
+     "team": "NFO",
+     "pos": "MID",
+     "slot": 6,
+     "captain": false,
+     "vice": true,
+     "purchase": 7.9,
+     "now": 8.0,
+     "selling": 7.9,
+     "purchase_source": "transfer log",
+     "status": "a"
+    },
+    {
+     "element_id": 40,
+     "web_name": "Rogers",
+     "team": "CHE",
+     "pos": "MID",
+     "slot": 7,
+     "captain": false,
+     "vice": false,
+     "purchase": 7.6,
+     "now": 7.9,
+     "selling": 7.7,
+     "purchase_source": "transfer log",
+     "status": "a"
+    },
+    {
+     "element_id": 154,
+     "web_name": "Palmer",
+     "team": "CHE",
+     "pos": "MID",
+     "slot": 8,
+     "captain": false,
+     "vice": false,
+     "purchase": 9.6,
+     "now": 9.7,
+     "selling": 9.6,
+     "purchase_source": "transfer log",
+     "status": "a"
+    },
+    {
+     "element_id": 124,
+     "web_name": "Groß",
+     "team": "BHA",
+     "pos": "MID",
+     "slot": 9,
+     "captain": false,
+     "vice": false,
+     "purchase": 5.7,
+     "now": 6.0,
+     "selling": 5.8,
+     "purchase_source": "transfer log",
+     "status": "a"
+    },
+    {
+     "element_id": 165,
+     "web_name": "João Pedro",
+     "team": "CHE",
+     "pos": "FWD",
+     "slot": 10,
+     "captain": false,
+     "vice": false,
+     "purchase": 7.5,
+     "now": 7.8,
+     "selling": 7.6,
+     "purchase_source": "start price",
+     "status": "a"
+    },
+    {
+     "element_id": 411,
+     "web_name": "Haaland",
+     "team": "MCI",
+     "pos": "FWD",
+     "slot": 11,
+     "captain": true,
+     "vice": false,
+     "purchase": 15.5,
+     "now": 15.6,
+     "selling": 15.5,
+     "purchase_source": "transfer log",
+     "status": "a"
+    },
+    {
+     "element_id": 111,
+     "web_name": "Steele",
+     "team": "BHA",
+     "pos": "GK",
+     "slot": 12,
+     "captain": false,
+     "vice": false,
+     "purchase": 4.0,
+     "now": 4.0,
+     "selling": 4.0,
+     "purchase_source": "transfer log",
+     "status": "a"
+    },
+    {
+     "element_id": 464,
+     "web_name": "Wissa",
+     "team": "NEW",
+     "pos": "FWD",
+     "slot": 13,
+     "captain": false,
+     "vice": false,
+     "purchase": 6.1,
+     "now": 6.3,
+     "selling": 6.2,
+     "purchase_source": "transfer log",
+     "status": "a"
+    },
+    {
+     "element_id": 277,
+     "web_name": "Egan",
+     "team": "HUL",
+     "pos": "DEF",
+     "slot": 14,
+     "captain": false,
+     "vice": false,
+     "purchase": 4.0,
+     "now": 4.1,
+     "selling": 4.0,
+     "purchase_source": "transfer log",
+     "status": "a"
+    },
+    {
+     "element_id": 290,
+     "web_name": "Slater",
+     "team": "HUL",
+     "pos": "MID",
+     "slot": 15,
+     "captain": false,
+     "vice": false,
+     "purchase": 4.5,
+     "now": 4.5,
+     "selling": 4.5,
+     "purchase_source": "transfer log",
      "status": "a"
     }
    ]
@@ -818,7 +818,7 @@
      "captain": false,
      "vice": false,
      "purchase": 5.0,
-     "now": 5.0,
+     "now": 5.1,
      "selling": 5.0,
      "purchase_source": "transfer log",
      "status": "a"
@@ -944,7 +944,7 @@
      "captain": false,
      "vice": false,
      "purchase": 5.1,
-     "now": 5.1,
+     "now": 5.2,
      "selling": 5.1,
      "purchase_source": "transfer log",
      "status": "a"
@@ -989,7 +989,7 @@
     "freehit",
     "3xc"
    ],
-   "selling_value": 99.2,
+   "selling_value": 99.3,
    "squad": [
     {
      "element_id": 496,
@@ -1028,8 +1028,8 @@
      "captain": false,
      "vice": false,
      "purchase": 4.7,
-     "now": 5.0,
-     "selling": 4.8,
+     "now": 5.1,
+     "selling": 4.9,
      "purchase_source": "transfer log",
      "status": "a"
     },
@@ -1126,7 +1126,7 @@
      "captain": false,
      "vice": true,
      "purchase": 7.5,
-     "now": 7.7,
+     "now": 7.8,
      "selling": 7.6,
      "purchase_source": "start price",
      "status": "a"
@@ -1374,7 +1374,7 @@
      "captain": false,
      "vice": false,
      "purchase": 7.5,
-     "now": 7.7,
+     "now": 7.8,
      "selling": 7.6,
      "purchase_source": "start price",
      "status": "a"
@@ -1461,7 +1461,7 @@
     "bboost",
     "3xc"
    ],
-   "selling_value": 98.5,
+   "selling_value": 98.7,
    "squad": [
     {
      "element_id": 496,
@@ -1556,8 +1556,8 @@
      "captain": false,
      "vice": false,
      "purchase": 7.7,
-     "now": 7.8,
-     "selling": 7.7,
+     "now": 7.9,
+     "selling": 7.8,
      "purchase_source": "transfer log",
      "status": "a"
     },
@@ -1598,7 +1598,7 @@
      "captain": false,
      "vice": true,
      "purchase": 7.7,
-     "now": 7.7,
+     "now": 7.8,
      "selling": 7.7,
      "purchase_source": "transfer log",
      "status": "a"
@@ -1668,8 +1668,8 @@
      "captain": false,
      "vice": false,
      "purchase": 4.5,
-     "now": 4.6,
-     "selling": 4.5,
+     "now": 4.7,
+     "selling": 4.6,
      "purchase_source": "transfer log",
      "status": "a"
     }
@@ -1695,7 +1695,7 @@
     "bboost",
     "3xc"
    ],
-   "selling_value": 99.3,
+   "selling_value": 99.1,
    "squad": [
     {
      "element_id": 250,
@@ -1790,8 +1790,8 @@
      "captain": false,
      "vice": true,
      "purchase": 8.5,
-     "now": 8.4,
-     "selling": 8.4,
+     "now": 8.3,
+     "selling": 8.3,
      "purchase_source": "start price",
      "status": "a"
     },
@@ -1818,8 +1818,8 @@
      "captain": false,
      "vice": false,
      "purchase": 7.2,
-     "now": 7.2,
-     "selling": 7.2,
+     "now": 7.1,
+     "selling": 7.1,
      "purchase_source": "transfer log",
      "status": "i"
     },
@@ -1832,7 +1832,7 @@
      "captain": false,
      "vice": false,
      "purchase": 7.5,
-     "now": 7.7,
+     "now": 7.8,
      "selling": 7.6,
      "purchase_source": "transfer log",
      "status": "a"
@@ -1933,7 +1933,7 @@
     "bboost",
     "3xc"
    ],
-   "selling_value": 98.8,
+   "selling_value": 98.9,
    "squad": [
     {
      "element_id": 412,
@@ -1958,7 +1958,7 @@
      "captain": false,
      "vice": false,
      "purchase": 4.8,
-     "now": 5.0,
+     "now": 5.1,
      "selling": 4.9,
      "purchase_source": "transfer log",
      "status": "a"
@@ -2014,8 +2014,8 @@
      "captain": false,
      "vice": false,
      "purchase": 7.5,
-     "now": 7.8,
-     "selling": 7.6,
+     "now": 7.9,
+     "selling": 7.7,
      "purchase_source": "start price",
      "status": "a"
     },
