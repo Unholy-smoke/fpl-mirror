@@ -2,7 +2,7 @@
  "schema": "league-state/1",
  "as_of_gw": 6,
  "ft_for_gw": 7,
- "source_run_at": "2026-10-13T20:50:00Z",
+ "source_run_at": "2026-10-13T23:07:37Z",
  "league": "Shabanga",
  "entries": [
   {
@@ -277,7 +277,7 @@
      "captain": false,
      "vice": false,
      "purchase": 4.5,
-     "now": 4.5,
+     "now": 4.6,
      "selling": 4.5,
      "purchase_source": "start price",
      "status": "a"
@@ -1304,7 +1304,7 @@
      "captain": false,
      "vice": false,
      "purchase": 7.8,
-     "now": 7.8,
+     "now": 7.9,
      "selling": 7.8,
      "purchase_source": "transfer log",
      "status": "a"
@@ -1570,7 +1570,7 @@
      "captain": false,
      "vice": false,
      "purchase": 7.8,
-     "now": 7.8,
+     "now": 7.9,
      "selling": 7.8,
      "purchase_source": "transfer log",
      "status": "a"
@@ -2098,7 +2098,7 @@
      "captain": false,
      "vice": false,
      "purchase": 4.5,
-     "now": 4.5,
+     "now": 4.6,
      "selling": 4.5,
      "purchase_source": "transfer log",
      "status": "a"
