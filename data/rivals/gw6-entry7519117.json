@@ -1,19 +1,26 @@
 {
   "active_chip": null,
-  "automatic_subs": [],
+  "automatic_subs": [
+    {
+      "element_in": 173,
+      "element_out": 368,
+      "entry": 7519117,
+      "event": 6
+    }
+  ],
   "entry_history": {
     "bank": 6,
     "event": 6,
     "event_transfers": 2,
     "event_transfers_cost": 0,
-    "overall_rank": 7035674,
+    "overall_rank": 7008775,
     "overall_rank_percentage": "64",
     "percentile_rank": 55,
-    "points": 54,
-    "points_on_bench": 24,
-    "rank": 5958221,
-    "rank_sort": 5980070,
-    "total_points": 319,
+    "points": 58,
+    "points_on_bench": 20,
+    "rank": 5700766,
+    "rank_sort": 5724650,
+    "total_points": 323,
     "value": 1002
   },
   "picks": [
@@ -50,20 +57,12 @@
       "position": 4
     },
     {
-      "element": 368,
-      "element_type": 3,
+      "element": 173,
+      "element_type": 2,
       "is_captain": false,
       "is_vice_captain": false,
       "multiplier": 1,
       "position": 5
-    },
-    {
-      "element": 40,
-      "element_type": 3,
-      "is_captain": false,
-      "is_vice_captain": false,
-      "multiplier": 1,
-      "position": 6
     },
     {
       "element": 12,
@@ -71,7 +70,7 @@
       "is_captain": false,
       "is_vice_captain": true,
       "multiplier": 1,
-      "position": 7
+      "position": 6
     },
     {
       "element": 426,
@@ -79,10 +78,18 @@
       "is_captain": true,
       "is_vice_captain": false,
       "multiplier": 2,
-      "position": 8
+      "position": 7
     },
     {
       "element": 154,
+      "element_type": 3,
+      "is_captain": false,
+      "is_vice_captain": false,
+      "multiplier": 1,
+      "position": 8
+    },
+    {
+      "element": 40,
       "element_type": 3,
       "is_captain": false,
       "is_vice_captain": false,
@@ -122,8 +129,8 @@
       "position": 13
     },
     {
-      "element": 173,
-      "element_type": 2,
+      "element": 368,
+      "element_type": 3,
       "is_captain": false,
       "is_vice_captain": false,
       "multiplier": 0,
