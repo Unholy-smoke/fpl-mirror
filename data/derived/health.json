@@ -1,12 +1,12 @@
 {
- "checked_utc": "2026-10-14T21:57:23Z",
- "snapshot_run_at": "2026-10-14T21:56:49Z",
- "worst": "OK",
+ "checked_utc": "2026-10-15T00:00:00Z",
+ "snapshot_run_at": "2026-10-14T23:59:24Z",
+ "worst": "WARN",
  "results": [
   {
    "level": "OK",
    "check": "freshness",
-   "msg": "last snapshot 2026-10-14T21:56:49Z (Wed 14 Oct 22:56 BST), 0.0h old"
+   "msg": "last snapshot 2026-10-14T23:59:24Z (Thu 15 Oct 00:59 BST), 0.0h old"
   },
   {
    "level": "OK",
@@ -19,14 +19,14 @@
    "msg": "9 entries, GW6 picks + transfers present for all"
   },
   {
-   "level": "OK",
+   "level": "WARN",
    "check": "progress",
-   "msg": "2026-10-14.csv: 8 stamps, rows/stamp [667]; newest stamp matches bootstrap (667 elements)"
+   "msg": "no file for today (2026-10-15) yet; newest 2026-10-14.csv: 9 stamps, rows/stamp [667]; newest stamp matches bootstrap (667 elements)"
   },
   {
    "level": "OK",
    "check": "prices",
-   "msg": "497 rows; newest batch 2026-10-13T23:07:37Z (Wed 14 Oct 00:07 BST)"
+   "msg": "502 rows; newest batch 2026-10-14T23:59:24Z (Thu 15 Oct 00:59 BST)"
   },
   {
    "level": "OK",
