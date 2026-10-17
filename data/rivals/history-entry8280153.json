@@ -1,5 +1,11 @@
 {
-  "chips": [],
+  "chips": [
+    {
+      "event": 7,
+      "name": "3xc",
+      "time": "2026-10-17T07:46:30.775913Z"
+    }
+  ],
   "current": [
     {
       "bank": 15,
@@ -90,6 +96,21 @@
       "rank_sort": 5693472,
       "total_points": 419,
       "value": 1012
+    },
+    {
+      "bank": 10,
+      "event": 7,
+      "event_transfers": 1,
+      "event_transfers_cost": 0,
+      "overall_rank": 726575,
+      "overall_rank_percentage": null,
+      "percentile_rank": null,
+      "points": 0,
+      "points_on_bench": 0,
+      "rank": null,
+      "rank_sort": null,
+      "total_points": 419,
+      "value": 1016
     }
   ],
   "past": [
