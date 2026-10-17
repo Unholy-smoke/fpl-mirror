@@ -2,7 +2,7 @@
  "schema": "league-state/1",
  "as_of_gw": 7,
  "ft_for_gw": 8,
- "source_run_at": "2026-10-17T16:20:15Z",
+ "source_run_at": "2026-10-17T17:58:09Z",
  "league": "Shabanga",
  "entries": [
   {
@@ -11,8 +11,8 @@
    "manager": "B Kites",
    "team_name": "Nwaneris Mate!",
    "rank": 1,
-   "total": 464,
-   "gw_points": 45,
+   "total": 465,
+   "gw_points": 46,
    "bank": 1.0,
    "free_transfers": 1,
    "transfers_total": 6,
@@ -249,8 +249,8 @@
    "manager": "Michael Jones",
    "team_name": "Ugarte Freund in Mee",
    "rank": 2,
-   "total": 453,
-   "gw_points": 32,
+   "total": 457,
+   "gw_points": 36,
    "bank": 0.7,
    "free_transfers": 3,
    "transfers_total": 5,
@@ -490,8 +490,8 @@
    "manager": "Ken Wan",
    "team_name": "The Special Wan",
    "rank": 3,
-   "total": 445,
-   "gw_points": 32,
+   "total": 447,
+   "gw_points": 34,
    "bank": 0.0,
    "free_transfers": 1,
    "transfers_total": 7,
@@ -1108,7 +1108,7 @@
      "now": 8.3,
      "selling": 8.3,
      "purchase_source": "transfer log",
-     "status": "a"
+     "status": "d"
     },
     {
      "element_id": 411,
@@ -1800,7 +1800,7 @@
      "now": 8.3,
      "selling": 8.3,
      "purchase_source": "start price",
-     "status": "a"
+     "status": "d"
     },
     {
      "element_id": 427,
