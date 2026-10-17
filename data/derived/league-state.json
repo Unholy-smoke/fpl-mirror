@@ -2,7 +2,7 @@
  "schema": "league-state/1",
  "as_of_gw": 7,
  "ft_for_gw": 8,
- "source_run_at": "2026-10-17T11:44:52Z",
+ "source_run_at": "2026-10-17T13:16:22Z",
  "league": "Shabanga",
  "entries": [
   {
@@ -11,8 +11,8 @@
    "manager": "Michael Jones",
    "team_name": "Ugarte Freund in Mee",
    "rank": 1,
-   "total": 423,
-   "gw_points": 2,
+   "total": 425,
+   "gw_points": 4,
    "bank": 0.7,
    "free_transfers": 3,
    "transfers_total": 5,
@@ -242,7 +242,7 @@
      "now": 6.2,
      "selling": 6.2,
      "purchase_source": "transfer log",
-     "status": "d"
+     "status": "a"
     }
    ]
   },
@@ -252,8 +252,8 @@
    "manager": "B Kites",
    "team_name": "Nwaneris Mate!",
    "rank": 2,
-   "total": 421,
-   "gw_points": 2,
+   "total": 423,
+   "gw_points": 4,
    "bank": 1.0,
    "free_transfers": 1,
    "transfers_total": 6,
@@ -466,7 +466,7 @@
      "now": 6.2,
      "selling": 6.1,
      "purchase_source": "transfer log",
-     "status": "d"
+     "status": "a"
     },
     {
      "element_id": 542,
@@ -490,8 +490,8 @@
    "manager": "Ken Wan",
    "team_name": "The Special Wan",
    "rank": 3,
-   "total": 416,
-   "gw_points": 3,
+   "total": 419,
+   "gw_points": 6,
    "bank": 0.0,
    "free_transfers": 1,
    "transfers_total": 7,
@@ -734,8 +734,8 @@
    "manager": "Craig Bowen",
    "team_name": "The Krejci Gang",
    "rank": 4,
-   "total": 400,
-   "gw_points": 3,
+   "total": 403,
+   "gw_points": 6,
    "bank": 0.3,
    "free_transfers": 3,
    "transfers_total": 4,
@@ -975,8 +975,8 @@
    "manager": "ifor jones",
    "team_name": "Cene Juan Cene Jamal",
    "rank": 5,
-   "total": 399,
-   "gw_points": 1,
+   "total": 400,
+   "gw_points": 2,
    "bank": 0.3,
    "free_transfers": 3,
    "transfers_total": 4,
@@ -1178,7 +1178,7 @@
      "now": 6.2,
      "selling": 6.1,
      "purchase_source": "start price",
-     "status": "d"
+     "status": "a"
     },
     {
      "element_id": 229,
@@ -1216,8 +1216,8 @@
    "manager": "Chris Hodierne",
    "team_name": "JesusSelsPopeSenesi",
    "rank": 6,
-   "total": 384,
-   "gw_points": 2,
+   "total": 386,
+   "gw_points": 4,
    "bank": 1.8,
    "free_transfers": 1,
    "transfers_total": 8,
@@ -1412,7 +1412,7 @@
      "now": 6.2,
      "selling": 6.2,
      "purchase_source": "transfer log",
-     "status": "d"
+     "status": "a"
     },
     {
      "element_id": 304,
@@ -1450,8 +1450,8 @@
    "manager": "Dean Barr",
    "team_name": "Dean's Team",
    "rank": 7,
-   "total": 365,
-   "gw_points": 2,
+   "total": 367,
+   "gw_points": 4,
    "bank": 1.8,
    "free_transfers": 3,
    "transfers_total": 4,
@@ -1650,7 +1650,7 @@
      "now": 6.2,
      "selling": 6.1,
      "purchase_source": "transfer log",
-     "status": "d"
+     "status": "a"
     },
     {
      "element_id": 175,
@@ -1688,8 +1688,8 @@
    "manager": "Richard Wisdom",
    "team_name": "WhenTheYrEndsIn7",
    "rank": 8,
-   "total": 338,
-   "gw_points": 1,
+   "total": 339,
+   "gw_points": 2,
    "bank": 2.2,
    "free_transfers": 2,
    "transfers_total": 6,
@@ -1922,8 +1922,8 @@
    "manager": "Matt Fox",
    "team_name": "Zero Fox Given",
    "rank": 9,
-   "total": 321,
-   "gw_points": 2,
+   "total": 323,
+   "gw_points": 4,
    "bank": 0.8,
    "free_transfers": 1,
    "transfers_total": 6,
