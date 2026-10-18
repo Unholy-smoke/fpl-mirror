@@ -24213,6 +24213,10 @@
             "value": 4
           },
           {
+            "element": 668,
+            "value": 4
+          },
+          {
             "element": 536,
             "value": 2
           },
@@ -24334,6 +24338,10 @@
           {
             "element": 545,
             "value": 4
+          },
+          {
+            "element": 668,
+            "value": 3
           },
           {
             "element": 543,
@@ -24531,12 +24539,12 @@
             "value": 3
           },
           {
-            "element": 114,
+            "element": 129,
             "value": 2
           },
           {
-            "element": 129,
-            "value": 2
+            "element": 114,
+            "value": 1
           }
         ],
         "identifier": "bonus"
@@ -24584,6 +24592,10 @@
             "value": 2
           },
           {
+            "element": 199,
+            "value": 1
+          },
+          {
             "element": 633,
             "value": -4
           },
@@ -24610,12 +24622,12 @@
             "value": 49
           },
           {
-            "element": 114,
+            "element": 129,
             "value": 39
           },
           {
-            "element": 129,
-            "value": 39
+            "element": 114,
+            "value": 38
           },
           {
             "element": 504,
