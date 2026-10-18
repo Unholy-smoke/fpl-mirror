@@ -52,7 +52,7 @@
         "entry_can_leave": false,
         "entry_last_rank": 119985,
         "entry_percentile_rank": 10,
-        "entry_rank": 119189,
+        "entry_rank": 119190,
         "featured_entry_ids": [],
         "has_cup": true,
         "id": 16,
@@ -144,7 +144,7 @@
         "entry_can_leave": false,
         "entry_last_rank": 657881,
         "entry_percentile_rank": 10,
-        "entry_rank": 646583,
+        "entry_rank": 646582,
         "featured_entry_ids": [],
         "has_cup": false,
         "id": 276,
@@ -190,7 +190,7 @@
         "entry_can_leave": false,
         "entry_last_rank": 657904,
         "entry_percentile_rank": 10,
-        "entry_rank": 646615,
+        "entry_rank": 646614,
         "featured_entry_ids": [],
         "has_cup": true,
         "id": 314,
@@ -308,14 +308,14 @@
             "total": 488
           },
           {
-            "entry_percentile_rank": 15,
+            "entry_percentile_rank": 30,
             "last_rank": 2,
             "league_id": 1420403,
             "phase": 4,
-            "rank": 1,
+            "rank": 2,
             "rank_count": 7,
-            "rank_sort": 1,
-            "total": 106
+            "rank_sort": 2,
+            "total": 135
           }
         ],
         "admin_entry": 6434407,
@@ -358,10 +358,10 @@
             "last_rank": 2626146,
             "league_id": 2430021,
             "phase": 4,
-            "rank": 1763629,
-            "rank_count": 11064041,
-            "rank_sort": 1764664,
-            "total": 106
+            "rank": 1856651,
+            "rank_count": 11063619,
+            "rank_sort": 1857506,
+            "total": 135
           }
         ],
         "admin_entry": null,
@@ -374,7 +374,7 @@
         "entry_can_leave": false,
         "entry_last_rank": 2626146,
         "entry_percentile_rank": 20,
-        "entry_rank": 1856324,
+        "entry_rank": 1856320,
         "featured_entry_ids": [],
         "has_cup": false,
         "id": 2430021,
@@ -412,8 +412,8 @@
   "player_region_name": "Afghanistan",
   "started_event": 1,
   "summary_event_points": 67,
-  "summary_event_rank": 2265976,
+  "summary_event_rank": 2265977,
   "summary_overall_points": 488,
-  "summary_overall_rank": 646615,
+  "summary_overall_rank": 646614,
   "years_active": 15
 }
