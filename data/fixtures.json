@@ -25492,17 +25492,205 @@
     "finished_provisional": false,
     "id": 70,
     "kickoff_time": "2026-10-19T19:00:00Z",
-    "minutes": 0,
+    "minutes": 10,
     "provisional_start_time": false,
     "pulse_id": 0,
-    "started": false,
-    "stats": [],
+    "started": true,
+    "stats": [
+      {
+        "a": [],
+        "h": [],
+        "identifier": "goals_scored"
+      },
+      {
+        "a": [],
+        "h": [],
+        "identifier": "assists"
+      },
+      {
+        "a": [],
+        "h": [],
+        "identifier": "own_goals"
+      },
+      {
+        "a": [],
+        "h": [],
+        "identifier": "penalties_saved"
+      },
+      {
+        "a": [],
+        "h": [],
+        "identifier": "penalties_missed"
+      },
+      {
+        "a": [],
+        "h": [],
+        "identifier": "yellow_cards"
+      },
+      {
+        "a": [],
+        "h": [],
+        "identifier": "red_cards"
+      },
+      {
+        "a": [],
+        "h": [],
+        "identifier": "saves"
+      },
+      {
+        "a": [],
+        "h": [],
+        "identifier": "bonus"
+      },
+      {
+        "a": [
+          {
+            "element": 183,
+            "value": 4
+          },
+          {
+            "element": 599,
+            "value": 4
+          },
+          {
+            "element": 91,
+            "value": 3
+          },
+          {
+            "element": 110,
+            "value": 3
+          },
+          {
+            "element": 173,
+            "value": 3
+          },
+          {
+            "element": 175,
+            "value": 3
+          },
+          {
+            "element": 176,
+            "value": 3
+          },
+          {
+            "element": 184,
+            "value": 3
+          },
+          {
+            "element": 185,
+            "value": 3
+          },
+          {
+            "element": 194,
+            "value": 3
+          },
+          {
+            "element": 575,
+            "value": 3
+          }
+        ],
+        "h": [
+          {
+            "element": 147,
+            "value": 3
+          },
+          {
+            "element": 401,
+            "value": 3
+          },
+          {
+            "element": 496,
+            "value": 3
+          },
+          {
+            "element": 502,
+            "value": 3
+          },
+          {
+            "element": 503,
+            "value": 3
+          },
+          {
+            "element": 512,
+            "value": 3
+          },
+          {
+            "element": 515,
+            "value": 3
+          },
+          {
+            "element": 522,
+            "value": 3
+          },
+          {
+            "element": 112,
+            "value": 2
+          },
+          {
+            "element": 455,
+            "value": 2
+          },
+          {
+            "element": 526,
+            "value": 2
+          }
+        ],
+        "identifier": "bps"
+      },
+      {
+        "a": [
+          {
+            "element": 175,
+            "value": 2
+          },
+          {
+            "element": 91,
+            "value": 1
+          },
+          {
+            "element": 173,
+            "value": 1
+          },
+          {
+            "element": 575,
+            "value": 1
+          }
+        ],
+        "h": [
+          {
+            "element": 455,
+            "value": 2
+          },
+          {
+            "element": 503,
+            "value": 2
+          },
+          {
+            "element": 526,
+            "value": 2
+          },
+          {
+            "element": 147,
+            "value": 1
+          },
+          {
+            "element": 401,
+            "value": 1
+          },
+          {
+            "element": 515,
+            "value": 1
+          }
+        ],
+        "identifier": "defensive_contribution"
+      }
+    ],
     "team_a": 7,
     "team_a_difficulty": 3,
-    "team_a_score": null,
+    "team_a_score": 0,
     "team_h": 19,
     "team_h_difficulty": 2,
-    "team_h_score": null
+    "team_h_score": 0
   },
   {
     "code": 2645271,
