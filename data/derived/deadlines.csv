@@ -11,10 +11,10 @@ gw,deadline_utc,deadline_uk,first_kickoff_utc,first_kickoff_uk,first_fixture,ko_
 10,2026-11-06T18:30:00Z,Fri 06 Nov 18:30 GMT,2026-11-06T20:00:00Z,Fri 06 Nov 20:00 GMT,EVE v COV,90,yes,false,false,false
 11,2026-11-21T11:00:00Z,Sat 21 Nov 11:00 GMT,2026-11-21T12:30:00Z,Sat 21 Nov 12:30 GMT,MCI v FUL,90,yes,false,false,false
 12,2026-11-27T18:30:00Z,Fri 27 Nov 18:30 GMT,2026-11-27T20:00:00Z,Fri 27 Nov 20:00 GMT,NFO v CHE,90,yes,false,false,false
-13,2026-12-02T18:30:00Z,Wed 02 Dec 18:30 GMT,2026-12-02T20:00:00Z,Wed 02 Dec 20:00 GMT,AVL v EVE,90,yes,false,false,false
-14,2026-12-05T13:30:00Z,Sat 05 Dec 13:30 GMT,2026-12-05T15:00:00Z,Sat 05 Dec 15:00 GMT,AVL v CRY,90,yes,false,false,false
-15,2026-12-12T13:30:00Z,Sat 12 Dec 13:30 GMT,2026-12-12T15:00:00Z,Sat 12 Dec 15:00 GMT,ARS v BOU,90,yes,false,false,false
-16,2026-12-19T13:30:00Z,Sat 19 Dec 13:30 GMT,2026-12-19T15:00:00Z,Sat 19 Dec 15:00 GMT,ARS v MUN,90,yes,false,false,false
+13,2026-12-01T18:30:00Z,Tue 01 Dec 18:30 GMT,2026-12-01T20:00:00Z,Tue 01 Dec 20:00 GMT,COV v IPS,90,yes,false,false,false
+14,2026-12-05T11:00:00Z,Sat 05 Dec 11:00 GMT,2026-12-05T12:30:00Z,Sat 05 Dec 12:30 GMT,CHE v LIV,90,yes,false,false,false
+15,2026-12-12T13:30:00Z,Sat 12 Dec 13:30 GMT,2026-12-12T15:00:00Z,Sat 12 Dec 15:00 GMT,FUL v BRE,90,yes,false,false,false
+16,2026-12-19T11:00:00Z,Sat 19 Dec 11:00 GMT,2026-12-19T12:30:00Z,Sat 19 Dec 12:30 GMT,BRE v NEW,90,yes,false,false,false
 17,2026-12-26T11:00:00Z,Sat 26 Dec 11:00 GMT,2026-12-26T12:30:00Z,Sat 26 Dec 12:30 GMT,AVL v LEE,90,yes,false,false,false
 18,2026-12-29T18:00:00Z,Tue 29 Dec 18:00 GMT,2026-12-29T19:30:00Z,Tue 29 Dec 19:30 GMT,HUL v LEE,90,yes,false,false,false
 19,2027-01-01T18:30:00Z,Fri 01 Jan 18:30 GMT,2027-01-01T20:00:00Z,Fri 01 Jan 20:00 GMT,LEE v EVE,90,yes,false,false,false
