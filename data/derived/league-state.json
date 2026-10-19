@@ -2,7 +2,7 @@
  "schema": "league-state/1",
  "as_of_gw": 7,
  "ft_for_gw": 8,
- "source_run_at": "2026-10-19T20:43:46Z",
+ "source_run_at": "2026-10-19T22:38:30Z",
  "league": "Shabanga",
  "entries": [
   {
@@ -975,8 +975,8 @@
    "manager": "Craig Bowen",
    "team_name": "The Krejci Gang",
    "rank": 5,
-   "total": 464,
-   "gw_points": 67,
+   "total": 466,
+   "gw_points": 69,
    "bank": 0.3,
    "free_transfers": 3,
    "transfers_total": 4,

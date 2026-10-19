@@ -1,5 +1,5 @@
 {
-  "last_updated_data": "2026-10-19T20:41:45Z",
+  "last_updated_data": "2026-10-19T22:34:54Z",
   "league": {
     "admin_entry": 118670,
     "closed": false,
@@ -72,12 +72,12 @@
         "club_badge_src": null,
         "entry": 3866837,
         "entry_name": "The Krejci Gang",
-        "event_total": 67,
+        "event_total": 69,
         "last_rank": 5,
         "player_name": "Craig Bowen",
         "rank": 5,
         "rank_sort": 5,
-        "total": 464
+        "total": 466
       },
       {
         "club_badge_src": null,
