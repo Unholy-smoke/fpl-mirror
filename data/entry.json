@@ -26,9 +26,9 @@
             "last_rank": 119985,
             "league_id": 16,
             "phase": 1,
-            "rank": 119200,
-            "rank_count": 1819679,
-            "rank_sort": 119272,
+            "rank": 123843,
+            "rank_count": 1819675,
+            "rank_sort": 123917,
             "total": 488
           },
           {
@@ -36,9 +36,9 @@
             "last_rank": 407761,
             "league_id": 16,
             "phase": 4,
-            "rank": 302884,
-            "rank_count": 1819679,
-            "rank_sort": 303050,
+            "rank": 320375,
+            "rank_count": 1819674,
+            "rank_sort": 320528,
             "total": 135
           }
         ],
@@ -60,7 +60,7 @@
         "max_entries": null,
         "name": "Man Utd",
         "rank": null,
-        "rank_count": 1819679,
+        "rank_count": 1819675,
         "scoring": "c",
         "short_name": "team-16",
         "start_event": 1
@@ -72,9 +72,9 @@
             "last_rank": 113,
             "league_id": 21,
             "phase": 1,
-            "rank": 110,
+            "rank": 113,
             "rank_count": 3316,
-            "rank_sort": 110,
+            "rank_sort": 113,
             "total": 488
           },
           {
@@ -82,9 +82,9 @@
             "last_rank": 658,
             "league_id": 21,
             "phase": 4,
-            "rank": 393,
+            "rank": 417,
             "rank_count": 3316,
-            "rank_sort": 394,
+            "rank_sort": 418,
             "total": 135
           }
         ],
@@ -118,19 +118,19 @@
             "last_rank": 657881,
             "league_id": 276,
             "phase": 1,
-            "rank": 646633,
-            "rank_count": 8890711,
-            "rank_sort": 646943,
+            "rank": 674073,
+            "rank_count": 8890504,
+            "rank_sort": 674398,
             "total": 488
           },
           {
-            "entry_percentile_rank": 20,
+            "entry_percentile_rank": 25,
             "last_rank": 2262614,
             "league_id": 276,
             "phase": 4,
-            "rank": 1719621,
-            "rank_count": 8890690,
-            "rank_sort": 1720476,
+            "rank": 1830316,
+            "rank_count": 8890496,
+            "rank_sort": 1831146,
             "total": 135
           }
         ],
@@ -152,7 +152,7 @@
         "max_entries": null,
         "name": "Gameweek 1",
         "rank": null,
-        "rank_count": 8890711,
+        "rank_count": 8890504,
         "scoring": "c",
         "short_name": "event-1",
         "start_event": 1
@@ -174,9 +174,9 @@
             "last_rank": 2626146,
             "league_id": 314,
             "phase": 4,
-            "rank": 1856650,
-            "rank_count": 11063641,
-            "rank_sort": 1857505,
+            "rank": 1976939,
+            "rank_count": 11063312,
+            "rank_sort": 1977769,
             "total": 135
           }
         ],
@@ -348,9 +348,9 @@
             "last_rank": 2626146,
             "league_id": 2430021,
             "phase": 1,
-            "rank": 1856650,
-            "rank_count": 11063649,
-            "rank_sort": 1857505,
+            "rank": 1976939,
+            "rank_count": 11063312,
+            "rank_sort": 1977769,
             "total": 135
           },
           {
@@ -358,9 +358,9 @@
             "last_rank": 2626146,
             "league_id": 2430021,
             "phase": 4,
-            "rank": 1856651,
-            "rank_count": 11063619,
-            "rank_sort": 1857506,
+            "rank": 1976939,
+            "rank_count": 11063311,
+            "rank_sort": 1977769,
             "total": 135
           }
         ],
@@ -374,7 +374,7 @@
         "entry_can_leave": false,
         "entry_last_rank": 2626146,
         "entry_percentile_rank": 20,
-        "entry_rank": 1976941,
+        "entry_rank": 1976939,
         "featured_entry_ids": [],
         "has_cup": false,
         "id": 2430021,
@@ -382,7 +382,7 @@
         "max_entries": null,
         "name": "Second Chance",
         "rank": null,
-        "rank_count": 11063649,
+        "rank_count": 11063312,
         "scoring": "c",
         "short_name": "sc",
         "start_event": 6
@@ -412,7 +412,7 @@
   "player_region_name": "Afghanistan",
   "started_event": 1,
   "summary_event_points": 67,
-  "summary_event_rank": 2523260,
+  "summary_event_rank": 2523254,
   "summary_overall_points": 488,
   "summary_overall_rank": 674106,
   "years_active": 15
