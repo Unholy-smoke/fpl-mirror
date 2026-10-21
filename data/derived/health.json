@@ -1,12 +1,12 @@
 {
- "checked_utc": "2026-10-21T06:00:12Z",
- "snapshot_run_at": "2026-10-21T05:59:37Z",
+ "checked_utc": "2026-10-21T08:54:17Z",
+ "snapshot_run_at": "2026-10-21T08:53:42Z",
  "worst": "OK",
  "results": [
   {
    "level": "OK",
    "check": "freshness",
-   "msg": "last snapshot 2026-10-21T05:59:37Z (Wed 21 Oct 06:59 BST), 0.0h old"
+   "msg": "last snapshot 2026-10-21T08:53:42Z (Wed 21 Oct 09:53 BST), 0.0h old"
   },
   {
    "level": "OK",
@@ -21,7 +21,7 @@
   {
    "level": "OK",
    "check": "progress",
-   "msg": "2026-10-21.csv: 1 stamps, rows/stamp [668]; newest stamp matches bootstrap (668 elements)"
+   "msg": "2026-10-21.csv: 2 stamps, rows/stamp [668]; newest stamp matches bootstrap (668 elements)"
   },
   {
    "level": "OK",
