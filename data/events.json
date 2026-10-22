@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-22T12:56:22Z",
-  "total_players": 11146271,
+  "generated_at": "2026-10-22T14:42:30Z",
+  "total_players": 11146812,
   "current_event": 7,
   "next_event": 8,
   "next_deadline_utc": "2026-10-23T17:30:00Z",
@@ -121,7 +121,7 @@
       "data_checked": false,
       "average_entry_score": 0,
       "highest_score": null,
-      "transfers_made": null,
+      "transfers_made": 5364980,
       "most_captained": null,
       "most_selected": null
     },
@@ -136,7 +136,7 @@
       "data_checked": false,
       "average_entry_score": 0,
       "highest_score": null,
-      "transfers_made": null,
+      "transfers_made": 0,
       "most_captained": null,
       "most_selected": null
     },
@@ -151,7 +151,7 @@
       "data_checked": false,
       "average_entry_score": 0,
       "highest_score": null,
-      "transfers_made": null,
+      "transfers_made": 0,
       "most_captained": null,
       "most_selected": null
     },
@@ -166,7 +166,7 @@
       "data_checked": false,
       "average_entry_score": 0,
       "highest_score": null,
-      "transfers_made": null,
+      "transfers_made": 0,
       "most_captained": null,
       "most_selected": null
     },
@@ -181,7 +181,7 @@
       "data_checked": false,
       "average_entry_score": 0,
       "highest_score": null,
-      "transfers_made": null,
+      "transfers_made": 0,
       "most_captained": null,
       "most_selected": null
     },
@@ -196,7 +196,7 @@
       "data_checked": false,
       "average_entry_score": 0,
       "highest_score": null,
-      "transfers_made": null,
+      "transfers_made": 0,
       "most_captained": null,
       "most_selected": null
     },
@@ -211,7 +211,7 @@
       "data_checked": false,
       "average_entry_score": 0,
       "highest_score": null,
-      "transfers_made": null,
+      "transfers_made": 0,
       "most_captained": null,
       "most_selected": null
     },
@@ -226,7 +226,7 @@
       "data_checked": false,
       "average_entry_score": 0,
       "highest_score": null,
-      "transfers_made": null,
+      "transfers_made": 0,
       "most_captained": null,
       "most_selected": null
     },
@@ -241,7 +241,7 @@
       "data_checked": false,
       "average_entry_score": 0,
       "highest_score": null,
-      "transfers_made": null,
+      "transfers_made": 0,
       "most_captained": null,
       "most_selected": null
     },
@@ -256,7 +256,7 @@
       "data_checked": false,
       "average_entry_score": 0,
       "highest_score": null,
-      "transfers_made": null,
+      "transfers_made": 0,
       "most_captained": null,
       "most_selected": null
     },
@@ -271,7 +271,7 @@
       "data_checked": false,
       "average_entry_score": 0,
       "highest_score": null,
-      "transfers_made": null,
+      "transfers_made": 0,
       "most_captained": null,
       "most_selected": null
     },
@@ -286,7 +286,7 @@
       "data_checked": false,
       "average_entry_score": 0,
       "highest_score": null,
-      "transfers_made": null,
+      "transfers_made": 0,
       "most_captained": null,
       "most_selected": null
     },
@@ -301,7 +301,7 @@
       "data_checked": false,
       "average_entry_score": 0,
       "highest_score": null,
-      "transfers_made": null,
+      "transfers_made": 0,
       "most_captained": null,
       "most_selected": null
     },
@@ -316,7 +316,7 @@
       "data_checked": false,
       "average_entry_score": 0,
       "highest_score": null,
-      "transfers_made": null,
+      "transfers_made": 0,
       "most_captained": null,
       "most_selected": null
     },
@@ -331,7 +331,7 @@
       "data_checked": false,
       "average_entry_score": 0,
       "highest_score": null,
-      "transfers_made": null,
+      "transfers_made": 0,
       "most_captained": null,
       "most_selected": null
     },
@@ -346,7 +346,7 @@
       "data_checked": false,
       "average_entry_score": 0,
       "highest_score": null,
-      "transfers_made": null,
+      "transfers_made": 0,
       "most_captained": null,
       "most_selected": null
     },
@@ -361,7 +361,7 @@
       "data_checked": false,
       "average_entry_score": 0,
       "highest_score": null,
-      "transfers_made": null,
+      "transfers_made": 0,
       "most_captained": null,
       "most_selected": null
     },
@@ -376,7 +376,7 @@
       "data_checked": false,
       "average_entry_score": 0,
       "highest_score": null,
-      "transfers_made": null,
+      "transfers_made": 0,
       "most_captained": null,
       "most_selected": null
     },
@@ -391,7 +391,7 @@
       "data_checked": false,
       "average_entry_score": 0,
       "highest_score": null,
-      "transfers_made": null,
+      "transfers_made": 0,
       "most_captained": null,
       "most_selected": null
     },
@@ -406,7 +406,7 @@
       "data_checked": false,
       "average_entry_score": 0,
       "highest_score": null,
-      "transfers_made": null,
+      "transfers_made": 0,
       "most_captained": null,
       "most_selected": null
     },
@@ -421,7 +421,7 @@
       "data_checked": false,
       "average_entry_score": 0,
       "highest_score": null,
-      "transfers_made": null,
+      "transfers_made": 0,
       "most_captained": null,
       "most_selected": null
     },
@@ -436,7 +436,7 @@
       "data_checked": false,
       "average_entry_score": 0,
       "highest_score": null,
-      "transfers_made": null,
+      "transfers_made": 0,
       "most_captained": null,
       "most_selected": null
     },
@@ -451,7 +451,7 @@
       "data_checked": false,
       "average_entry_score": 0,
       "highest_score": null,
-      "transfers_made": null,
+      "transfers_made": 0,
       "most_captained": null,
       "most_selected": null
     },
@@ -466,7 +466,7 @@
       "data_checked": false,
       "average_entry_score": 0,
       "highest_score": null,
-      "transfers_made": null,
+      "transfers_made": 0,
       "most_captained": null,
       "most_selected": null
     },
@@ -481,7 +481,7 @@
       "data_checked": false,
       "average_entry_score": 0,
       "highest_score": null,
-      "transfers_made": null,
+      "transfers_made": 0,
       "most_captained": null,
       "most_selected": null
     },
@@ -496,7 +496,7 @@
       "data_checked": false,
       "average_entry_score": 0,
       "highest_score": null,
-      "transfers_made": null,
+      "transfers_made": 0,
       "most_captained": null,
       "most_selected": null
     },
@@ -511,7 +511,7 @@
       "data_checked": false,
       "average_entry_score": 0,
       "highest_score": null,
-      "transfers_made": null,
+      "transfers_made": 0,
       "most_captained": null,
       "most_selected": null
     },
@@ -526,7 +526,7 @@
       "data_checked": false,
       "average_entry_score": 0,
       "highest_score": null,
-      "transfers_made": null,
+      "transfers_made": 0,
       "most_captained": null,
       "most_selected": null
     },
@@ -541,7 +541,7 @@
       "data_checked": false,
       "average_entry_score": 0,
       "highest_score": null,
-      "transfers_made": null,
+      "transfers_made": 0,
       "most_captained": null,
       "most_selected": null
     },
@@ -556,7 +556,7 @@
       "data_checked": false,
       "average_entry_score": 0,
       "highest_score": null,
-      "transfers_made": null,
+      "transfers_made": 0,
       "most_captained": null,
       "most_selected": null
     },
@@ -571,7 +571,7 @@
       "data_checked": false,
       "average_entry_score": 0,
       "highest_score": null,
-      "transfers_made": null,
+      "transfers_made": 0,
       "most_captained": null,
       "most_selected": null
     }
