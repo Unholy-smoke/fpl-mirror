@@ -1,5 +1,5 @@
 {
-  "last_updated_data": "2026-10-23T14:25:36Z",
+  "last_updated_data": "2026-10-23T19:32:29Z",
   "league": {
     "admin_entry": 118670,
     "closed": false,
@@ -28,7 +28,7 @@
         "club_badge_src": null,
         "entry": 8280153,
         "entry_name": "Nwaneris Mate!",
-        "event_total": 74,
+        "event_total": 0,
         "last_rank": 2,
         "player_name": "B Kites",
         "rank": 1,
@@ -39,18 +39,18 @@
         "club_badge_src": null,
         "entry": 118670,
         "entry_name": "Ugarte Freund in Mee",
-        "event_total": 67,
+        "event_total": 1,
         "last_rank": 1,
         "player_name": "Michael Jones",
         "rank": 2,
         "rank_sort": 2,
-        "total": 488
+        "total": 489
       },
       {
         "club_badge_src": null,
         "entry": 10324,
         "entry_name": "The Special Wan",
-        "event_total": 67,
+        "event_total": 0,
         "last_rank": 3,
         "player_name": "Ken Wan",
         "rank": 3,
@@ -61,7 +61,7 @@
         "club_badge_src": null,
         "entry": 1539533,
         "entry_name": "Cene Juan Cene Jamal",
-        "event_total": 73,
+        "event_total": 0,
         "last_rank": 4,
         "player_name": "ifor jones",
         "rank": 4,
@@ -72,7 +72,7 @@
         "club_badge_src": null,
         "entry": 3866837,
         "entry_name": "The Krejci Gang",
-        "event_total": 69,
+        "event_total": 0,
         "last_rank": 5,
         "player_name": "Craig Bowen",
         "rank": 5,
@@ -83,7 +83,7 @@
         "club_badge_src": null,
         "entry": 7307209,
         "entry_name": "JesusSelsPopeSenesi",
-        "event_total": 63,
+        "event_total": 0,
         "last_rank": 6,
         "player_name": "Chris Hodierne",
         "rank": 6,
@@ -94,7 +94,7 @@
         "club_badge_src": null,
         "entry": 88625,
         "entry_name": "Dean's Team",
-        "event_total": 57,
+        "event_total": 0,
         "last_rank": 7,
         "player_name": "Dean Barr",
         "rank": 7,
@@ -105,23 +105,23 @@
         "club_badge_src": null,
         "entry": 6231483,
         "entry_name": "WhenTheYrEndsIn7",
-        "event_total": 68,
+        "event_total": 6,
         "last_rank": 8,
         "player_name": "Richard Wisdom",
         "rank": 8,
         "rank_sort": 8,
-        "total": 405
+        "total": 411
       },
       {
         "club_badge_src": null,
         "entry": 7519117,
         "entry_name": "Zero Fox Given",
-        "event_total": 53,
+        "event_total": 1,
         "last_rank": 9,
         "player_name": "Matt Fox",
         "rank": 9,
         "rank_sort": 9,
-        "total": 372
+        "total": 359
       }
     ]
   }
