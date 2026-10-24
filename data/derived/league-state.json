@@ -2,7 +2,7 @@
  "schema": "league-state/1",
  "as_of_gw": 8,
  "ft_for_gw": 9,
- "source_run_at": "2026-10-23T23:54:08Z",
+ "source_run_at": "2026-10-24T05:47:47Z",
  "league": "Shabanga",
  "entries": [
   {
@@ -1922,7 +1922,7 @@
    "manager": "Matt Fox",
    "team_name": "Zero Fox Given",
    "rank": 9,
-   "total": 360,
+   "total": 362,
    "gw_points": 2,
    "bank": 7.8,
    "free_transfers": 1,
