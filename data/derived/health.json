@@ -1,12 +1,12 @@
 {
- "checked_utc": "2026-10-24T21:12:36Z",
- "snapshot_run_at": "2026-10-24T21:12:00Z",
+ "checked_utc": "2026-10-24T23:29:47Z",
+ "snapshot_run_at": "2026-10-24T23:29:10Z",
  "worst": "OK",
  "results": [
   {
    "level": "OK",
    "check": "freshness",
-   "msg": "last snapshot 2026-10-24T21:12:00Z (Sat 24 Oct 22:12 BST), 0.0h old"
+   "msg": "last snapshot 2026-10-24T23:29:10Z (Sun 25 Oct 00:29 BST), 0.0h old"
   },
   {
    "level": "OK",
@@ -21,12 +21,12 @@
   {
    "level": "OK",
    "check": "progress",
-   "msg": "2026-10-24.csv: 7 stamps, rows/stamp [668, 669] (uneven: normal only if the player pool grew that day); newest stamp matches bootstrap (669 elements)"
+   "msg": "2026-10-24.csv: 8 stamps, rows/stamp [668, 669] (uneven: normal only if the player pool grew that day); newest stamp matches bootstrap (669 elements)"
   },
   {
    "level": "OK",
    "check": "prices",
-   "msg": "602 rows; newest batch 2026-10-23T23:54:08Z (Sat 24 Oct 00:54 BST)"
+   "msg": "610 rows; newest batch 2026-10-24T23:29:10Z (Sun 25 Oct 00:29 BST)"
   },
   {
    "level": "OK",
