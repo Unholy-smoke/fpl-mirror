@@ -2,7 +2,7 @@
  "schema": "league-state/1",
  "as_of_gw": 8,
  "ft_for_gw": 9,
- "source_run_at": "2026-10-24T16:33:12Z",
+ "source_run_at": "2026-10-24T18:22:46Z",
  "league": "Shabanga",
  "entries": [
   {
@@ -249,8 +249,8 @@
    "manager": "Michael Jones",
    "team_name": "Ugarte Freund in Mee",
    "rank": 2,
-   "total": 516,
-   "gw_points": 28,
+   "total": 517,
+   "gw_points": 29,
    "bank": 2.3,
    "free_transfers": 3,
    "transfers_total": 6,
@@ -811,7 +811,7 @@
      "now": 4.0,
      "selling": 4.0,
      "purchase_source": "start price",
-     "status": "a"
+     "status": "d"
     },
     {
      "element_id": 115,
@@ -1216,8 +1216,8 @@
    "manager": "Chris Hodierne",
    "team_name": "JesusSelsPopeSenesi",
    "rank": 6,
-   "total": 470,
-   "gw_points": 25,
+   "total": 471,
+   "gw_points": 26,
    "bank": 0.7,
    "free_transfers": 1,
    "transfers_total": 9,
@@ -1450,8 +1450,8 @@
    "manager": "Dean Barr",
    "team_name": "Dean's Team",
    "rank": 7,
-   "total": 456,
-   "gw_points": 36,
+   "total": 466,
+   "gw_points": 46,
    "bank": 0.5,
    "free_transfers": 2,
    "transfers_total": 6,
@@ -1922,8 +1922,8 @@
    "manager": "Matt Fox",
    "team_name": "Zero Fox Given",
    "rank": 9,
-   "total": 365,
-   "gw_points": 5,
+   "total": 364,
+   "gw_points": 4,
    "bank": 7.8,
    "free_transfers": 1,
    "transfers_total": 10,
@@ -1996,7 +1996,7 @@
      "now": 4.0,
      "selling": 4.0,
      "purchase_source": "transfer log",
-     "status": "a"
+     "status": "d"
     },
     {
      "element_id": 124,
