@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-24T18:22:46Z",
-  "total_players": 11166045,
+  "generated_at": "2026-10-24T21:12:00Z",
+  "total_players": 11167934,
   "current_event": 8,
   "next_event": 9,
   "next_deadline_utc": "2026-10-31T11:00:00Z",
@@ -119,8 +119,8 @@
       "is_previous": false,
       "finished": false,
       "data_checked": false,
-      "average_entry_score": 1,
-      "highest_score": 45,
+      "average_entry_score": 27,
+      "highest_score": 102,
       "transfers_made": 10389270,
       "most_captained": 411,
       "most_selected": 411
