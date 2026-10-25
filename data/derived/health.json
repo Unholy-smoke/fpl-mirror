@@ -1,12 +1,12 @@
 {
- "checked_utc": "2026-10-24T23:29:47Z",
- "snapshot_run_at": "2026-10-24T23:29:10Z",
+ "checked_utc": "2026-10-25T06:04:22Z",
+ "snapshot_run_at": "2026-10-25T06:03:45Z",
  "worst": "OK",
  "results": [
   {
    "level": "OK",
    "check": "freshness",
-   "msg": "last snapshot 2026-10-24T23:29:10Z (Sun 25 Oct 00:29 BST), 0.0h old"
+   "msg": "last snapshot 2026-10-25T06:03:45Z (Sun 25 Oct 06:03 GMT), 0.0h old"
   },
   {
    "level": "OK",
@@ -21,7 +21,7 @@
   {
    "level": "OK",
    "check": "progress",
-   "msg": "2026-10-24.csv: 8 stamps, rows/stamp [668, 669] (uneven: normal only if the player pool grew that day); newest stamp matches bootstrap (669 elements)"
+   "msg": "2026-10-25.csv: 1 stamps, rows/stamp [669]; newest stamp matches bootstrap (669 elements)"
   },
   {
    "level": "OK",
