@@ -29828,22 +29828,40 @@
     "code": 2645275,
     "event": 9,
     "finished": false,
-    "finished_provisional": false,
+    "finished_provisional": true,
     "id": 82,
     "kickoff_time": "2026-10-31T15:00:00Z",
-    "minutes": 28,
+    "minutes": 90,
     "provisional_start_time": false,
     "pulse_id": 0,
     "started": true,
     "stats": [
       {
         "a": [],
-        "h": [],
+        "h": [
+          {
+            "element": 77,
+            "value": 1
+          },
+          {
+            "element": 79,
+            "value": 1
+          }
+        ],
         "identifier": "goals_scored"
       },
       {
         "a": [],
-        "h": [],
+        "h": [
+          {
+            "element": 70,
+            "value": 1
+          },
+          {
+            "element": 78,
+            "value": 1
+          }
+        ],
         "identifier": "assists"
       },
       {
@@ -29862,8 +29880,26 @@
         "identifier": "penalties_missed"
       },
       {
-        "a": [],
-        "h": [],
+        "a": [
+          {
+            "element": 338,
+            "value": 1
+          },
+          {
+            "element": 598,
+            "value": 1
+          }
+        ],
+        "h": [
+          {
+            "element": 73,
+            "value": 1
+          },
+          {
+            "element": 75,
+            "value": 1
+          }
+        ],
         "identifier": "yellow_cards"
       },
       {
@@ -29872,7 +29908,12 @@
         "identifier": "red_cards"
       },
       {
-        "a": [],
+        "a": [
+          {
+            "element": 385,
+            "value": 3
+          }
+        ],
         "h": [
           {
             "element": 57,
@@ -29882,20 +29923,19 @@
         "identifier": "saves"
       },
       {
-        "a": [
-          {
-            "element": 332,
-            "value": 1
-          }
-        ],
+        "a": [],
         "h": [
           {
-            "element": 57,
+            "element": 79,
             "value": 3
           },
           {
-            "element": 75,
-            "value": 3
+            "element": 77,
+            "value": 2
+          },
+          {
+            "element": 566,
+            "value": 2
           }
         ],
         "identifier": "bonus"
@@ -29904,30 +29944,50 @@
         "a": [
           {
             "element": 332,
-            "value": 7
-          },
-          {
-            "element": 334,
-            "value": 6
-          },
-          {
-            "element": 343,
-            "value": 6
+            "value": 13
           },
           {
             "element": 338,
-            "value": 5
+            "value": 11
           },
           {
-            "element": 330,
-            "value": 4
+            "element": 334,
+            "value": 10
           },
           {
-            "element": 385,
-            "value": 4
+            "element": 343,
+            "value": 9
+          },
+          {
+            "element": 345,
+            "value": 9
+          },
+          {
+            "element": 260,
+            "value": 8
           },
           {
             "element": 331,
+            "value": 8
+          },
+          {
+            "element": 347,
+            "value": 7
+          },
+          {
+            "element": 385,
+            "value": 6
+          },
+          {
+            "element": 330,
+            "value": 5
+          },
+          {
+            "element": 346,
+            "value": 5
+          },
+          {
+            "element": 337,
             "value": 3
           },
           {
@@ -29935,58 +29995,78 @@
             "value": 3
           },
           {
-            "element": 260,
+            "element": 335,
             "value": 2
           },
           {
-            "element": 345,
+            "element": 648,
             "value": 2
           }
         ],
         "h": [
           {
-            "element": 57,
-            "value": 8
-          },
-          {
-            "element": 75,
-            "value": 8
-          },
-          {
-            "element": 61,
-            "value": 5
-          },
-          {
-            "element": 60,
-            "value": 4
-          },
-          {
-            "element": 64,
-            "value": 4
-          },
-          {
             "element": 79,
-            "value": 4
+            "value": 42
+          },
+          {
+            "element": 77,
+            "value": 26
           },
           {
             "element": 566,
-            "value": 4
+            "value": 26
           },
           {
-            "element": 67,
-            "value": 3
+            "element": 57,
+            "value": 25
           },
           {
-            "element": 68,
-            "value": 3
+            "element": 61,
+            "value": 24
           },
           {
-            "element": 73,
-            "value": 3
+            "element": 60,
+            "value": 23
+          },
+          {
+            "element": 64,
+            "value": 22
+          },
+          {
+            "element": 78,
+            "value": 21
           },
           {
             "element": 70,
-            "value": 2
+            "value": 19
+          },
+          {
+            "element": 75,
+            "value": 18
+          },
+          {
+            "element": 68,
+            "value": 12
+          },
+          {
+            "element": 67,
+            "value": 7
+          },
+          {
+            "element": 73,
+            "value": 6
+          },
+          {
+            "element": 81,
+            "value": 6
+          },
+          {
+            "element": 71,
+            "value": 4
+          },
+          {
+            "element": 62,
+            "value": 3
           }
         ],
         "identifier": "bps"
@@ -29995,68 +30075,112 @@
         "a": [
           {
             "element": 338,
-            "value": 6
-          },
-          {
-            "element": 345,
-            "value": 4
+            "value": 16
           },
           {
             "element": 334,
-            "value": 3
+            "value": 10
+          },
+          {
+            "element": 345,
+            "value": 9
           },
           {
             "element": 598,
-            "value": 3
-          },
-          {
-            "element": 331,
-            "value": 1
-          },
-          {
-            "element": 332,
-            "value": 1
+            "value": 9
           },
           {
             "element": 343,
+            "value": 7
+          },
+          {
+            "element": 332,
+            "value": 6
+          },
+          {
+            "element": 260,
+            "value": 4
+          },
+          {
+            "element": 330,
+            "value": 4
+          },
+          {
+            "element": 331,
+            "value": 3
+          },
+          {
+            "element": 335,
+            "value": 3
+          },
+          {
+            "element": 339,
+            "value": 2
+          },
+          {
+            "element": 346,
+            "value": 1
+          },
+          {
+            "element": 347,
             "value": 1
           }
         ],
         "h": [
           {
             "element": 75,
-            "value": 7
-          },
-          {
-            "element": 566,
-            "value": 4
-          },
-          {
-            "element": 64,
-            "value": 3
+            "value": 15
           },
           {
             "element": 73,
-            "value": 3
+            "value": 10
+          },
+          {
+            "element": 566,
+            "value": 9
           },
           {
             "element": 60,
-            "value": 2
+            "value": 8
           },
           {
             "element": 67,
-            "value": 2
+            "value": 8
           },
           {
-            "element": 70,
-            "value": 2
+            "element": 71,
+            "value": 6
+          },
+          {
+            "element": 79,
+            "value": 6
           },
           {
             "element": 61,
-            "value": 1
+            "value": 5
+          },
+          {
+            "element": 64,
+            "value": 5
+          },
+          {
+            "element": 70,
+            "value": 5
+          },
+          {
+            "element": 78,
+            "value": 4
           },
           {
             "element": 68,
+            "value": 3
+          },
+          {
+            "element": 81,
+            "value": 2
+          },
+          {
+            "element": 77,
             "value": 1
           }
         ],
@@ -30068,32 +30192,51 @@
     "team_a_score": 0,
     "team_h": 3,
     "team_h_difficulty": 3,
-    "team_h_score": 0
+    "team_h_score": 2
   },
   {
     "code": 2645277,
     "event": 9,
     "finished": false,
-    "finished_provisional": false,
+    "finished_provisional": true,
     "id": 83,
     "kickoff_time": "2026-10-31T15:00:00Z",
-    "minutes": 28,
+    "minutes": 90,
     "provisional_start_time": false,
     "pulse_id": 0,
     "started": true,
     "stats": [
       {
         "a": [],
-        "h": [],
+        "h": [
+          {
+            "element": 106,
+            "value": 1
+          }
+        ],
         "identifier": "goals_scored"
       },
       {
         "a": [],
-        "h": [],
+        "h": [
+          {
+            "element": 95,
+            "value": 1
+          },
+          {
+            "element": 105,
+            "value": 1
+          }
+        ],
         "identifier": "assists"
       },
       {
-        "a": [],
+        "a": [
+          {
+            "element": 471,
+            "value": 1
+          }
+        ],
         "h": [],
         "identifier": "own_goals"
       },
@@ -30108,8 +30251,26 @@
         "identifier": "penalties_missed"
       },
       {
-        "a": [],
-        "h": [],
+        "a": [
+          {
+            "element": 201,
+            "value": 1
+          },
+          {
+            "element": 471,
+            "value": 1
+          },
+          {
+            "element": 486,
+            "value": 1
+          }
+        ],
+        "h": [
+          {
+            "element": 88,
+            "value": 1
+          }
+        ],
         "identifier": "yellow_cards"
       },
       {
@@ -30119,31 +30280,27 @@
       },
       {
         "a": [],
-        "h": [],
-        "identifier": "saves"
-      },
-      {
-        "a": [
+        "h": [
           {
-            "element": 486,
-            "value": 3
-          },
-          {
-            "element": 474,
+            "element": 82,
             "value": 1
           }
         ],
+        "identifier": "saves"
+      },
+      {
+        "a": [],
         "h": [
           {
-            "element": 97,
+            "element": 106,
             "value": 3
           },
           {
-            "element": 95,
-            "value": 1
+            "element": 85,
+            "value": 2
           },
           {
-            "element": 98,
+            "element": 82,
             "value": 1
           }
         ],
@@ -30153,88 +30310,112 @@
         "a": [
           {
             "element": 486,
-            "value": 7
+            "value": 15
+          },
+          {
+            "element": 472,
+            "value": 11
           },
           {
             "element": 474,
-            "value": 6
+            "value": 10
+          },
+          {
+            "element": 480,
+            "value": 10
+          },
+          {
+            "element": 483,
+            "value": 8
           },
           {
             "element": 469,
             "value": 5
           },
           {
-            "element": 472,
-            "value": 5
-          },
-          {
             "element": 473,
-            "value": 5
-          },
-          {
-            "element": 467,
             "value": 4
           },
           {
-            "element": 480,
+            "element": 489,
             "value": 4
           },
           {
-            "element": 483,
-            "value": 4
+            "element": 201,
+            "value": 2
           },
           {
-            "element": 471,
-            "value": 3
+            "element": 490,
+            "value": 2
+          },
+          {
+            "element": 493,
+            "value": 2
           },
           {
             "element": 558,
-            "value": 3
+            "value": 2
           }
         ],
         "h": [
           {
-            "element": 97,
-            "value": 7
-          },
-          {
-            "element": 95,
-            "value": 6
-          },
-          {
-            "element": 98,
-            "value": 6
+            "element": 106,
+            "value": 37
           },
           {
             "element": 85,
-            "value": 5
-          },
-          {
-            "element": 86,
-            "value": 5
-          },
-          {
-            "element": 106,
-            "value": 5
+            "value": 33
           },
           {
             "element": 82,
-            "value": 4
+            "value": 24
           },
           {
             "element": 87,
-            "value": 4
+            "value": 23
+          },
+          {
+            "element": 95,
+            "value": 22
+          },
+          {
+            "element": 98,
+            "value": 18
+          },
+          {
+            "element": 105,
+            "value": 18
           },
           {
             "element": 88,
-            "value": 3
+            "value": 15
+          },
+          {
+            "element": 86,
+            "value": 11
+          },
+          {
+            "element": 97,
+            "value": 10
           },
           {
             "element": 94,
-            "value": 3
+            "value": 9
           },
           {
             "element": 565,
+            "value": 9
+          },
+          {
+            "element": 90,
+            "value": 4
+          },
+          {
+            "element": 96,
+            "value": 4
+          },
+          {
+            "element": 108,
             "value": 2
           }
         ],
@@ -30243,15 +30424,35 @@
       {
         "a": [
           {
-            "element": 471,
-            "value": 5
+            "element": 472,
+            "value": 15
           },
           {
             "element": 486,
+            "value": 12
+          },
+          {
+            "element": 471,
+            "value": 9
+          },
+          {
+            "element": 474,
+            "value": 6
+          },
+          {
+            "element": 489,
+            "value": 6
+          },
+          {
+            "element": 201,
             "value": 5
           },
           {
-            "element": 472,
+            "element": 469,
+            "value": 5
+          },
+          {
+            "element": 558,
             "value": 4
           },
           {
@@ -30259,66 +30460,74 @@
             "value": 3
           },
           {
-            "element": 558,
+            "element": 483,
             "value": 3
           },
           {
-            "element": 483,
+            "element": 473,
             "value": 2
           },
           {
-            "element": 469,
+            "element": 480,
             "value": 1
           },
           {
-            "element": 473,
-            "value": 1
-          },
-          {
-            "element": 474,
+            "element": 493,
             "value": 1
           }
         ],
         "h": [
           {
             "element": 98,
-            "value": 8
+            "value": 16
           },
           {
             "element": 87,
-            "value": 6
+            "value": 13
           },
           {
             "element": 85,
-            "value": 5
-          },
-          {
-            "element": 97,
-            "value": 5
+            "value": 12
           },
           {
             "element": 86,
-            "value": 4
-          },
-          {
-            "element": 106,
-            "value": 4
+            "value": 9
           },
           {
             "element": 565,
-            "value": 4
+            "value": 9
           },
           {
-            "element": 88,
-            "value": 2
+            "element": 97,
+            "value": 8
           },
           {
             "element": 94,
-            "value": 2
+            "value": 7
           },
           {
             "element": 95,
-            "value": 2
+            "value": 7
+          },
+          {
+            "element": 105,
+            "value": 7
+          },
+          {
+            "element": 106,
+            "value": 6
+          },
+          {
+            "element": 88,
+            "value": 5
+          },
+          {
+            "element": 90,
+            "value": 3
+          },
+          {
+            "element": 96,
+            "value": 3
           }
         ],
         "identifier": "defensive_contribution"
@@ -30329,33 +30538,56 @@
     "team_a_score": 0,
     "team_h": 4,
     "team_h_difficulty": 3,
-    "team_h_score": 0
+    "team_h_score": 2
   },
   {
     "code": 2645279,
     "event": 9,
     "finished": false,
-    "finished_provisional": false,
+    "finished_provisional": true,
     "id": 85,
     "kickoff_time": "2026-10-31T15:00:00Z",
-    "minutes": 27,
+    "minutes": 90,
     "provisional_start_time": false,
     "pulse_id": 0,
     "started": true,
     "stats": [
       {
-        "a": [],
+        "a": [
+          {
+            "element": 542,
+            "value": 1
+          }
+        ],
         "h": [
           {
+            "element": 183,
+            "value": 1
+          },
+          {
             "element": 185,
+            "value": 1
+          },
+          {
+            "element": 492,
             "value": 1
           }
         ],
         "identifier": "goals_scored"
       },
       {
-        "a": [],
-        "h": [],
+        "a": [
+          {
+            "element": 539,
+            "value": 1
+          }
+        ],
+        "h": [
+          {
+            "element": 188,
+            "value": 1
+          }
+        ],
         "identifier": "assists"
       },
       {
@@ -30377,6 +30609,10 @@
         "a": [],
         "h": [
           {
+            "element": 185,
+            "value": 1
+          },
+          {
             "element": 188,
             "value": 1
           }
@@ -30384,12 +30620,22 @@
         "identifier": "yellow_cards"
       },
       {
-        "a": [],
+        "a": [
+          {
+            "element": 535,
+            "value": 1
+          }
+        ],
         "h": [],
         "identifier": "red_cards"
       },
       {
-        "a": [],
+        "a": [
+          {
+            "element": 529,
+            "value": 1
+          }
+        ],
         "h": [
           {
             "element": 110,
@@ -30401,18 +30647,18 @@
       {
         "a": [
           {
-            "element": 548,
-            "value": 2
-          },
-          {
-            "element": 551,
-            "value": 2
+            "element": 542,
+            "value": 1
           }
         ],
         "h": [
           {
-            "element": 185,
+            "element": 492,
             "value": 3
+          },
+          {
+            "element": 183,
+            "value": 2
           }
         ],
         "identifier": "bonus"
@@ -30420,23 +30666,158 @@
       {
         "a": [
           {
-            "element": 548,
-            "value": 7
-          },
-          {
-            "element": 551,
-            "value": 7
+            "element": 542,
+            "value": 32
           },
           {
             "element": 544,
-            "value": 5
+            "value": 19
           },
           {
-            "element": 542,
-            "value": 4
+            "element": 539,
+            "value": 14
+          },
+          {
+            "element": 548,
+            "value": 11
           },
           {
             "element": 545,
+            "value": 10
+          },
+          {
+            "element": 541,
+            "value": 6
+          },
+          {
+            "element": 551,
+            "value": 6
+          },
+          {
+            "element": 552,
+            "value": 6
+          },
+          {
+            "element": 646,
+            "value": 5
+          },
+          {
+            "element": 553,
+            "value": 3
+          },
+          {
+            "element": 549,
+            "value": 2
+          },
+          {
+            "element": 529,
+            "value": -1
+          },
+          {
+            "element": 534,
+            "value": -3
+          },
+          {
+            "element": 535,
+            "value": -13
+          }
+        ],
+        "h": [
+          {
+            "element": 492,
+            "value": 38
+          },
+          {
+            "element": 183,
+            "value": 36
+          },
+          {
+            "element": 185,
+            "value": 20
+          },
+          {
+            "element": 188,
+            "value": 19
+          },
+          {
+            "element": 175,
+            "value": 10
+          },
+          {
+            "element": 176,
+            "value": 10
+          },
+          {
+            "element": 655,
+            "value": 10
+          },
+          {
+            "element": 91,
+            "value": 8
+          },
+          {
+            "element": 656,
+            "value": 8
+          },
+          {
+            "element": 110,
+            "value": 7
+          },
+          {
+            "element": 184,
+            "value": 5
+          },
+          {
+            "element": 575,
+            "value": 5
+          },
+          {
+            "element": 599,
+            "value": 5
+          },
+          {
+            "element": 194,
+            "value": 3
+          }
+        ],
+        "identifier": "bps"
+      },
+      {
+        "a": [
+          {
+            "element": 544,
+            "value": 16
+          },
+          {
+            "element": 535,
+            "value": 14
+          },
+          {
+            "element": 542,
+            "value": 11
+          },
+          {
+            "element": 534,
+            "value": 7
+          },
+          {
+            "element": 539,
+            "value": 7
+          },
+          {
+            "element": 545,
+            "value": 6
+          },
+          {
+            "element": 536,
+            "value": 4
+          },
+          {
+            "element": 548,
+            "value": 4
+          },
+          {
+            "element": 551,
             "value": 2
           },
           {
@@ -30444,137 +30825,62 @@
             "value": 2
           },
           {
-            "element": 529,
+            "element": 646,
+            "value": 2
+          },
+          {
+            "element": 541,
             "value": 1
-          },
-          {
-            "element": 534,
-            "value": -1
-          },
-          {
-            "element": 535,
-            "value": -1
-          },
-          {
-            "element": 539,
-            "value": -1
           }
         ],
         "h": [
           {
-            "element": 185,
-            "value": 25
-          },
-          {
-            "element": 110,
-            "value": 6
-          },
-          {
-            "element": 183,
-            "value": 6
+            "element": 91,
+            "value": 14
           },
           {
             "element": 175,
-            "value": 5
+            "value": 11
+          },
+          {
+            "element": 183,
+            "value": 11
           },
           {
             "element": 656,
-            "value": 5
+            "value": 11
           },
           {
-            "element": 91,
-            "value": 4
+            "element": 188,
+            "value": 8
+          },
+          {
+            "element": 575,
+            "value": 6
           },
           {
             "element": 176,
             "value": 4
           },
           {
+            "element": 185,
+            "value": 4
+          },
+          {
             "element": 655,
+            "value": 4
+          },
+          {
+            "element": 184,
             "value": 3
           },
           {
-            "element": 188,
-            "value": 2
+            "element": 194,
+            "value": 3
           },
           {
             "element": 492,
             "value": 2
-          },
-          {
-            "element": 575,
-            "value": 2
-          }
-        ],
-        "identifier": "bps"
-      },
-      {
-        "a": [
-          {
-            "element": 534,
-            "value": 4
-          },
-          {
-            "element": 542,
-            "value": 4
-          },
-          {
-            "element": 544,
-            "value": 4
-          },
-          {
-            "element": 536,
-            "value": 3
-          },
-          {
-            "element": 539,
-            "value": 2
-          },
-          {
-            "element": 535,
-            "value": 1
-          },
-          {
-            "element": 545,
-            "value": 1
-          },
-          {
-            "element": 548,
-            "value": 1
-          },
-          {
-            "element": 551,
-            "value": 1
-          }
-        ],
-        "h": [
-          {
-            "element": 175,
-            "value": 3
-          },
-          {
-            "element": 183,
-            "value": 3
-          },
-          {
-            "element": 188,
-            "value": 3
-          },
-          {
-            "element": 656,
-            "value": 3
-          },
-          {
-            "element": 176,
-            "value": 2
-          },
-          {
-            "element": 655,
-            "value": 2
-          },
-          {
-            "element": 575,
-            "value": 1
           }
         ],
         "identifier": "defensive_contribution"
@@ -30582,19 +30888,19 @@
     ],
     "team_a": 20,
     "team_a_difficulty": 2,
-    "team_a_score": 0,
+    "team_a_score": 1,
     "team_h": 7,
     "team_h_difficulty": 3,
-    "team_h_score": 1
+    "team_h_score": 3
   },
   {
     "code": 2645280,
     "event": 9,
     "finished": false,
-    "finished_provisional": false,
+    "finished_provisional": true,
     "id": 86,
     "kickoff_time": "2026-10-31T15:00:00Z",
-    "minutes": 26,
+    "minutes": 90,
     "provisional_start_time": false,
     "pulse_id": 0,
     "started": true,
@@ -30604,19 +30910,45 @@
           {
             "element": 571,
             "value": 1
+          },
+          {
+            "element": 591,
+            "value": 1
           }
         ],
-        "h": [],
+        "h": [
+          {
+            "element": 240,
+            "value": 1
+          },
+          {
+            "element": 295,
+            "value": 1
+          }
+        ],
         "identifier": "goals_scored"
       },
       {
         "a": [
           {
+            "element": 310,
+            "value": 1
+          },
+          {
             "element": 592,
             "value": 1
           }
         ],
-        "h": [],
+        "h": [
+          {
+            "element": 286,
+            "value": 1
+          },
+          {
+            "element": 295,
+            "value": 1
+          }
+        ],
         "identifier": "assists"
       },
       {
@@ -30635,8 +30967,34 @@
         "identifier": "penalties_missed"
       },
       {
-        "a": [],
-        "h": [],
+        "a": [
+          {
+            "element": 259,
+            "value": 1
+          },
+          {
+            "element": 591,
+            "value": 1
+          },
+          {
+            "element": 619,
+            "value": 1
+          }
+        ],
+        "h": [
+          {
+            "element": 279,
+            "value": 1
+          },
+          {
+            "element": 289,
+            "value": 1
+          },
+          {
+            "element": 576,
+            "value": 1
+          }
+        ],
         "identifier": "yellow_cards"
       },
       {
@@ -30645,7 +31003,12 @@
         "identifier": "red_cards"
       },
       {
-        "a": [],
+        "a": [
+          {
+            "element": 300,
+            "value": 1
+          }
+        ],
         "h": [
           {
             "element": 572,
@@ -30657,103 +31020,152 @@
       {
         "a": [
           {
-            "element": 571,
-            "value": 3
-          },
-          {
-            "element": 592,
+            "element": 591,
             "value": 2
           },
           {
-            "element": 619,
+            "element": 571,
             "value": 1
           }
         ],
-        "h": [],
+        "h": [
+          {
+            "element": 295,
+            "value": 3
+          },
+          {
+            "element": 240,
+            "value": 1
+          }
+        ],
         "identifier": "bonus"
       },
       {
         "a": [
           {
+            "element": 591,
+            "value": 36
+          },
+          {
             "element": 571,
-            "value": 26
+            "value": 32
           },
           {
             "element": 592,
-            "value": 20
+            "value": 28
+          },
+          {
+            "element": 310,
+            "value": 16
           },
           {
             "element": 619,
-            "value": 10
+            "value": 13
+          },
+          {
+            "element": 318,
+            "value": 8
+          },
+          {
+            "element": 313,
+            "value": 6
           },
           {
             "element": 259,
-            "value": 9
+            "value": 5
+          },
+          {
+            "element": 300,
+            "value": 5
           },
           {
             "element": 304,
-            "value": 9
+            "value": 5
           },
           {
-            "element": 591,
-            "value": 8
+            "element": 315,
+            "value": 5
           },
           {
             "element": 316,
             "value": 5
           },
           {
-            "element": 318,
-            "value": 5
-          },
-          {
-            "element": 300,
-            "value": 3
-          },
-          {
             "element": 305,
+            "value": 4
+          },
+          {
+            "element": 320,
             "value": 3
           },
           {
-            "element": 315,
+            "element": 562,
+            "value": 3
+          },
+          {
+            "element": 640,
             "value": 3
           }
         ],
         "h": [
           {
-            "element": 576,
-            "value": 4
+            "element": 295,
+            "value": 46
           },
           {
             "element": 240,
-            "value": 3
+            "value": 32
           },
           {
             "element": 286,
-            "value": 3
-          },
-          {
-            "element": 295,
-            "value": 3
-          },
-          {
-            "element": 282,
-            "value": 2
+            "value": 21
           },
           {
             "element": 290,
-            "value": 2
+            "value": 6
+          },
+          {
+            "element": 563,
+            "value": 5
+          },
+          {
+            "element": 586,
+            "value": 5
+          },
+          {
+            "element": 638,
+            "value": 5
+          },
+          {
+            "element": 340,
+            "value": 4
           },
           {
             "element": 572,
+            "value": 4
+          },
+          {
+            "element": 617,
+            "value": 3
+          },
+          {
+            "element": 576,
             "value": 2
           },
           {
             "element": 279,
-            "value": -1
+            "value": 1
+          },
+          {
+            "element": 282,
+            "value": 1
           },
           {
             "element": 280,
+            "value": -1
+          },
+          {
+            "element": 289,
             "value": -1
           }
         ],
@@ -30762,61 +31174,101 @@
       {
         "a": [
           {
-            "element": 318,
-            "value": 3
+            "element": 619,
+            "value": 14
           },
           {
-            "element": 592,
-            "value": 3
+            "element": 259,
+            "value": 11
           },
           {
             "element": 304,
-            "value": 2
+            "value": 9
           },
           {
-            "element": 315,
-            "value": 1
+            "element": 318,
+            "value": 9
+          },
+          {
+            "element": 305,
+            "value": 7
+          },
+          {
+            "element": 592,
+            "value": 7
+          },
+          {
+            "element": 310,
+            "value": 6
           },
           {
             "element": 571,
-            "value": 1
+            "value": 6
+          },
+          {
+            "element": 315,
+            "value": 5
           },
           {
             "element": 591,
-            "value": 1
+            "value": 5
           },
           {
-            "element": 619,
+            "element": 316,
+            "value": 4
+          },
+          {
+            "element": 313,
+            "value": 3
+          },
+          {
+            "element": 640,
             "value": 1
           }
         ],
         "h": [
           {
-            "element": 586,
-            "value": 5
+            "element": 279,
+            "value": 10
           },
           {
-            "element": 277,
-            "value": 4
+            "element": 586,
+            "value": 10
           },
           {
             "element": 240,
-            "value": 3
-          },
-          {
-            "element": 279,
-            "value": 3
-          },
-          {
-            "element": 282,
-            "value": 3
-          },
-          {
-            "element": 286,
-            "value": 3
+            "value": 9
           },
           {
             "element": 576,
+            "value": 8
+          },
+          {
+            "element": 290,
+            "value": 7
+          },
+          {
+            "element": 277,
+            "value": 6
+          },
+          {
+            "element": 286,
+            "value": 6
+          },
+          {
+            "element": 282,
+            "value": 5
+          },
+          {
+            "element": 295,
+            "value": 5
+          },
+          {
+            "element": 563,
+            "value": 4
+          },
+          {
+            "element": 289,
             "value": 3
           },
           {
@@ -30824,11 +31276,11 @@
             "value": 2
           },
           {
-            "element": 290,
-            "value": 1
+            "element": 638,
+            "value": 2
           },
           {
-            "element": 295,
+            "element": 340,
             "value": 1
           }
         ],
@@ -30837,19 +31289,19 @@
     ],
     "team_a": 12,
     "team_a_difficulty": 2,
-    "team_a_score": 1,
+    "team_a_score": 2,
     "team_h": 11,
     "team_h_difficulty": 2,
-    "team_h_score": 0
+    "team_h_score": 2
   },
   {
     "code": 2645282,
     "event": 9,
     "finished": false,
-    "finished_provisional": false,
+    "finished_provisional": true,
     "id": 88,
     "kickoff_time": "2026-10-31T15:00:00Z",
-    "minutes": 27,
+    "minutes": 90,
     "provisional_start_time": false,
     "pulse_id": 0,
     "started": true,
@@ -30892,6 +31344,14 @@
       {
         "a": [
           {
+            "element": 115,
+            "value": 1
+          },
+          {
+            "element": 124,
+            "value": 1
+          },
+          {
             "element": 639,
             "value": 1
           }
@@ -30908,122 +31368,158 @@
         "a": [
           {
             "element": 109,
-            "value": 1
+            "value": 7
           }
         ],
-        "h": [],
+        "h": [
+          {
+            "element": 384,
+            "value": 2
+          }
+        ],
         "identifier": "saves"
       },
       {
         "a": [
           {
-            "element": 129,
+            "element": 109,
             "value": 3
           },
           {
-            "element": 115,
+            "element": 129,
             "value": 2
-          }
-        ],
-        "h": [
+          },
           {
-            "element": 481,
+            "element": 115,
             "value": 1
           }
         ],
+        "h": [],
         "identifier": "bonus"
       },
       {
         "a": [
           {
+            "element": 109,
+            "value": 46
+          },
+          {
             "element": 129,
-            "value": 28
+            "value": 40
           },
           {
             "element": 115,
-            "value": 19
-          },
-          {
-            "element": 109,
-            "value": 7
+            "value": 30
           },
           {
             "element": 119,
-            "value": 5
-          },
-          {
-            "element": 114,
-            "value": 3
+            "value": 27
           },
           {
             "element": 116,
-            "value": 3
-          },
-          {
-            "element": 124,
-            "value": 3
+            "value": 26
           },
           {
             "element": 504,
-            "value": 3
+            "value": 25
+          },
+          {
+            "element": 114,
+            "value": 20
+          },
+          {
+            "element": 605,
+            "value": 11
           },
           {
             "element": 639,
-            "value": 3
-          },
-          {
-            "element": 127,
-            "value": 1
+            "value": 11
           },
           {
             "element": 138,
-            "value": 1
+            "value": 9
+          },
+          {
+            "element": 127,
+            "value": 8
+          },
+          {
+            "element": 614,
+            "value": 8
+          },
+          {
+            "element": 125,
+            "value": 6
+          },
+          {
+            "element": 124,
+            "value": 5
+          },
+          {
+            "element": 130,
+            "value": 2
           }
         ],
         "h": [
           {
             "element": 481,
-            "value": 11
+            "value": 29
           },
           {
             "element": 400,
-            "value": 7
-          },
-          {
-            "element": 616,
-            "value": 5
-          },
-          {
-            "element": 155,
-            "value": 4
-          },
-          {
-            "element": 411,
-            "value": 3
-          },
-          {
-            "element": 237,
-            "value": 2
-          },
-          {
-            "element": 393,
-            "value": 1
+            "value": 28
           },
           {
             "element": 384,
-            "value": -1
+            "value": 16
           },
           {
-            "element": 389,
-            "value": -1
+            "element": 393,
+            "value": 14
           },
           {
-            "element": 390,
-            "value": -1
+            "element": 237,
+            "value": 12
+          },
+          {
+            "element": 155,
+            "value": 11
           },
           {
             "element": 391,
-            "value": -1
+            "value": 10
+          },
+          {
+            "element": 399,
+            "value": 10
+          },
+          {
+            "element": 389,
+            "value": 9
+          },
+          {
+            "element": 387,
+            "value": 8
+          },
+          {
+            "element": 390,
+            "value": 8
+          },
+          {
+            "element": 411,
+            "value": 6
+          },
+          {
+            "element": 616,
+            "value": 6
+          },
+          {
+            "element": 628,
+            "value": 6
+          },
+          {
+            "element": 398,
+            "value": 3
           }
         ],
         "identifier": "bps"
@@ -31031,81 +31527,117 @@
       {
         "a": [
           {
-            "element": 639,
-            "value": 5
-          },
-          {
             "element": 119,
-            "value": 4
-          },
-          {
-            "element": 114,
-            "value": 2
-          },
-          {
-            "element": 127,
-            "value": 2
-          },
-          {
-            "element": 504,
-            "value": 2
-          },
-          {
-            "element": 115,
-            "value": 1
-          },
-          {
-            "element": 116,
-            "value": 1
+            "value": 10
           },
           {
             "element": 124,
-            "value": 1
+            "value": 10
+          },
+          {
+            "element": 127,
+            "value": 10
           },
           {
             "element": 129,
-            "value": 1
+            "value": 8
+          },
+          {
+            "element": 504,
+            "value": 8
+          },
+          {
+            "element": 639,
+            "value": 8
           },
           {
             "element": 138,
-            "value": 1
+            "value": 6
+          },
+          {
+            "element": 605,
+            "value": 6
+          },
+          {
+            "element": 114,
+            "value": 5
+          },
+          {
+            "element": 116,
+            "value": 5
+          },
+          {
+            "element": 123,
+            "value": 4
+          },
+          {
+            "element": 115,
+            "value": 3
+          },
+          {
+            "element": 125,
+            "value": 3
+          },
+          {
+            "element": 614,
+            "value": 3
+          },
+          {
+            "element": 130,
+            "value": 2
           }
         ],
         "h": [
           {
-            "element": 393,
-            "value": 3
-          },
-          {
-            "element": 389,
-            "value": 2
-          },
-          {
-            "element": 391,
-            "value": 2
+            "element": 481,
+            "value": 13
           },
           {
             "element": 400,
-            "value": 2
+            "value": 12
           },
           {
-            "element": 616,
-            "value": 2
+            "element": 393,
+            "value": 9
           },
           {
-            "element": 155,
-            "value": 1
+            "element": 389,
+            "value": 5
+          },
+          {
+            "element": 391,
+            "value": 5
           },
           {
             "element": 237,
-            "value": 1
+            "value": 3
+          },
+          {
+            "element": 387,
+            "value": 3
           },
           {
             "element": 390,
+            "value": 3
+          },
+          {
+            "element": 399,
+            "value": 3
+          },
+          {
+            "element": 616,
+            "value": 3
+          },
+          {
+            "element": 155,
+            "value": 2
+          },
+          {
+            "element": 411,
             "value": 1
           },
           {
-            "element": 481,
+            "element": 628,
             "value": 1
           }
         ],
@@ -31126,17 +31658,205 @@
     "finished_provisional": false,
     "id": 90,
     "kickoff_time": "2026-10-31T17:30:00Z",
-    "minutes": 0,
+    "minutes": 7,
     "provisional_start_time": false,
     "pulse_id": 0,
-    "started": false,
-    "stats": [],
+    "started": true,
+    "stats": [
+      {
+        "a": [],
+        "h": [],
+        "identifier": "goals_scored"
+      },
+      {
+        "a": [],
+        "h": [],
+        "identifier": "assists"
+      },
+      {
+        "a": [],
+        "h": [],
+        "identifier": "own_goals"
+      },
+      {
+        "a": [],
+        "h": [],
+        "identifier": "penalties_saved"
+      },
+      {
+        "a": [],
+        "h": [],
+        "identifier": "penalties_missed"
+      },
+      {
+        "a": [],
+        "h": [],
+        "identifier": "yellow_cards"
+      },
+      {
+        "a": [],
+        "h": [],
+        "identifier": "red_cards"
+      },
+      {
+        "a": [],
+        "h": [],
+        "identifier": "saves"
+      },
+      {
+        "a": [],
+        "h": [],
+        "identifier": "bonus"
+      },
+      {
+        "a": [
+          {
+            "element": 207,
+            "value": 5
+          },
+          {
+            "element": 210,
+            "value": 5
+          },
+          {
+            "element": 223,
+            "value": 4
+          },
+          {
+            "element": 153,
+            "value": 3
+          },
+          {
+            "element": 198,
+            "value": 3
+          },
+          {
+            "element": 202,
+            "value": 3
+          },
+          {
+            "element": 203,
+            "value": 3
+          },
+          {
+            "element": 204,
+            "value": 3
+          },
+          {
+            "element": 211,
+            "value": 3
+          },
+          {
+            "element": 214,
+            "value": 3
+          },
+          {
+            "element": 241,
+            "value": 3
+          }
+        ],
+        "h": [
+          {
+            "element": 512,
+            "value": 7
+          },
+          {
+            "element": 455,
+            "value": 5
+          },
+          {
+            "element": 514,
+            "value": 4
+          },
+          {
+            "element": 112,
+            "value": 3
+          },
+          {
+            "element": 401,
+            "value": 3
+          },
+          {
+            "element": 496,
+            "value": 3
+          },
+          {
+            "element": 502,
+            "value": 3
+          },
+          {
+            "element": 503,
+            "value": 3
+          },
+          {
+            "element": 522,
+            "value": 3
+          },
+          {
+            "element": 525,
+            "value": 3
+          },
+          {
+            "element": 526,
+            "value": 3
+          }
+        ],
+        "identifier": "bps"
+      },
+      {
+        "a": [
+          {
+            "element": 210,
+            "value": 4
+          },
+          {
+            "element": 204,
+            "value": 2
+          },
+          {
+            "element": 223,
+            "value": 2
+          },
+          {
+            "element": 203,
+            "value": 1
+          },
+          {
+            "element": 207,
+            "value": 1
+          },
+          {
+            "element": 241,
+            "value": 1
+          }
+        ],
+        "h": [
+          {
+            "element": 522,
+            "value": 2
+          },
+          {
+            "element": 455,
+            "value": 1
+          },
+          {
+            "element": 512,
+            "value": 1
+          },
+          {
+            "element": 526,
+            "value": 1
+          }
+        ],
+        "identifier": "defensive_contribution"
+      }
+    ],
     "team_a": 8,
     "team_a_difficulty": 3,
-    "team_a_score": null,
+    "team_a_score": 0,
     "team_h": 19,
     "team_h_difficulty": 2,
-    "team_h_score": null
+    "team_h_score": 0
   },
   {
     "code": 2645276,
