@@ -54,7 +54,7 @@
         "entry_can_leave": false,
         "entry_last_rank": 100701,
         "entry_percentile_rank": 10,
-        "entry_rank": 116320,
+        "entry_rank": 115985,
         "featured_entry_ids": [],
         "has_cup": true,
         "id": 16,
@@ -146,7 +146,7 @@
         "entry_can_leave": false,
         "entry_last_rank": 560255,
         "entry_percentile_rank": 10,
-        "entry_rank": 646665,
+        "entry_rank": 644232,
         "featured_entry_ids": [],
         "has_cup": false,
         "id": 276,
@@ -166,10 +166,10 @@
             "last_rank": 560281,
             "league_id": 314,
             "phase": 1,
-            "rank": 560281,
-            "rank_count": 11111663,
-            "rank_sort": 560593,
-            "total": 541
+            "rank": 644309,
+            "rank_count": 11162254,
+            "rank_sort": 644474,
+            "total": 582
           },
           {
             "entry_percentile_rank": 15,
@@ -192,7 +192,7 @@
         "entry_can_leave": false,
         "entry_last_rank": 560281,
         "entry_percentile_rank": 10,
-        "entry_rank": 646744,
+        "entry_rank": 644310,
         "featured_entry_ids": [],
         "has_cup": true,
         "id": 314,
@@ -200,7 +200,7 @@
         "max_entries": null,
         "name": "Overall",
         "rank": null,
-        "rank_count": 11111663,
+        "rank_count": 11162254,
         "scoring": "c",
         "short_name": "overall",
         "start_event": 1
@@ -208,14 +208,14 @@
       {
         "active_phases": [
           {
-            "entry_percentile_rank": 25,
+            "entry_percentile_rank": 15,
             "last_rank": 2,
             "league_id": 24124,
             "phase": 1,
-            "rank": 2,
+            "rank": 1,
             "rank_count": 9,
-            "rank_sort": 2,
-            "total": 541
+            "rank_sort": 1,
+            "total": 582
           },
           {
             "entry_percentile_rank": 15,
@@ -237,7 +237,7 @@
         "entry_can_invite": true,
         "entry_can_leave": false,
         "entry_last_rank": 2,
-        "entry_percentile_rank": 25,
+        "entry_percentile_rank": 15,
         "entry_rank": 1,
         "featured_entry_ids": [],
         "has_cup": true,
@@ -261,7 +261,7 @@
             "rank": 1,
             "rank_count": 9,
             "rank_sort": 1,
-            "total": 541
+            "total": 582
           },
           {
             "entry_percentile_rank": 35,
@@ -376,7 +376,7 @@
         "entry_can_leave": false,
         "entry_last_rank": 1657989,
         "entry_percentile_rank": 15,
-        "entry_rank": 1522203,
+        "entry_rank": 1515318,
         "featured_entry_ids": [],
         "has_cup": false,
         "id": 2430021,
@@ -414,8 +414,8 @@
   "player_region_name": "Afghanistan",
   "started_event": 1,
   "summary_event_points": 41,
-  "summary_event_rank": 2773557,
+  "summary_event_rank": 2750821,
   "summary_overall_points": 582,
-  "summary_overall_rank": 646744,
+  "summary_overall_rank": 644310,
   "years_active": 15
 }

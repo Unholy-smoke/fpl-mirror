@@ -30313,11 +30313,11 @@
             "value": 11
           },
           {
-            "element": 474,
-            "value": 10
+            "element": 480,
+            "value": 11
           },
           {
-            "element": 480,
+            "element": 474,
             "value": 10
           },
           {
@@ -30364,7 +30364,7 @@
           },
           {
             "element": 82,
-            "value": 24
+            "value": 25
           },
           {
             "element": 87,
@@ -30375,16 +30375,16 @@
             "value": 22
           },
           {
-            "element": 98,
-            "value": 18
-          },
-          {
             "element": 105,
             "value": 18
           },
           {
             "element": 88,
-            "value": 15
+            "value": 17
+          },
+          {
+            "element": 98,
+            "value": 17
           },
           {
             "element": 86,
@@ -30395,16 +30395,16 @@
             "value": 10
           },
           {
+            "element": 565,
+            "value": 10
+          },
+          {
             "element": 94,
             "value": 9
           },
           {
-            "element": 565,
-            "value": 9
-          },
-          {
             "element": 90,
-            "value": 4
+            "value": 5
           },
           {
             "element": 96,
@@ -30448,15 +30448,15 @@
             "value": 5
           },
           {
+            "element": 483,
+            "value": 4
+          },
+          {
             "element": 558,
             "value": 4
           },
           {
             "element": 167,
-            "value": 3
-          },
-          {
-            "element": 483,
             "value": 3
           },
           {
@@ -30475,11 +30475,11 @@
         "h": [
           {
             "element": 98,
-            "value": 16
+            "value": 15
           },
           {
             "element": 87,
-            "value": 13
+            "value": 14
           },
           {
             "element": 85,
@@ -30487,11 +30487,11 @@
           },
           {
             "element": 86,
-            "value": 9
+            "value": 10
           },
           {
             "element": 565,
-            "value": 9
+            "value": 10
           },
           {
             "element": 97,
@@ -30506,20 +30506,20 @@
             "value": 7
           },
           {
-            "element": 105,
+            "element": 106,
             "value": 7
           },
           {
-            "element": 106,
+            "element": 88,
             "value": 6
           },
           {
-            "element": 88,
-            "value": 5
+            "element": 105,
+            "value": 6
           },
           {
             "element": 90,
-            "value": 3
+            "value": 4
           },
           {
             "element": 96,
@@ -31409,18 +31409,18 @@
           },
           {
             "element": 504,
-            "value": 25
+            "value": 26
           },
           {
             "element": 114,
             "value": 20
           },
           {
-            "element": 605,
-            "value": 11
+            "element": 639,
+            "value": 13
           },
           {
-            "element": 639,
+            "element": 605,
             "value": 11
           },
           {
@@ -31450,12 +31450,12 @@
         ],
         "h": [
           {
-            "element": 481,
-            "value": 29
-          },
-          {
             "element": 400,
             "value": 28
+          },
+          {
+            "element": 481,
+            "value": 27
           },
           {
             "element": 384,
@@ -31463,26 +31463,26 @@
           },
           {
             "element": 393,
-            "value": 14
+            "value": 15
+          },
+          {
+            "element": 155,
+            "value": 12
           },
           {
             "element": 237,
             "value": 12
           },
           {
-            "element": 155,
-            "value": 11
-          },
-          {
             "element": 391,
-            "value": 10
-          },
-          {
-            "element": 399,
-            "value": 10
+            "value": 12
           },
           {
             "element": 389,
+            "value": 9
+          },
+          {
+            "element": 399,
             "value": 9
           },
           {
@@ -31527,11 +31527,11 @@
             "value": 10
           },
           {
-            "element": 129,
-            "value": 8
+            "element": 504,
+            "value": 9
           },
           {
-            "element": 504,
+            "element": 129,
             "value": 8
           },
           {
@@ -31581,20 +31581,24 @@
             "value": 13
           },
           {
-            "element": 400,
-            "value": 12
+            "element": 393,
+            "value": 11
           },
           {
-            "element": 393,
-            "value": 9
+            "element": 400,
+            "value": 11
+          },
+          {
+            "element": 391,
+            "value": 6
           },
           {
             "element": 389,
             "value": 5
           },
           {
-            "element": 391,
-            "value": 5
+            "element": 155,
+            "value": 3
           },
           {
             "element": 237,
@@ -31609,15 +31613,11 @@
             "value": 3
           },
           {
-            "element": 399,
-            "value": 3
-          },
-          {
             "element": 616,
             "value": 3
           },
           {
-            "element": 155,
+            "element": 399,
             "value": 2
           },
           {
@@ -32010,10 +32010,10 @@
     "code": 2645276,
     "event": 9,
     "finished": false,
-    "finished_provisional": false,
+    "finished_provisional": true,
     "id": 81,
     "kickoff_time": "2026-10-31T20:00:00Z",
-    "minutes": 88,
+    "minutes": 90,
     "provisional_start_time": false,
     "pulse_id": 0,
     "started": true,
@@ -32170,7 +32170,7 @@
           },
           {
             "element": 256,
-            "value": 5
+            "value": 7
           },
           {
             "element": 257,
@@ -32178,15 +32178,15 @@
           },
           {
             "element": 271,
-            "value": 3
-          },
-          {
-            "element": 570,
-            "value": 3
+            "value": 4
           },
           {
             "element": 635,
             "value": 3
+          },
+          {
+            "element": 570,
+            "value": 2
           },
           {
             "element": 266,
@@ -32196,7 +32196,7 @@
         "h": [
           {
             "element": 166,
-            "value": 37
+            "value": 39
           },
           {
             "element": 53,
@@ -32212,15 +32212,19 @@
           },
           {
             "element": 32,
-            "value": 13
+            "value": 14
           },
           {
             "element": 36,
-            "value": 11
+            "value": 12
           },
           {
             "element": 37,
-            "value": 11
+            "value": 10
+          },
+          {
+            "element": 41,
+            "value": 9
           },
           {
             "element": 618,
@@ -32231,28 +32235,24 @@
             "value": 7
           },
           {
-            "element": 631,
+            "element": 160,
             "value": 5
           },
           {
-            "element": 160,
-            "value": 4
+            "element": 631,
+            "value": 5
           },
           {
             "element": 46,
             "value": 3
           },
           {
-            "element": 34,
-            "value": 2
-          },
-          {
-            "element": 41,
-            "value": 2
-          },
-          {
             "element": 54,
             "value": 2
+          },
+          {
+            "element": 34,
+            "value": -1
           }
         ],
         "identifier": "bps"
@@ -32261,7 +32261,11 @@
         "a": [
           {
             "element": 650,
-            "value": 17
+            "value": 18
+          },
+          {
+            "element": 254,
+            "value": 10
           },
           {
             "element": 265,
@@ -32270,10 +32274,6 @@
           {
             "element": 580,
             "value": 10
-          },
-          {
-            "element": 254,
-            "value": 8
           },
           {
             "element": 261,
@@ -32288,30 +32288,34 @@
             "value": 5
           },
           {
+            "element": 256,
+            "value": 4
+          },
+          {
+            "element": 257,
+            "value": 3
+          },
+          {
             "element": 264,
             "value": 3
           },
           {
-            "element": 257,
-            "value": 2
+            "element": 266,
+            "value": 3
           },
           {
             "element": 570,
-            "value": 2
-          },
-          {
-            "element": 256,
-            "value": 1
-          },
-          {
-            "element": 266,
-            "value": 1
+            "value": 3
           }
         ],
         "h": [
           {
             "element": 47,
             "value": 8
+          },
+          {
+            "element": 34,
+            "value": 6
           },
           {
             "element": 36,
@@ -32323,10 +32327,6 @@
           },
           {
             "element": 32,
-            "value": 5
-          },
-          {
-            "element": 34,
             "value": 5
           },
           {
@@ -32350,16 +32350,16 @@
             "value": 3
           },
           {
-            "element": 631,
+            "element": 41,
             "value": 2
           },
           {
-            "element": 41,
-            "value": 1
+            "element": 54,
+            "value": 2
           },
           {
-            "element": 54,
-            "value": 1
+            "element": 631,
+            "value": 2
           }
         ],
         "identifier": "defensive_contribution"

@@ -2,7 +2,7 @@
  "schema": "league-state/1",
  "as_of_gw": 9,
  "ft_for_gw": 10,
- "source_run_at": "2026-10-31T21:52:11Z",
+ "source_run_at": "2026-11-01T00:15:22Z",
  "league": "Shabanga",
  "entries": [
   {
@@ -32,7 +32,7 @@
     "freehit",
     "3xc"
    ],
-   "selling_value": 98.3,
+   "selling_value": 98.4,
    "squad": [
     {
      "element_id": 572,
@@ -155,7 +155,7 @@
      "captain": false,
      "vice": false,
      "purchase": 6.3,
-     "now": 6.3,
+     "now": 6.4,
      "selling": 6.3,
      "purchase_source": "transfer log",
      "status": "a"
@@ -169,8 +169,8 @@
      "captain": false,
      "vice": true,
      "purchase": 6.6,
-     "now": 6.9,
-     "selling": 6.7,
+     "now": 7.0,
+     "selling": 6.8,
      "purchase_source": "transfer log",
      "status": "a"
     },
@@ -239,7 +239,7 @@
      "captain": false,
      "vice": false,
      "purchase": 4.9,
-     "now": 5.3,
+     "now": 5.4,
      "selling": 5.1,
      "purchase_source": "transfer log",
      "status": "a"
@@ -337,7 +337,7 @@
      "captain": false,
      "vice": false,
      "purchase": 6.5,
-     "now": 6.5,
+     "now": 6.6,
      "selling": 6.5,
      "purchase_source": "transfer log",
      "status": "a"
@@ -421,7 +421,7 @@
      "captain": false,
      "vice": true,
      "purchase": 6.3,
-     "now": 6.3,
+     "now": 6.4,
      "selling": 6.3,
      "purchase_source": "transfer log",
      "status": "a"
@@ -536,7 +536,7 @@
      "captain": false,
      "vice": false,
      "purchase": 4.9,
-     "now": 4.9,
+     "now": 5.0,
      "selling": 4.9,
      "purchase_source": "transfer log",
      "status": "a"
@@ -620,7 +620,7 @@
      "captain": false,
      "vice": false,
      "purchase": 5.2,
-     "now": 5.2,
+     "now": 5.3,
      "selling": 5.2,
      "purchase_source": "transfer log",
      "status": "a"
@@ -648,7 +648,7 @@
      "captain": false,
      "vice": true,
      "purchase": 6.7,
-     "now": 6.9,
+     "now": 7.0,
      "selling": 6.8,
      "purchase_source": "transfer log",
      "status": "a"
@@ -718,7 +718,7 @@
      "captain": false,
      "vice": false,
      "purchase": 4.7,
-     "now": 5.3,
+     "now": 5.4,
      "selling": 5.0,
      "purchase_source": "transfer log",
      "status": "a"
@@ -892,7 +892,7 @@
      "captain": false,
      "vice": true,
      "purchase": 6.7,
-     "now": 6.9,
+     "now": 7.0,
      "selling": 6.8,
      "purchase_source": "transfer log",
      "status": "a"
@@ -934,7 +934,7 @@
      "captain": false,
      "vice": false,
      "purchase": 4.7,
-     "now": 5.3,
+     "now": 5.4,
      "selling": 5.0,
      "purchase_source": "transfer log",
      "status": "a"
@@ -996,7 +996,7 @@
     "freehit",
     "bboost"
    ],
-   "selling_value": 100.1,
+   "selling_value": 100.3,
    "squad": [
     {
      "element_id": 1,
@@ -1063,8 +1063,8 @@
      "captain": false,
      "vice": false,
      "purchase": 5.1,
-     "now": 5.2,
-     "selling": 5.1,
+     "now": 5.3,
+     "selling": 5.2,
      "purchase_source": "transfer log",
      "status": "a"
     },
@@ -1203,8 +1203,8 @@
      "captain": false,
      "vice": false,
      "purchase": 5.0,
-     "now": 5.3,
-     "selling": 5.1,
+     "now": 5.4,
+     "selling": 5.2,
      "purchase_source": "transfer log",
      "status": "a"
     }
@@ -1230,7 +1230,7 @@
     "bboost",
     "3xc"
    ],
-   "selling_value": 97.7,
+   "selling_value": 97.8,
    "squad": [
     {
      "element_id": 1,
@@ -1258,7 +1258,7 @@
      "now": 4.3,
      "selling": 4.3,
      "purchase_source": "start price",
-     "status": "a"
+     "status": "s"
     },
     {
      "element_id": 391,
@@ -1283,7 +1283,7 @@
      "captain": false,
      "vice": false,
      "purchase": 5.1,
-     "now": 5.3,
+     "now": 5.4,
      "selling": 5.2,
      "purchase_source": "transfer log",
      "status": "a"
@@ -1297,8 +1297,8 @@
      "captain": false,
      "vice": false,
      "purchase": 6.4,
-     "now": 6.5,
-     "selling": 6.4,
+     "now": 6.6,
+     "selling": 6.5,
      "purchase_source": "transfer log",
      "status": "a"
     },
@@ -1311,8 +1311,8 @@
      "captain": false,
      "vice": false,
      "purchase": 7.8,
-     "now": 8.0,
-     "selling": 7.9,
+     "now": 7.9,
+     "selling": 7.8,
      "purchase_source": "transfer log",
      "status": "a"
     },
@@ -1381,8 +1381,8 @@
      "captain": true,
      "vice": false,
      "purchase": 6.8,
-     "now": 6.9,
-     "selling": 6.8,
+     "now": 7.0,
+     "selling": 6.9,
      "purchase_source": "transfer log",
      "status": "a"
     },
@@ -1563,8 +1563,8 @@
      "captain": false,
      "vice": false,
      "purchase": 7.8,
-     "now": 8.0,
-     "selling": 7.9,
+     "now": 7.9,
+     "selling": 7.8,
      "purchase_source": "transfer log",
      "status": "a"
     },
@@ -1591,8 +1591,8 @@
      "captain": false,
      "vice": false,
      "purchase": 9.0,
-     "now": 9.1,
-     "selling": 9.0,
+     "now": 9.2,
+     "selling": 9.1,
      "purchase_source": "transfer log",
      "status": "a"
     },
@@ -1619,7 +1619,7 @@
      "captain": false,
      "vice": true,
      "purchase": 6.3,
-     "now": 6.3,
+     "now": 6.4,
      "selling": 6.3,
      "purchase_source": "transfer log",
      "status": "a"
@@ -1769,7 +1769,7 @@
      "captain": false,
      "vice": true,
      "purchase": 6.1,
-     "now": 6.5,
+     "now": 6.6,
      "selling": 6.3,
      "purchase_source": "transfer log",
      "status": "a"
@@ -1797,8 +1797,8 @@
      "captain": false,
      "vice": false,
      "purchase": 8.0,
-     "now": 8.0,
-     "selling": 8.0,
+     "now": 7.9,
+     "selling": 7.9,
      "purchase_source": "transfer log",
      "status": "a"
     },
@@ -1825,7 +1825,7 @@
      "captain": false,
      "vice": false,
      "purchase": 5.2,
-     "now": 5.2,
+     "now": 5.3,
      "selling": 5.2,
      "purchase_source": "transfer log",
      "status": "a"
@@ -1839,7 +1839,7 @@
      "captain": true,
      "vice": false,
      "purchase": 7.5,
-     "now": 7.8,
+     "now": 7.7,
      "selling": 7.6,
      "purchase_source": "transfer log",
      "status": "i"
@@ -1895,8 +1895,8 @@
      "captain": false,
      "vice": false,
      "purchase": 5.2,
-     "now": 5.3,
-     "selling": 5.2,
+     "now": 5.4,
+     "selling": 5.3,
      "purchase_source": "transfer log",
      "status": "a"
     },
@@ -1940,7 +1940,7 @@
     "bboost",
     "3xc"
    ],
-   "selling_value": 93.5,
+   "selling_value": 93.8,
    "squad": [
     {
      "element_id": 597,
@@ -1965,7 +1965,7 @@
      "captain": false,
      "vice": false,
      "purchase": 4.9,
-     "now": 4.9,
+     "now": 5.0,
      "selling": 4.9,
      "purchase_source": "transfer log",
      "status": "a"
@@ -2035,8 +2035,8 @@
      "captain": false,
      "vice": true,
      "purchase": 6.2,
-     "now": 6.5,
-     "selling": 6.3,
+     "now": 6.6,
+     "selling": 6.4,
      "purchase_source": "transfer log",
      "status": "a"
     },
@@ -2091,8 +2091,8 @@
      "captain": false,
      "vice": false,
      "purchase": 6.8,
-     "now": 6.9,
-     "selling": 6.8,
+     "now": 7.0,
+     "selling": 6.9,
      "purchase_source": "transfer log",
      "status": "a"
     },
@@ -2119,8 +2119,8 @@
      "captain": false,
      "vice": false,
      "purchase": 4.8,
-     "now": 5.3,
-     "selling": 5.0,
+     "now": 5.4,
+     "selling": 5.1,
      "purchase_source": "transfer log",
      "status": "a"
     },
