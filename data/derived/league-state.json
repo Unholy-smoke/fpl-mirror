@@ -2,7 +2,7 @@
  "schema": "league-state/1",
  "as_of_gw": 9,
  "ft_for_gw": 10,
- "source_run_at": "2026-11-01T14:14:46Z",
+ "source_run_at": "2026-11-01T16:27:28Z",
  "league": "Shabanga",
  "entries": [
   {
@@ -214,7 +214,7 @@
      "now": 5.9,
      "selling": 5.7,
      "purchase_source": "start price",
-     "status": "d"
+     "status": "a"
     },
     {
      "element_id": 124,
@@ -480,7 +480,7 @@
      "now": 5.9,
      "selling": 5.7,
      "purchase_source": "start price",
-     "status": "d"
+     "status": "a"
     }
    ]
   },
@@ -567,7 +567,7 @@
      "now": 5.9,
      "selling": 5.7,
      "purchase_source": "start price",
-     "status": "d"
+     "status": "a"
     },
     {
      "element_id": 154,
@@ -783,7 +783,7 @@
      "now": 5.9,
      "selling": 5.7,
      "purchase_source": "start price",
-     "status": "d"
+     "status": "a"
     },
     {
      "element_id": 277,
@@ -1412,7 +1412,7 @@
      "now": 5.9,
      "selling": 5.7,
      "purchase_source": "start price",
-     "status": "d"
+     "status": "a"
     },
     {
      "element_id": 94,
@@ -1496,7 +1496,7 @@
      "now": 5.9,
      "selling": 5.7,
      "purchase_source": "start price",
-     "status": "d"
+     "status": "a"
     },
     {
      "element_id": 31,
@@ -1538,7 +1538,7 @@
      "now": 7.4,
      "selling": 7.3,
      "purchase_source": "transfer log",
-     "status": "d"
+     "status": "a"
     },
     {
      "element_id": 40,
@@ -1744,7 +1744,7 @@
      "now": 5.9,
      "selling": 5.7,
      "purchase_source": "start price",
-     "status": "d"
+     "status": "a"
     },
     {
      "element_id": 201,
@@ -2136,7 +2136,7 @@
      "now": 5.9,
      "selling": 5.8,
      "purchase_source": "transfer log",
-     "status": "d"
+     "status": "a"
     },
     {
      "element_id": 26,
