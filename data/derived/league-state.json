@@ -2,7 +2,7 @@
  "schema": "league-state/1",
  "as_of_gw": 9,
  "ft_for_gw": 10,
- "source_run_at": "2026-11-02T23:13:30Z",
+ "source_run_at": "2026-11-03T01:16:55Z",
  "league": "Shabanga",
  "entries": [
   {
@@ -11,8 +11,8 @@
    "manager": "B Kites",
    "team_name": "Nwaneris Mate!",
    "rank": 1,
-   "total": 593,
-   "gw_points": 46,
+   "total": 594,
+   "gw_points": 47,
    "bank": 1.5,
    "free_transfers": 1,
    "transfers_total": 8,
