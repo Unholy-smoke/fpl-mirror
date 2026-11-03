@@ -2,7 +2,7 @@
   "fixtures": [
     {
       "code": 2645292,
-      "difficulty": 4,
+      "difficulty": 3,
       "event": 10,
       "event_name": "Gameweek 10",
       "finished": false,
@@ -18,7 +18,7 @@
     },
     {
       "code": 2645296,
-      "difficulty": 3,
+      "difficulty": 2,
       "event": 11,
       "event_name": "Gameweek 11",
       "finished": false,
@@ -146,7 +146,7 @@
     },
     {
       "code": 2645375,
-      "difficulty": 3,
+      "difficulty": 4,
       "event": 19,
       "event_name": "Gameweek 19",
       "finished": false,
@@ -178,7 +178,7 @@
     },
     {
       "code": 2645396,
-      "difficulty": 4,
+      "difficulty": 3,
       "event": 21,
       "event_name": "Gameweek 21",
       "finished": false,
@@ -322,7 +322,7 @@
     },
     {
       "code": 2645494,
-      "difficulty": 3,
+      "difficulty": 2,
       "event": 30,
       "event_name": "Gameweek 30",
       "finished": false,
@@ -338,7 +338,7 @@
     },
     {
       "code": 2645496,
-      "difficulty": 3,
+      "difficulty": 4,
       "event": 31,
       "event_name": "Gameweek 31",
       "finished": false,
@@ -386,7 +386,7 @@
     },
     {
       "code": 2645528,
-      "difficulty": 3,
+      "difficulty": 2,
       "event": 34,
       "event_name": "Gameweek 34",
       "finished": false,
@@ -402,7 +402,7 @@
     },
     {
       "code": 2645536,
-      "difficulty": 3,
+      "difficulty": 4,
       "event": 35,
       "event_name": "Gameweek 35",
       "finished": false,
@@ -450,7 +450,7 @@
     },
     {
       "code": 2645566,
-      "difficulty": 2,
+      "difficulty": 3,
       "event": 38,
       "event_name": "Gameweek 38",
       "finished": false,

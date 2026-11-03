@@ -50,7 +50,7 @@
     },
     {
       "code": 2645315,
-      "difficulty": 3,
+      "difficulty": 4,
       "event": 13,
       "event_name": "Gameweek 13",
       "finished": false,
@@ -130,7 +130,7 @@
     },
     {
       "code": 2645367,
-      "difficulty": 3,
+      "difficulty": 2,
       "event": 18,
       "event_name": "Gameweek 18",
       "finished": false,
@@ -194,7 +194,7 @@
     },
     {
       "code": 2645413,
-      "difficulty": 3,
+      "difficulty": 2,
       "event": 22,
       "event_name": "Gameweek 22",
       "finished": false,
@@ -290,7 +290,7 @@
     },
     {
       "code": 2645465,
-      "difficulty": 2,
+      "difficulty": 3,
       "event": 28,
       "event_name": "Gameweek 28",
       "finished": false,
@@ -322,7 +322,7 @@
     },
     {
       "code": 2645486,
-      "difficulty": 3,
+      "difficulty": 4,
       "event": 30,
       "event_name": "Gameweek 30",
       "finished": false,
@@ -402,7 +402,7 @@
     },
     {
       "code": 2645535,
-      "difficulty": 4,
+      "difficulty": 3,
       "event": 35,
       "event_name": "Gameweek 35",
       "finished": false,
