@@ -2,7 +2,7 @@
  "schema": "league-state/1",
  "as_of_gw": 9,
  "ft_for_gw": 10,
- "source_run_at": "2026-11-03T23:42:37Z",
+ "source_run_at": "2026-11-04T01:31:46Z",
  "league": "Shabanga",
  "entries": [
   {
@@ -270,7 +270,7 @@
     "freehit",
     "3xc"
    ],
-   "selling_value": 96.2,
+   "selling_value": 96.4,
    "squad": [
     {
      "element_id": 496,
@@ -309,8 +309,8 @@
      "captain": false,
      "vice": false,
      "purchase": 4.4,
-     "now": 4.7,
-     "selling": 4.5,
+     "now": 4.8,
+     "selling": 4.6,
      "purchase_source": "transfer log",
      "status": "a"
     },
@@ -351,8 +351,8 @@
      "captain": false,
      "vice": false,
      "purchase": 7.8,
-     "now": 8.1,
-     "selling": 7.9,
+     "now": 8.2,
+     "selling": 8.0,
      "purchase_source": "transfer log",
      "status": "a"
     },
@@ -592,7 +592,7 @@
      "captain": false,
      "vice": false,
      "purchase": 7.7,
-     "now": 8.1,
+     "now": 8.2,
      "selling": 7.9,
      "purchase_source": "transfer log",
      "status": "a"
@@ -755,7 +755,7 @@
    "chips_held_now": [
     "freehit"
    ],
-   "selling_value": 97.0,
+   "selling_value": 97.1,
    "squad": [
     {
      "element_id": 1,
@@ -836,8 +836,8 @@
      "captain": false,
      "vice": false,
      "purchase": 7.6,
-     "now": 8.1,
-     "selling": 7.8,
+     "now": 8.2,
+     "selling": 7.9,
      "purchase_source": "transfer log",
      "status": "a"
     },
@@ -1273,7 +1273,7 @@
      "captain": false,
      "vice": false,
      "purchase": 4.5,
-     "now": 4.7,
+     "now": 4.8,
      "selling": 4.6,
      "purchase_source": "transfer log",
      "status": "a"
@@ -1315,7 +1315,7 @@
      "captain": false,
      "vice": false,
      "purchase": 7.7,
-     "now": 8.1,
+     "now": 8.2,
      "selling": 7.9,
      "purchase_source": "transfer log",
      "status": "a"
@@ -1577,7 +1577,7 @@
      "captain": false,
      "vice": true,
      "purchase": 7.9,
-     "now": 8.1,
+     "now": 8.2,
      "selling": 8.0,
      "purchase_source": "transfer log",
      "status": "a"
@@ -2021,7 +2021,7 @@
      "captain": true,
      "vice": false,
      "purchase": 7.5,
-     "now": 8.1,
+     "now": 8.2,
      "selling": 7.8,
      "purchase_source": "start price",
      "status": "a"
