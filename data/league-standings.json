@@ -1,5 +1,5 @@
 {
-  "last_updated_data": "2026-11-07T10:39:01Z",
+  "last_updated_data": "2026-11-07T13:56:42Z",
   "league": {
     "admin_entry": 118670,
     "closed": false,
@@ -39,23 +39,23 @@
         "club_badge_src": null,
         "entry": 3866837,
         "entry_name": "The Krejci Gang",
-        "event_total": 0,
+        "event_total": 9,
         "last_rank": 2,
         "player_name": "Craig Bowen",
         "rank": 2,
         "rank_sort": 2,
-        "total": 589
+        "total": 598
       },
       {
         "club_badge_src": null,
         "entry": 118670,
         "entry_name": "Ugarte Freund in Mee",
-        "event_total": 0,
+        "event_total": 9,
         "last_rank": 3,
         "player_name": "Michael Jones",
         "rank": 3,
         "rank_sort": 3,
-        "total": 586
+        "total": 595
       },
       {
         "club_badge_src": null,
@@ -83,12 +83,12 @@
         "club_badge_src": null,
         "entry": 88625,
         "entry_name": "Dean's Team",
-        "event_total": 0,
+        "event_total": 6,
         "last_rank": 6,
         "player_name": "Dean Barr",
         "rank": 6,
         "rank_sort": 6,
-        "total": 536
+        "total": 542
       },
       {
         "club_badge_src": null,
@@ -116,12 +116,12 @@
         "club_badge_src": null,
         "entry": 7519117,
         "entry_name": "Zero Fox Given",
-        "event_total": 0,
+        "event_total": 7,
         "last_rank": 9,
         "player_name": "Matt Fox",
         "rank": 9,
         "rank_sort": 9,
-        "total": 433
+        "total": 440
       }
     ]
   }

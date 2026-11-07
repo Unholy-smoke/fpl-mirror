@@ -2,7 +2,7 @@
  "schema": "league-state/1",
  "as_of_gw": 10,
  "ft_for_gw": 11,
- "source_run_at": "2026-11-07T10:42:00Z",
+ "source_run_at": "2026-11-07T13:56:56Z",
  "league": "Shabanga",
  "entries": [
   {
@@ -249,8 +249,8 @@
    "manager": "Craig Bowen",
    "team_name": "The Krejci Gang",
    "rank": 2,
-   "total": 589,
-   "gw_points": 0,
+   "total": 598,
+   "gw_points": 9,
    "bank": 3.7,
    "free_transfers": 4,
    "transfers_total": 6,
@@ -424,7 +424,7 @@
      "now": 6.0,
      "selling": 6.0,
      "purchase_source": "transfer log",
-     "status": "d"
+     "status": "a"
     },
     {
      "element_id": 496,
@@ -490,8 +490,8 @@
    "manager": "Michael Jones",
    "team_name": "Ugarte Freund in Mee",
    "rank": 3,
-   "total": 586,
-   "gw_points": 0,
+   "total": 595,
+   "gw_points": 9,
    "bank": 3.1,
    "free_transfers": 3,
    "transfers_total": 8,
@@ -948,7 +948,7 @@
      "now": 6.0,
      "selling": 6.0,
      "purchase_source": "transfer log",
-     "status": "d"
+     "status": "a"
     },
     {
      "element_id": 286,
@@ -1216,8 +1216,8 @@
    "manager": "Dean Barr",
    "team_name": "Dean's Team",
    "rank": 6,
-   "total": 536,
-   "gw_points": 0,
+   "total": 542,
+   "gw_points": 6,
    "bank": 1.9,
    "free_transfers": 3,
    "transfers_total": 7,
@@ -1922,8 +1922,8 @@
    "manager": "Matt Fox",
    "team_name": "Zero Fox Given",
    "rank": 9,
-   "total": 433,
-   "gw_points": 0,
+   "total": 440,
+   "gw_points": 7,
    "bank": 2.7,
    "free_transfers": 1,
    "transfers_total": 14,
