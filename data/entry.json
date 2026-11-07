@@ -29,9 +29,9 @@
             "last_rank": 159791,
             "league_id": 16,
             "phase": 1,
-            "rank": 159791,
-            "rank_count": 1830433,
-            "rank_sort": 159827,
+            "rank": 172781,
+            "rank_count": 1834502,
+            "rank_sort": 172848,
             "total": 586
           },
           {
@@ -63,7 +63,7 @@
         "max_entries": null,
         "name": "Man Utd",
         "rank": null,
-        "rank_count": 1830433,
+        "rank_count": 1834502,
         "scoring": "c",
         "short_name": "team-16",
         "start_event": 1
@@ -75,9 +75,9 @@
             "last_rank": 149,
             "league_id": 21,
             "phase": 1,
-            "rank": 149,
-            "rank_count": 3436,
-            "rank_sort": 149,
+            "rank": 158,
+            "rank_count": 3538,
+            "rank_sort": 158,
             "total": 586
           },
           {
@@ -109,7 +109,7 @@
         "max_entries": null,
         "name": "Afghanistan",
         "rank": null,
-        "rank_count": 3436,
+        "rank_count": 3538,
         "scoring": "c",
         "short_name": "region-1",
         "start_event": 1
@@ -121,9 +121,9 @@
             "last_rank": 902985,
             "league_id": 276,
             "phase": 1,
-            "rank": 902985,
-            "rank_count": 8888381,
-            "rank_sort": 903158,
+            "rank": 990666,
+            "rank_count": 8888135,
+            "rank_sort": 990968,
             "total": 586
           },
           {
@@ -155,7 +155,7 @@
         "max_entries": null,
         "name": "Gameweek 1",
         "rank": null,
-        "rank_count": 8888381,
+        "rank_count": 8888135,
         "scoring": "c",
         "short_name": "event-1",
         "start_event": 1
@@ -167,9 +167,9 @@
             "last_rank": 903165,
             "league_id": 314,
             "phase": 1,
-            "rank": 903165,
-            "rank_count": 11161781,
-            "rank_sort": 903338,
+            "rank": 990930,
+            "rank_count": 11202652,
+            "rank_sort": 991232,
             "total": 586
           },
           {
@@ -201,7 +201,7 @@
         "max_entries": null,
         "name": "Overall",
         "rank": null,
-        "rank_count": 11161781,
+        "rank_count": 11202652,
         "scoring": "c",
         "short_name": "overall",
         "start_event": 1
@@ -377,7 +377,7 @@
         "entry_can_leave": false,
         "entry_last_rank": 2514214,
         "entry_percentile_rank": 25,
-        "entry_rank": 2781153,
+        "entry_rank": 2781152,
         "featured_entry_ids": [],
         "has_cup": false,
         "id": 2430021,
@@ -415,7 +415,7 @@
   "player_region_name": "Afghanistan",
   "started_event": 1,
   "summary_event_points": 0,
-  "summary_event_rank": 4060967,
+  "summary_event_rank": 4060966,
   "summary_overall_points": 586,
   "summary_overall_rank": 990930,
   "years_active": 15
