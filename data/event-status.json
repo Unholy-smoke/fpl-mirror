@@ -1,23 +1,23 @@
 {
-  "leagues": "",
+  "leagues": "Updating",
   "status": [
     {
-      "bonus_added": false,
+      "bonus_added": true,
       "date": "2026-11-06",
       "event": 10,
-      "points": "p"
+      "points": "r"
     },
     {
-      "bonus_added": false,
+      "bonus_added": true,
       "date": "2026-11-07",
       "event": 10,
-      "points": "p"
+      "points": "r"
     },
     {
-      "bonus_added": false,
+      "bonus_added": true,
       "date": "2026-11-08",
       "event": 10,
-      "points": "p"
+      "points": "r"
     }
   ]
 }
