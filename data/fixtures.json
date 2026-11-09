@@ -36220,15 +36220,15 @@
             "value": 15
           },
           {
+            "element": 583,
+            "value": 13
+          },
+          {
             "element": 101,
             "value": 12
           },
           {
             "element": 560,
-            "value": 12
-          },
-          {
-            "element": 583,
             "value": 12
           },
           {
@@ -36241,7 +36241,7 @@
           },
           {
             "element": 157,
-            "value": 11
+            "value": 8
           },
           {
             "element": 145,
@@ -36253,15 +36253,11 @@
           },
           {
             "element": 170,
-            "value": 4
+            "value": 5
           },
           {
             "element": 164,
             "value": 3
-          },
-          {
-            "element": 136,
-            "value": -3
           }
         ],
         "h": [
@@ -36279,7 +36275,7 @@
           },
           {
             "element": 534,
-            "value": 24
+            "value": 22
           },
           {
             "element": 536,
@@ -36290,12 +36286,12 @@
             "value": 20
           },
           {
-            "element": 539,
-            "value": 15
+            "element": 613,
+            "value": 18
           },
           {
-            "element": 613,
-            "value": 15
+            "element": 539,
+            "value": 16
           },
           {
             "element": 545,
@@ -36307,7 +36303,7 @@
           },
           {
             "element": 552,
-            "value": 4
+            "value": 5
           },
           {
             "element": 544,
@@ -36339,19 +36335,23 @@
             "value": 10
           },
           {
-            "element": 145,
-            "value": 9
-          },
-          {
             "element": 40,
             "value": 8
           },
           {
+            "element": 145,
+            "value": 8
+          },
+          {
             "element": 583,
-            "value": 6
+            "value": 7
           },
           {
             "element": 152,
+            "value": 4
+          },
+          {
+            "element": 157,
             "value": 4
           },
           {
@@ -36359,19 +36359,15 @@
             "value": 3
           },
           {
-            "element": 149,
-            "value": 3
-          },
-          {
             "element": 154,
             "value": 3
           },
           {
-            "element": 157,
-            "value": 3
+            "element": 101,
+            "value": 2
           },
           {
-            "element": 101,
+            "element": 149,
             "value": 2
           },
           {
@@ -36381,11 +36377,11 @@
         ],
         "h": [
           {
-            "element": 545,
-            "value": 12
+            "element": 613,
+            "value": 14
           },
           {
-            "element": 613,
+            "element": 545,
             "value": 12
           },
           {
@@ -36409,7 +36405,7 @@
             "value": 7
           },
           {
-            "element": 549,
+            "element": 552,
             "value": 5
           },
           {
@@ -36417,7 +36413,7 @@
             "value": 4
           },
           {
-            "element": 552,
+            "element": 549,
             "value": 4
           },
           {
@@ -36589,7 +36585,7 @@
         "h": [
           {
             "element": 415,
-            "value": 1
+            "value": 2
           }
         ],
         "identifier": "bonus"
@@ -36598,7 +36594,7 @@
         "a": [
           {
             "element": 52,
-            "value": 46
+            "value": 48
           },
           {
             "element": 166,
@@ -36614,11 +36610,11 @@
           },
           {
             "element": 53,
-            "value": 17
+            "value": 19
           },
           {
             "element": 47,
-            "value": 8
+            "value": 9
           },
           {
             "element": 46,
@@ -36645,6 +36641,10 @@
             "value": 4
           },
           {
+            "element": 630,
+            "value": 2
+          },
+          {
             "element": 34,
             "value": -1
           },
@@ -36660,19 +36660,19 @@
         "h": [
           {
             "element": 415,
-            "value": 42
+            "value": 44
           },
           {
             "element": 43,
-            "value": 41
+            "value": 39
+          },
+          {
+            "element": 428,
+            "value": 39
           },
           {
             "element": 426,
             "value": 38
-          },
-          {
-            "element": 428,
-            "value": 37
           },
           {
             "element": 440,
@@ -36680,7 +36680,7 @@
           },
           {
             "element": 432,
-            "value": 24
+            "value": 22
           },
           {
             "element": 431,
@@ -36707,16 +36707,16 @@
             "value": -2
           },
           {
+            "element": 421,
+            "value": -3
+          },
+          {
             "element": 418,
             "value": -4
           },
           {
-            "element": 421,
-            "value": -4
-          },
-          {
             "element": 417,
-            "value": -11
+            "value": -7
           }
         ],
         "identifier": "bps"
@@ -36728,27 +36728,27 @@
             "value": 14
           },
           {
+            "element": 47,
+            "value": 14
+          },
+          {
             "element": 34,
             "value": 12
           },
           {
-            "element": 47,
-            "value": 12
-          },
-          {
             "element": 53,
-            "value": 8
+            "value": 9
           },
           {
             "element": 630,
             "value": 8
           },
           {
-            "element": 36,
-            "value": 6
+            "element": 52,
+            "value": 7
           },
           {
-            "element": 52,
+            "element": 36,
             "value": 6
           },
           {
@@ -36798,11 +36798,11 @@
             "value": 7
           },
           {
-            "element": 417,
-            "value": 6
+            "element": 428,
+            "value": 7
           },
           {
-            "element": 428,
+            "element": 417,
             "value": 6
           },
           {
@@ -36811,7 +36811,7 @@
           },
           {
             "element": 421,
-            "value": 4
+            "value": 5
           },
           {
             "element": 431,
