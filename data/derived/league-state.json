@@ -2,7 +2,7 @@
  "schema": "league-state/1",
  "as_of_gw": 10,
  "ft_for_gw": 11,
- "source_run_at": "2026-11-09T17:26:08Z",
+ "source_run_at": "2026-11-09T20:10:56Z",
  "league": "Shabanga",
  "entries": [
   {
@@ -1038,7 +1038,7 @@
      "now": 6.4,
      "selling": 6.4,
      "purchase_source": "start price",
-     "status": "a"
+     "status": "d"
     },
     {
      "element_id": 229,
