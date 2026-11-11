@@ -2,7 +2,7 @@
  "schema": "league-state/1",
  "as_of_gw": 10,
  "ft_for_gw": 11,
- "source_run_at": "2026-11-10T23:43:47Z",
+ "source_run_at": "2026-11-11T01:20:34Z",
  "league": "Shabanga",
  "entries": [
   {
@@ -29,7 +29,7 @@
     "freehit",
     "bboost"
    ],
-   "selling_value": 98.2,
+   "selling_value": 98.4,
    "squad": [
     {
      "element_id": 109,
@@ -40,8 +40,8 @@
      "captain": false,
      "vice": false,
      "purchase": 4.5,
-     "now": 4.6,
-     "selling": 4.5,
+     "now": 4.7,
+     "selling": 4.6,
      "purchase_source": "start price",
      "status": "a"
     },
@@ -208,8 +208,8 @@
      "captain": false,
      "vice": false,
      "purchase": 6.5,
-     "now": 6.6,
-     "selling": 6.5,
+     "now": 6.7,
+     "selling": 6.6,
      "purchase_source": "transfer log",
      "status": "a"
     },
@@ -511,7 +511,7 @@
     "freehit",
     "3xc"
    ],
-   "selling_value": 96.8,
+   "selling_value": 96.9,
    "squad": [
     {
      "element_id": 109,
@@ -522,8 +522,8 @@
      "captain": false,
      "vice": false,
      "purchase": 4.5,
-     "now": 4.6,
-     "selling": 4.5,
+     "now": 4.7,
+     "selling": 4.6,
      "purchase_source": "transfer log",
      "status": "a"
     },
@@ -1940,7 +1940,7 @@
     "bboost",
     "3xc"
    ],
-   "selling_value": 97.0,
+   "selling_value": 97.1,
    "squad": [
     {
      "element_id": 109,
@@ -1951,8 +1951,8 @@
      "captain": false,
      "vice": false,
      "purchase": 4.5,
-     "now": 4.6,
-     "selling": 4.5,
+     "now": 4.7,
+     "selling": 4.6,
      "purchase_source": "transfer log",
      "status": "a"
     },
