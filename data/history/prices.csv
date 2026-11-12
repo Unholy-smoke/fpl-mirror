@@ -752,3 +752,4 @@ observed_at,element_id,web_name,team,element_type,old_cost,new_cost,delta,select
 "2026-11-11T01:20:34Z",109,"Verbruggen","BHA",1,46,47,1,"23.9",43672,11757
 "2026-11-11T01:20:34Z",236,"Dewsbury-Hall","EVE",3,66,67,1,"7.2",53592,7117
 "2026-11-11T01:20:34Z",424,"Amass","MUN",2,40,39,-1,"0.2",206,318
+"2026-11-12T00:59:49Z",462,"Steur","NEW",3,48,47,-1,"0.1",76,121
