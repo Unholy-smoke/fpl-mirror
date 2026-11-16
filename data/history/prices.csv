@@ -757,3 +757,4 @@ observed_at,element_id,web_name,team,element_type,old_cost,new_cost,delta,select
 "2026-11-15T01:09:11Z",31,"Konsa","ARS",2,48,49,1,"24.7",148603,13509
 "2026-11-15T01:09:11Z",111,"Steele","BHA",1,40,39,-1,"3.4",1058,7862
 "2026-11-15T01:09:11Z",357,"Frimpong","LIV",2,52,51,-1,"1.2",52,3549
+"2026-11-16T01:14:16Z",584,"Hamer","COV",3,53,52,-1,"0.1",12,95
