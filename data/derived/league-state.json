@@ -2,7 +2,7 @@
  "schema": "league-state/1",
  "as_of_gw": 10,
  "ft_for_gw": 11,
- "source_run_at": "2026-11-17T23:11:14Z",
+ "source_run_at": "2026-11-18T01:19:19Z",
  "league": "Shabanga",
  "entries": [
   {
@@ -270,7 +270,7 @@
     "freehit",
     "3xc"
    ],
-   "selling_value": 98.4,
+   "selling_value": 98.3,
    "squad": [
     {
      "element_id": 1,
@@ -379,8 +379,8 @@
      "captain": false,
      "vice": false,
      "purchase": 6.1,
-     "now": 6.1,
-     "selling": 6.1,
+     "now": 6.0,
+     "selling": 6.0,
      "purchase_source": "transfer log",
      "status": "a"
     },

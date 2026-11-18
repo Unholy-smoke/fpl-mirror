@@ -761,3 +761,4 @@ observed_at,element_id,web_name,team,element_type,old_cost,new_cost,delta,select
 "2026-11-17T02:06:08Z",71,"Cook","BOU",3,50,49,-1,"0.1",205,531
 "2026-11-17T02:06:08Z",207,"Mingueza","CRY",2,43,42,-1,"0.0",59,109
 "2026-11-17T02:06:08Z",434,"J.Fletcher","MUN",3,49,48,-1,"0.0",23,30
+"2026-11-18T01:19:19Z",453,"Barnes","NEW",3,61,60,-1,"6.5",3497,55359
