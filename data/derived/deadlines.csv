@@ -19,9 +19,9 @@ gw,deadline_utc,deadline_uk,first_kickoff_utc,first_kickoff_uk,first_fixture,ko_
 18,2026-12-29T18:00:00Z,Tue 29 Dec 18:00 GMT,2026-12-29T19:30:00Z,Tue 29 Dec 19:30 GMT,HUL v LEE,90,yes,false,false,false
 19,2027-01-01T18:30:00Z,Fri 01 Jan 18:30 GMT,2027-01-01T20:00:00Z,Fri 01 Jan 20:00 GMT,LEE v EVE,90,yes,false,false,false
 20,2027-01-05T18:00:00Z,Tue 05 Jan 18:00 GMT,2027-01-05T19:30:00Z,Tue 05 Jan 19:30 GMT,ARS v BRE,90,yes,false,false,false
-21,2027-01-16T13:30:00Z,Sat 16 Jan 13:30 GMT,2027-01-16T15:00:00Z,Sat 16 Jan 15:00 GMT,AVL v MUN,90,yes,false,false,false
-22,2027-01-23T13:30:00Z,Sat 23 Jan 13:30 GMT,2027-01-23T15:00:00Z,Sat 23 Jan 15:00 GMT,ARS v NEW,90,yes,false,false,false
-23,2027-01-30T13:30:00Z,Sat 30 Jan 13:30 GMT,2027-01-30T15:00:00Z,Sat 30 Jan 15:00 GMT,AVL v IPS,90,yes,false,false,false
+21,2027-01-16T11:00:00Z,Sat 16 Jan 11:00 GMT,2027-01-16T12:30:00Z,Sat 16 Jan 12:30 GMT,COV v EVE,90,yes,false,false,false
+22,2027-01-23T13:30:00Z,Sat 23 Jan 13:30 GMT,2027-01-23T15:00:00Z,Sat 23 Jan 15:00 GMT,FUL v AVL,90,yes,false,false,false
+23,2027-01-30T11:00:00Z,Sat 30 Jan 11:00 GMT,2027-01-30T12:30:00Z,Sat 30 Jan 12:30 GMT,LIV v EVE,90,yes,false,false,false
 24,2027-02-06T13:30:00Z,Sat 06 Feb 13:30 GMT,2027-02-06T15:00:00Z,Sat 06 Feb 15:00 GMT,ARS v LIV,90,yes,false,false,false
 25,2027-02-10T18:30:00Z,Wed 10 Feb 18:30 GMT,2027-02-10T20:00:00Z,Wed 10 Feb 20:00 GMT,AVL v BOU,90,yes,false,false,false
 26,2027-02-20T13:30:00Z,Sat 20 Feb 13:30 GMT,2027-02-20T15:00:00Z,Sat 20 Feb 15:00 GMT,ARS v FUL,90,yes,false,false,false
