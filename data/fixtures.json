@@ -38424,7 +38424,7 @@
         "a": [
           {
             "element": 211,
-            "value": 45
+            "value": 46
           },
           {
             "element": 222,
@@ -38435,15 +38435,19 @@
             "value": 23
           },
           {
+            "element": 241,
+            "value": 14
+          },
+          {
             "element": 153,
-            "value": 15
+            "value": 13
           },
           {
             "element": 214,
             "value": 13
           },
           {
-            "element": 241,
+            "element": 210,
             "value": 10
           },
           {
@@ -38451,16 +38455,12 @@
             "value": 8
           },
           {
-            "element": 210,
-            "value": 8
+            "element": 202,
+            "value": 7
           },
           {
             "element": 588,
             "value": 7
-          },
-          {
-            "element": 202,
-            "value": 6
           },
           {
             "element": 42,
@@ -38490,11 +38490,15 @@
           },
           {
             "element": 185,
-            "value": 31
+            "value": 28
           },
           {
             "element": 492,
             "value": 27
+          },
+          {
+            "element": 655,
+            "value": 17
           },
           {
             "element": 656,
@@ -38505,8 +38509,8 @@
             "value": 14
           },
           {
-            "element": 655,
-            "value": 14
+            "element": 184,
+            "value": 13
           },
           {
             "element": 188,
@@ -38515,10 +38519,6 @@
           {
             "element": 173,
             "value": 12
-          },
-          {
-            "element": 184,
-            "value": 11
           },
           {
             "element": 194,
@@ -38530,7 +38530,7 @@
           },
           {
             "element": 91,
-            "value": 3
+            "value": 5
           },
           {
             "element": 584,
@@ -38551,7 +38551,7 @@
         "a": [
           {
             "element": 202,
-            "value": 11
+            "value": 12
           },
           {
             "element": 644,
@@ -38562,27 +38562,27 @@
             "value": 10
           },
           {
+            "element": 211,
+            "value": 9
+          },
+          {
             "element": 153,
             "value": 8
           },
           {
-            "element": 211,
-            "value": 8
-          },
-          {
             "element": 210,
-            "value": 7
+            "value": 8
           },
           {
             "element": 214,
             "value": 7
           },
           {
-            "element": 204,
-            "value": 5
+            "element": 588,
+            "value": 6
           },
           {
-            "element": 588,
+            "element": 204,
             "value": 5
           },
           {
@@ -38790,7 +38790,7 @@
         "a": [
           {
             "element": 300,
-            "value": 24
+            "value": 25
           },
           {
             "element": 267,
@@ -38813,11 +38813,11 @@
             "value": 9
           },
           {
-            "element": 315,
-            "value": 8
+            "element": 619,
+            "value": 9
           },
           {
-            "element": 619,
+            "element": 315,
             "value": 8
           },
           {
@@ -38883,11 +38883,11 @@
             "value": 23
           },
           {
-            "element": 512,
-            "value": 17
+            "element": 519,
+            "value": 19
           },
           {
-            "element": 519,
+            "element": 512,
             "value": 17
           },
           {
