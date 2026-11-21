@@ -2,7 +2,7 @@
  "schema": "league-state/1",
  "as_of_gw": 10,
  "ft_for_gw": 11,
- "source_run_at": "2026-11-20T22:22:37Z",
+ "source_run_at": "2026-11-21T00:15:27Z",
  "league": "Shabanga",
  "entries": [
   {
@@ -29,7 +29,7 @@
     "freehit",
     "bboost"
    ],
-   "selling_value": 98.4,
+   "selling_value": 98.3,
    "squad": [
     {
      "element_id": 109,
@@ -194,8 +194,8 @@
      "captain": false,
      "vice": false,
      "purchase": 4.0,
-     "now": 4.0,
-     "selling": 4.0,
+     "now": 3.9,
+     "selling": 3.9,
      "purchase_source": "start price",
      "status": "a"
     },
@@ -281,7 +281,7 @@
      "captain": false,
      "vice": false,
      "purchase": 6.0,
-     "now": 6.2,
+     "now": 6.3,
      "selling": 6.1,
      "purchase_source": "transfer log",
      "status": "a"
@@ -766,7 +766,7 @@
      "captain": false,
      "vice": false,
      "purchase": 6.0,
-     "now": 6.2,
+     "now": 6.3,
      "selling": 6.1,
      "purchase_source": "transfer log",
      "status": "a"
@@ -996,7 +996,7 @@
     "freehit",
     "bboost"
    ],
-   "selling_value": 100.3,
+   "selling_value": 100.2,
    "squad": [
     {
      "element_id": 1,
@@ -1007,7 +1007,7 @@
      "captain": false,
      "vice": true,
      "purchase": 6.0,
-     "now": 6.2,
+     "now": 6.3,
      "selling": 6.1,
      "purchase_source": "start price",
      "status": "a"
@@ -1175,8 +1175,8 @@
      "captain": false,
      "vice": false,
      "purchase": 6.0,
-     "now": 6.0,
-     "selling": 6.0,
+     "now": 5.9,
+     "selling": 5.9,
      "purchase_source": "transfer log",
      "status": "d"
     },
@@ -1234,7 +1234,7 @@
     "bboost",
     "3xc"
    ],
-   "selling_value": 99.0,
+   "selling_value": 98.9,
    "squad": [
     {
      "element_id": 496,
@@ -1399,8 +1399,8 @@
      "captain": false,
      "vice": false,
      "purchase": 4.0,
-     "now": 4.0,
-     "selling": 4.0,
+     "now": 3.9,
+     "selling": 3.9,
      "purchase_source": "start price",
      "status": "a"
     },
@@ -1479,7 +1479,7 @@
      "captain": false,
      "vice": false,
      "purchase": 6.0,
-     "now": 6.2,
+     "now": 6.3,
      "selling": 6.1,
      "purchase_source": "start price",
      "status": "a"
@@ -1702,7 +1702,7 @@
     "bboost",
     "3xc"
    ],
-   "selling_value": 96.7,
+   "selling_value": 96.6,
    "squad": [
     {
      "element_id": 250,
@@ -1797,8 +1797,8 @@
      "captain": false,
      "vice": false,
      "purchase": 8.0,
-     "now": 7.9,
-     "selling": 7.9,
+     "now": 7.8,
+     "selling": 7.8,
      "purchase_source": "start price",
      "status": "a"
     },
