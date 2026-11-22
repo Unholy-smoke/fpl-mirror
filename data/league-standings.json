@@ -1,5 +1,5 @@
 {
-  "last_updated_data": "2026-11-22T17:22:19Z",
+  "last_updated_data": "2026-11-22T20:17:24Z",
   "league": {
     "admin_entry": 118670,
     "closed": false,
@@ -50,12 +50,12 @@
         "club_badge_src": null,
         "entry": 3866837,
         "entry_name": "The Krejci Gang",
-        "event_total": 32,
+        "event_total": 33,
         "last_rank": 3,
         "player_name": "Craig Bowen",
         "rank": 3,
         "rank_sort": 3,
-        "total": 675
+        "total": 676
       },
       {
         "club_badge_src": null,
@@ -72,12 +72,12 @@
         "club_badge_src": null,
         "entry": 1539533,
         "entry_name": "Cene Juan Cene Jamal",
-        "event_total": 27,
+        "event_total": 32,
         "last_rank": 5,
         "player_name": "ifor jones",
         "rank": 5,
         "rank_sort": 5,
-        "total": 658
+        "total": 663
       },
       {
         "club_badge_src": null,
@@ -116,12 +116,12 @@
         "club_badge_src": null,
         "entry": 7519117,
         "entry_name": "Zero Fox Given",
-        "event_total": 61,
+        "event_total": 63,
         "last_rank": 9,
         "player_name": "Matt Fox",
         "rank": 9,
         "rank_sort": 9,
-        "total": 552
+        "total": 554
       }
     ]
   }
