@@ -2,7 +2,7 @@
  "schema": "league-state/1",
  "as_of_gw": 11,
  "ft_for_gw": 12,
- "source_run_at": "2026-11-22T01:28:04Z",
+ "source_run_at": "2026-11-22T07:57:50Z",
  "league": "Shabanga",
  "entries": [
   {
@@ -1219,8 +1219,8 @@
    "manager": "Dean Barr",
    "team_name": "Dean's Team",
    "rank": 6,
-   "total": 616,
-   "gw_points": 27,
+   "total": 618,
+   "gw_points": 29,
    "bank": 1.9,
    "free_transfers": 4,
    "transfers_total": 7,
