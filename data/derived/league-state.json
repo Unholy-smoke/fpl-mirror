@@ -2,7 +2,7 @@
  "schema": "league-state/1",
  "as_of_gw": 11,
  "ft_for_gw": 12,
- "source_run_at": "2026-11-23T19:11:47Z",
+ "source_run_at": "2026-11-23T21:43:24Z",
  "league": "Shabanga",
  "entries": [
   {
@@ -11,8 +11,8 @@
    "manager": "B Kites",
    "team_name": "Nwaneris Mate!",
    "rank": 1,
-   "total": 712,
-   "gw_points": 39,
+   "total": 714,
+   "gw_points": 41,
    "bank": 2.4,
    "free_transfers": 1,
    "transfers_total": 10,
@@ -1055,7 +1055,7 @@
      "now": 6.2,
      "selling": 6.2,
      "purchase_source": "transfer log",
-     "status": "a"
+     "status": "s"
     },
     {
      "element_id": 115,
@@ -1219,8 +1219,8 @@
    "manager": "Dean Barr",
    "team_name": "Dean's Team",
    "rank": 6,
-   "total": 622,
-   "gw_points": 33,
+   "total": 623,
+   "gw_points": 34,
    "bank": 1.9,
    "free_transfers": 4,
    "transfers_total": 7,
