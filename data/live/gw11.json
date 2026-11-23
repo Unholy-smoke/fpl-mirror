@@ -15057,7 +15057,7 @@
               "identifier": "saves",
               "points": 2,
               "points_modification": 0,
-              "value": 8
+              "value": 7
             }
           ]
         }
@@ -15067,7 +15067,7 @@
       "stats": {
         "assists": 0,
         "bonus": 0,
-        "bps": 25,
+        "bps": 22,
         "clean_sheets": 0,
         "clearances_blocks_interceptions": 3,
         "creativity": "0.0",
@@ -15088,7 +15088,7 @@
         "played": true,
         "recoveries": 9,
         "red_cards": 0,
-        "saves": 8,
+        "saves": 7,
         "starts": 1,
         "tackles": 0,
         "threat": "0.0",
@@ -25027,7 +25027,7 @@
       "stats": {
         "assists": 0,
         "bonus": 0,
-        "bps": 34,
+        "bps": 33,
         "clean_sheets": 1,
         "clearances_blocks_interceptions": 11,
         "creativity": "0.0",
@@ -25081,9 +25081,9 @@
             },
             {
               "identifier": "bonus",
-              "points": 3,
+              "points": 2,
               "points_modification": 0,
-              "value": 3
+              "value": 2
             }
           ]
         }
@@ -25092,7 +25092,7 @@
       "modified": false,
       "stats": {
         "assists": 1,
-        "bonus": 3,
+        "bonus": 2,
         "bps": 44,
         "clean_sheets": 1,
         "clearances_blocks_interceptions": 2,
@@ -25118,7 +25118,7 @@
         "starts": 1,
         "tackles": 1,
         "threat": "0.0",
-        "total_points": 12,
+        "total_points": 11,
         "yellow_cards": 0
       }
     },
@@ -30295,9 +30295,9 @@
             },
             {
               "identifier": "bonus",
-              "points": 2,
+              "points": 3,
               "points_modification": 0,
-              "value": 2
+              "value": 3
             }
           ]
         }
@@ -30306,15 +30306,15 @@
       "modified": false,
       "stats": {
         "assists": 1,
-        "bonus": 2,
-        "bps": 43,
+        "bonus": 3,
+        "bps": 45,
         "clean_sheets": 1,
         "clearances_blocks_interceptions": 2,
         "creativity": "0.0",
         "defensive_contribution": 5,
         "expected_assists": "0.02",
-        "expected_goal_involvements": "0.86",
-        "expected_goals": "0.84",
+        "expected_goal_involvements": "0.83",
+        "expected_goals": "0.81",
         "expected_goals_conceded": "0.34",
         "goals_conceded": 0,
         "goals_scored": 1,
@@ -30332,7 +30332,7 @@
         "starts": 1,
         "tackles": 1,
         "threat": "0.0",
-        "total_points": 12,
+        "total_points": 13,
         "yellow_cards": 1
       }
     },
