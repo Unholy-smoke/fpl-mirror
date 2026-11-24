@@ -31,20 +31,20 @@
             "last_rank": 126369,
             "league_id": 16,
             "phase": 1,
-            "rank": 144181,
-            "rank_count": 1841616,
-            "rank_sort": 144227,
+            "rank": 145244,
+            "rank_count": 1841624,
+            "rank_sort": 145290,
             "total": 688
           },
           {
             "contest": null,
-            "entry_percentile_rank": 20,
+            "entry_percentile_rank": 25,
             "last_rank": 201198,
             "league_id": 16,
             "phase": 5,
-            "rank": 348976,
-            "rank_count": 1841617,
-            "rank_sort": 349165,
+            "rank": 386100,
+            "rank_count": 1841625,
+            "rank_sort": 386291,
             "total": 102
           }
         ],
@@ -66,7 +66,7 @@
         "max_entries": null,
         "name": "Man Utd",
         "rank": null,
-        "rank_count": 1841616,
+        "rank_count": 1841624,
         "scoring": "c",
         "short_name": "team-16",
         "start_event": 1
@@ -79,20 +79,20 @@
             "last_rank": 113,
             "league_id": 21,
             "phase": 1,
-            "rank": 127,
-            "rank_count": 3591,
-            "rank_sort": 127,
+            "rank": 129,
+            "rank_count": 3590,
+            "rank_sort": 129,
             "total": 688
           },
           {
             "contest": null,
-            "entry_percentile_rank": 20,
+            "entry_percentile_rank": 25,
             "last_rank": 395,
             "league_id": 21,
             "phase": 5,
-            "rank": 615,
-            "rank_count": 3591,
-            "rank_sort": 615,
+            "rank": 729,
+            "rank_count": 3590,
+            "rank_sort": 729,
             "total": 102
           }
         ],
@@ -114,7 +114,7 @@
         "max_entries": null,
         "name": "Afghanistan",
         "rank": null,
-        "rank_count": 3591,
+        "rank_count": 3590,
         "scoring": "c",
         "short_name": "region-1",
         "start_event": 1
@@ -127,20 +127,20 @@
             "last_rank": 711118,
             "league_id": 276,
             "phase": 1,
-            "rank": 829097,
-            "rank_count": 8886261,
-            "rank_sort": 829338,
+            "rank": 836836,
+            "rank_count": 8886230,
+            "rank_sort": 837073,
             "total": 688
           },
           {
             "contest": null,
-            "entry_percentile_rank": 25,
+            "entry_percentile_rank": 30,
             "last_rank": 1087231,
             "league_id": 276,
             "phase": 5,
-            "rank": 2050698,
-            "rank_count": 8886258,
-            "rank_sort": 2051633,
+            "rank": 2222382,
+            "rank_count": 8886226,
+            "rank_sort": 2223302,
             "total": 102
           }
         ],
@@ -162,7 +162,7 @@
         "max_entries": null,
         "name": "Gameweek 1",
         "rank": null,
-        "rank_count": 8886261,
+        "rank_count": 8886230,
         "scoring": "c",
         "short_name": "event-1",
         "start_event": 1
@@ -175,9 +175,9 @@
             "last_rank": 711255,
             "league_id": 314,
             "phase": 1,
-            "rank": 829324,
-            "rank_count": 11261444,
-            "rank_sort": 829565,
+            "rank": 837072,
+            "rank_count": 11261393,
+            "rank_sort": 837309,
             "total": 688
           },
           {
@@ -186,9 +186,9 @@
             "last_rank": 1251369,
             "league_id": 314,
             "phase": 5,
-            "rank": 2325521,
-            "rank_count": 11261442,
-            "rank_sort": 2326456,
+            "rank": 2575190,
+            "rank_count": 11261386,
+            "rank_sort": 2576110,
             "total": 102
           }
         ],
@@ -210,7 +210,7 @@
         "max_entries": null,
         "name": "Overall",
         "rank": null,
-        "rank_count": 11261444,
+        "rank_count": 11261393,
         "scoring": "c",
         "short_name": "overall",
         "start_event": 1
@@ -367,9 +367,9 @@
             "last_rank": 1692955,
             "league_id": 2430021,
             "phase": 1,
-            "rank": 1988098,
-            "rank_count": 11261443,
-            "rank_sort": 1988295,
+            "rank": 2045745,
+            "rank_count": 11261386,
+            "rank_sort": 2045946,
             "total": 335
           },
           {
@@ -378,9 +378,9 @@
             "last_rank": 1251368,
             "league_id": 2430021,
             "phase": 5,
-            "rank": 2325521,
-            "rank_count": 11261442,
-            "rank_sort": 2326456,
+            "rank": 2575191,
+            "rank_count": 11261385,
+            "rank_sort": 2576111,
             "total": 102
           }
         ],
@@ -402,7 +402,7 @@
         "max_entries": null,
         "name": "Second Chance",
         "rank": null,
-        "rank_count": 11261443,
+        "rank_count": 11261386,
         "scoring": "c",
         "short_name": "sc",
         "start_event": 6
@@ -432,7 +432,7 @@
   "player_region_name": "Afghanistan",
   "started_event": 1,
   "summary_event_points": 32,
-  "summary_event_rank": 7181065,
+  "summary_event_rank": 7181056,
   "summary_overall_points": 688,
   "summary_overall_rank": 837072,
   "years_active": 15
