@@ -867,7 +867,7 @@
     {
       "assists": 0,
       "bonus": 0,
-      "bps": 6,
+      "bps": 7,
       "clean_sheets": 0,
       "clearances_blocks_interceptions": 5,
       "creativity": "0.0",
@@ -876,7 +876,7 @@
       "expected_assists": "0.00",
       "expected_goal_involvements": "0.02",
       "expected_goals": "0.02",
-      "expected_goals_conceded": "1.50",
+      "expected_goals_conceded": "1.56",
       "fixture": 103,
       "goals_conceded": 3,
       "goals_scored": 0,
