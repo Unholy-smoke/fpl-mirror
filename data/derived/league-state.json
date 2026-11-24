@@ -2,7 +2,7 @@
  "schema": "league-state/1",
  "as_of_gw": 11,
  "ft_for_gw": 12,
- "source_run_at": "2026-11-23T21:43:24Z",
+ "source_run_at": "2026-11-24T00:45:52Z",
  "league": "Shabanga",
  "entries": [
   {
@@ -110,7 +110,7 @@
      "captain": false,
      "vice": false,
      "purchase": 6.5,
-     "now": 6.7,
+     "now": 6.8,
      "selling": 6.6,
      "purchase_source": "transfer log",
      "status": "a"
@@ -273,7 +273,7 @@
    "chips_held_now": [
     "freehit"
    ],
-   "selling_value": 99.1,
+   "selling_value": 99.0,
    "squad": [
     {
      "element_id": 1,
@@ -480,8 +480,8 @@
      "captain": false,
      "vice": false,
      "purchase": 4.1,
-     "now": 4.1,
-     "selling": 4.1,
+     "now": 4.0,
+     "selling": 4.0,
      "purchase_source": "transfer log",
      "status": "a"
     }
@@ -978,8 +978,8 @@
    "manager": "ifor jones",
    "team_name": "Cene Juan Cene Jamal",
    "rank": 5,
-   "total": 663,
-   "gw_points": 32,
+   "total": 662,
+   "gw_points": 31,
    "bank": 0.0,
    "free_transfers": 4,
    "transfers_total": 7,
@@ -1471,7 +1471,7 @@
     "bboost",
     "3xc"
    ],
-   "selling_value": 99.2,
+   "selling_value": 99.3,
    "squad": [
     {
      "element_id": 1,
@@ -1538,8 +1538,8 @@
      "captain": false,
      "vice": false,
      "purchase": 6.4,
-     "now": 6.7,
-     "selling": 6.5,
+     "now": 6.8,
+     "selling": 6.6,
      "purchase_source": "transfer log",
      "status": "a"
     },
@@ -1790,7 +1790,7 @@
      "captain": false,
      "vice": false,
      "purchase": 6.1,
-     "now": 6.7,
+     "now": 6.8,
      "selling": 6.4,
      "purchase_source": "transfer log",
      "status": "a"
@@ -1950,7 +1950,7 @@
     "freehit",
     "3xc"
    ],
-   "selling_value": 95.3,
+   "selling_value": 95.4,
    "squad": [
     {
      "element_id": 597,
@@ -2045,8 +2045,8 @@
      "captain": false,
      "vice": false,
      "purchase": 6.2,
-     "now": 6.7,
-     "selling": 6.4,
+     "now": 6.8,
+     "selling": 6.5,
      "purchase_source": "transfer log",
      "status": "a"
     },
