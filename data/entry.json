@@ -154,7 +154,7 @@
         "entry_can_leave": false,
         "entry_last_rank": 711118,
         "entry_percentile_rank": 10,
-        "entry_rank": 836835,
+        "entry_rank": 836834,
         "featured_entry_ids": [],
         "has_cup": false,
         "id": 276,
@@ -202,7 +202,7 @@
         "entry_can_leave": false,
         "entry_last_rank": 711255,
         "entry_percentile_rank": 10,
-        "entry_rank": 837071,
+        "entry_rank": 837070,
         "featured_entry_ids": [],
         "has_cup": true,
         "id": 314,
@@ -432,8 +432,8 @@
   "player_region_name": "Afghanistan",
   "started_event": 1,
   "summary_event_points": 32,
-  "summary_event_rank": 7180838,
+  "summary_event_rank": 7180835,
   "summary_overall_points": 688,
-  "summary_overall_rank": 837071,
+  "summary_overall_rank": 837070,
   "years_active": 15
 }
