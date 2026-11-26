@@ -58,7 +58,7 @@
         "entry_can_leave": false,
         "entry_last_rank": 126369,
         "entry_percentile_rank": 10,
-        "entry_rank": 145249,
+        "entry_rank": 145251,
         "featured_entry_ids": [],
         "has_cup": true,
         "id": 16,
@@ -432,7 +432,7 @@
   "player_region_name": "Afghanistan",
   "started_event": 1,
   "summary_event_points": 32,
-  "summary_event_rank": 7180833,
+  "summary_event_rank": 7180825,
   "summary_overall_points": 688,
   "summary_overall_rank": 837070,
   "years_active": 15
