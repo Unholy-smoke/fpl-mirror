@@ -42,9 +42,9 @@
             "last_rank": 201198,
             "league_id": 16,
             "phase": 5,
-            "rank": 386114,
+            "rank": 386117,
             "rank_count": 1841625,
-            "rank_sort": 386305,
+            "rank_sort": 386308,
             "total": 102
           }
         ],
@@ -138,9 +138,9 @@
             "last_rank": 1087231,
             "league_id": 276,
             "phase": 5,
-            "rank": 2222323,
+            "rank": 2222317,
             "rank_count": 8886226,
-            "rank_sort": 2223243,
+            "rank_sort": 2223237,
             "total": 102
           }
         ],
@@ -186,9 +186,9 @@
             "last_rank": 1251369,
             "league_id": 314,
             "phase": 5,
-            "rank": 2575110,
+            "rank": 2575104,
             "rank_count": 11261386,
-            "rank_sort": 2576030,
+            "rank_sort": 2576024,
             "total": 102
           }
         ],
@@ -378,9 +378,9 @@
             "last_rank": 1251368,
             "league_id": 2430021,
             "phase": 5,
-            "rank": 2575110,
+            "rank": 2575104,
             "rank_count": 11261385,
-            "rank_sort": 2576030,
+            "rank_sort": 2576024,
             "total": 102
           }
         ],
@@ -432,7 +432,7 @@
   "player_region_name": "Afghanistan",
   "started_event": 1,
   "summary_event_points": 32,
-  "summary_event_rank": 7180693,
+  "summary_event_rank": 7180641,
   "summary_overall_points": 688,
   "summary_overall_rank": 837067,
   "years_active": 15
