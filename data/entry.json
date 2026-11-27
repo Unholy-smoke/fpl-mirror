@@ -31,9 +31,9 @@
             "last_rank": 126369,
             "league_id": 16,
             "phase": 1,
-            "rank": 145251,
+            "rank": 145252,
             "rank_count": 1841624,
-            "rank_sort": 145297,
+            "rank_sort": 145298,
             "total": 688
           },
           {
@@ -42,9 +42,9 @@
             "last_rank": 201198,
             "league_id": 16,
             "phase": 5,
-            "rank": 386120,
+            "rank": 386122,
             "rank_count": 1841625,
-            "rank_sort": 386311,
+            "rank_sort": 386313,
             "total": 102
           }
         ],
@@ -58,7 +58,7 @@
         "entry_can_leave": false,
         "entry_last_rank": 126369,
         "entry_percentile_rank": 10,
-        "entry_rank": 145251,
+        "entry_rank": 145252,
         "featured_entry_ids": [],
         "has_cup": true,
         "id": 16,
@@ -138,9 +138,9 @@
             "last_rank": 1087231,
             "league_id": 276,
             "phase": 5,
-            "rank": 2222312,
+            "rank": 2222313,
             "rank_count": 8886226,
-            "rank_sort": 2223232,
+            "rank_sort": 2223233,
             "total": 102
           }
         ],
@@ -186,9 +186,9 @@
             "last_rank": 1251369,
             "league_id": 314,
             "phase": 5,
-            "rank": 2575099,
+            "rank": 2575098,
             "rank_count": 11261386,
-            "rank_sort": 2576019,
+            "rank_sort": 2576018,
             "total": 102
           }
         ],
@@ -378,9 +378,9 @@
             "last_rank": 1251368,
             "league_id": 2430021,
             "phase": 5,
-            "rank": 2575099,
+            "rank": 2575098,
             "rank_count": 11261385,
-            "rank_sort": 2576019,
+            "rank_sort": 2576018,
             "total": 102
           }
         ],
@@ -432,7 +432,7 @@
   "player_region_name": "Afghanistan",
   "started_event": 1,
   "summary_event_points": 32,
-  "summary_event_rank": 7180618,
+  "summary_event_rank": 7180615,
   "summary_overall_points": 688,
   "summary_overall_rank": 837067,
   "years_active": 15
