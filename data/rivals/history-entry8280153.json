@@ -177,13 +177,13 @@
       "event": 12,
       "event_transfers": 1,
       "event_transfers_cost": 0,
-      "overall_rank": 322240,
-      "overall_rank_percentage": null,
-      "percentile_rank": null,
+      "overall_rank": 371886,
+      "overall_rank_percentage": "3",
+      "percentile_rank": 95,
       "points": 0,
       "points_on_bench": 0,
-      "rank": null,
-      "rank_sort": null,
+      "rank": 10660464,
+      "rank_sort": 10886816,
       "total_points": 714,
       "value": 1021
     }
