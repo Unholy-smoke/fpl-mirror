@@ -1,12 +1,12 @@
 {
- "checked_utc": "2026-11-27T17:26:06Z",
- "snapshot_run_at": "2026-11-27T17:25:31Z",
+ "checked_utc": "2026-11-27T19:13:05Z",
+ "snapshot_run_at": "2026-11-27T19:12:26Z",
  "worst": "OK",
  "results": [
   {
    "level": "OK",
    "check": "freshness",
-   "msg": "last snapshot 2026-11-27T17:25:31Z (Fri 27 Nov 17:25 GMT), 0.0h old"
+   "msg": "last snapshot 2026-11-27T19:12:26Z (Fri 27 Nov 19:12 GMT), 0.0h old"
   },
   {
    "level": "OK",
@@ -16,12 +16,12 @@
   {
    "level": "OK",
    "check": "rivals",
-   "msg": "9 entries, GW11 picks + transfers present for all"
+   "msg": "9 entries, GW12 picks + transfers present for all"
   },
   {
    "level": "OK",
    "check": "progress",
-   "msg": "2026-11-27.csv: 6 stamps, rows/stamp [674]; newest stamp matches bootstrap (674 elements)"
+   "msg": "2026-11-27.csv: 7 stamps, rows/stamp [674]; newest stamp matches bootstrap (674 elements)"
   },
   {
    "level": "OK",

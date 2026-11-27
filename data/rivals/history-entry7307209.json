@@ -165,6 +165,21 @@
       "rank_sort": 8182920,
       "total_points": 610,
       "value": 1029
+    },
+    {
+      "bank": 17,
+      "event": 12,
+      "event_transfers": 0,
+      "event_transfers_cost": 0,
+      "overall_rank": 4180472,
+      "overall_rank_percentage": null,
+      "percentile_rank": null,
+      "points": 0,
+      "points_on_bench": 0,
+      "rank": null,
+      "rank_sort": null,
+      "total_points": 610,
+      "value": 1031
     }
   ],
   "past": [
