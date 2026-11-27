@@ -42,9 +42,9 @@
             "last_rank": 201198,
             "league_id": 16,
             "phase": 5,
-            "rank": 386122,
+            "rank": 386123,
             "rank_count": 1841625,
-            "rank_sort": 386313,
+            "rank_sort": 386314,
             "total": 102
           }
         ],
@@ -186,9 +186,9 @@
             "last_rank": 1251369,
             "league_id": 314,
             "phase": 5,
-            "rank": 2575098,
+            "rank": 2575097,
             "rank_count": 11261386,
-            "rank_sort": 2576018,
+            "rank_sort": 2576017,
             "total": 102
           }
         ],
@@ -367,9 +367,9 @@
             "last_rank": 1692955,
             "league_id": 2430021,
             "phase": 1,
-            "rank": 2045729,
+            "rank": 2045728,
             "rank_count": 11261386,
-            "rank_sort": 2045930,
+            "rank_sort": 2045929,
             "total": 335
           },
           {
@@ -378,9 +378,9 @@
             "last_rank": 1251368,
             "league_id": 2430021,
             "phase": 5,
-            "rank": 2575098,
+            "rank": 2575097,
             "rank_count": 11261385,
-            "rank_sort": 2576018,
+            "rank_sort": 2576017,
             "total": 102
           }
         ],
@@ -394,7 +394,7 @@
         "entry_can_leave": false,
         "entry_last_rank": 1692955,
         "entry_percentile_rank": 20,
-        "entry_rank": 2045729,
+        "entry_rank": 2045728,
         "featured_entry_ids": [],
         "has_cup": false,
         "id": 2430021,
@@ -432,7 +432,7 @@
   "player_region_name": "Afghanistan",
   "started_event": 1,
   "summary_event_points": 32,
-  "summary_event_rank": 7180615,
+  "summary_event_rank": 7180612,
   "summary_overall_points": 688,
   "summary_overall_rank": 837067,
   "years_active": 15
