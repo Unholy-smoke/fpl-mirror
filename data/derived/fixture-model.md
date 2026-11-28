@@ -1,6 +1,6 @@
 # Fixture model v0.2 — GW13–20
 
-**Generated** 2026-11-27 23:46 UTC from mirror `2026-11-27T23:45:45Z`.
+**Generated** 2026-11-28 01:40 UTC from mirror `2026-11-28T01:40:08Z`.
 **Observed** 12 gameweek(s) — [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]. With k=6 pseudo-matches, ratings are **33% prior / 67% data** for the 2 clubs on 12 matches, and **35% / 65%** for the 18 on 11. That weight shifts toward data every week.
 
 League mean xG per team-match **1.49**; home 1.66 / away 1.33 at an assumed home advantage of ×1.25.
